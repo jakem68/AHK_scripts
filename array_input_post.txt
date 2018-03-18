@@ -3,7 +3,7 @@
 ▄▄▄▄▄INTERNET:
 8; chrome; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 907; jan; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.google.com/
-3309; ksj; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.google.com/
+3310; ksj; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.google.com/
 143; rpi; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 2" --new-window --start-maximized http://drive.google.com/
 ever; evern; evernote; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.evernote.com/Home.action?__fp=a5FRWOmTir03yWPvuidLz-TPR6I9Jhx8&username=jansixtyeight&rememberMe=true&login=true&_sourcePage=nKoweBvMrvniMUD9T65RG_YvRLZ-1eYO3fqfqRu0fynRL_1nukNa4gH1t86pc1SP#ses=4&sh=2&sds=3&
 504; keep; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://keep.google.com/
@@ -27,7 +27,7 @@ ever; evern; evernote; "C:\Program Files (x86)\Google\Chrome\Application\chrome.
 301; jdrive; jdir; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://drive.google.com/drive/#my-drive
 560; kdrive; kdir; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://drive.google.com/drive/#my-drive
 43; feedly; feed; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://feedly.com/i/my
-105; klad; gklad; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/document/d/1H-hNTQ69d81cUjw1ZHAHigmGxS_rQPYxZrZJR3gsb9I/edit
+106; klad; gklad; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/document/d/1H-hNTQ69d81cUjw1ZHAHigmGxS_rQPYxZrZJR3gsb9I/edit
 46; twitter; twit; tweet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://twitter.com/
 92; diigo; diig; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.diigo.com/user/vjqedgk
 5; zand; zandstuivers; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://sites.google.com/site/schoonbeekzandstuivers/
@@ -63,7 +63,7 @@ books; playbooks; book; "C:\Program Files (x86)\Google\Chrome\Application\chrome
 
 ninetyfour; ntf; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://levelstuck.com/94-percent-game-answers-level-11-12-13-14-15-16-17-18-19-20/
 5; grab; grabcad; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://workbench.grabcad.com/workbench/myprojects#/account/1678557/projects/my_projects
-19; git; github; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://github.com/
+20; git; github; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://github.com/
 2; kruis; kruiswoord; kruiswoordraadsel; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.cybercomm.nl/~zundert/mid/printen.html
 32; sone; sonedrive; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/_layouts/15/onedrive.aspx
 7; gantt; instagantt; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://instagantt.com/app/
@@ -147,7 +147,7 @@ qdir; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\Q-Dir_Portable
 17; bru; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\BRU\Bulk Rename Utility.exe"
 22; powerp; powerpoint; "C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE"
 41; sub; sublime; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\Sublime\sublime_text.exe"
-6; vsc; code; vscode; C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe"
+16; vsc; code; vscode; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe"
 317; onenote; onen; onote; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe"
 3; tvgids; tv; gids; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\tvgids.ahk"
 12; nrp; ; noreadingpane; rpon; readingpaneon; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-readingpaneon.ahk"
@@ -168,13 +168,13 @@ qdir; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\Q-Dir_Portable
 287; viv; visiv; vvv; vist; vis2; vst; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\15-0274_VISiv Automatisering"
 13; pc; myc; mycomputer; "C:\Users\ksj\Links\Computer.lnk"
 share; freecom; "\\192.168.0.10\share"
-114; port; portable; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps"
+115; port; portable; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps"
 24; admin; administratie; "C:\Users\ksj\Dropbox (Sirris)\Administratie"
 252; cor; corn; cornet; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-0233_CORNET_cobot_polishing"
 34; pers; personal; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk"
-110; port; portable; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps"
+111; port; portable; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps"
 104; bar; barco; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\16-1046_Barco"
-137; ahk; scripts; script; ahkscripts; C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts
+139; ahk; scripts; script; ahkscripts; C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts
 7; tti; C:\Users\ksj\Dropbox (Sirris)\_Projecten\proeftuinen voor west-vlaanderen
 2; arch; archief; "C:\Users\ksj\Dropbox (Sirris)\projecten - archiefC-schijf"
 13; bor; borit; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-2857_Borit_fof-audit"
