@@ -1,0 +1,43 @@
+    open_and_count_opened_outlook_windows()
+    loop, %nr_OutWin_opened%
+    {
+      winactivate, Appointment
+      function_oof()
+    }
+  return
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  function_oof() ;out of office
+{
+  setTitleMatchMode, 2
+  ifwinactive, Appointment
+  {
+    Send {Alt}
+    Send H
+    Send b
+    Send o
+    Send {enter}
+    Send !s
+    sleep 100
+  }
+  Else
+  {
+    msgbox appointment is not active
+  }
+}                 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; aantal open outlook vensters tellen op voorhand, vervolgens na openen afspraken opnieuw tellen --> verschil is aantal keren dat bovenstaande functies in een loop moet doorlopen worden.
+
+open_and_count_opened_outlook_windows()
+{
+ winget, nr_OutWin_bef, count, ahk_class rctrl_renwnd32
+ winactivate, Calendar
+ send {enter}
+ sleep 2000
+ winget, nr_OutWin_aft, count, ahk_class rctrl_renwnd32
+ global nr_OutWin_opened := nr_OutWin_aft - nr_OutWin_bef               
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

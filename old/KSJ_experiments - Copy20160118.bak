@@ -1,0 +1,286 @@
+;;;; group Outlook windows to make hotkeys F1&Z + F1&D below work in multiple outlook windows 
+SetTitleMatchMode, 2
+Groupadd, grouptemp, Inbox - Jan.Kempeneers@sirris.be - Microsoft Outlook
+Groupadd, grouptemp, Message 
+                    
+                                                       
+;;;; hotkeys ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; reload this script
+F2 & r::reload
+
+;;;; edit this script
+F2 & e::Run "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk", , max
+
+;;;; pause script
+F2 & p::pause
+
+;;;; run windowinfo
+F2 & w::run "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\windowinfo.ahk"
+
+;;;; start explorer in links (=windows + e)
+#e::
+  {
+  Run explorer.exe "C:\Users\ksj\Links"
+  sleep 1000
+  send, {tab 5}
+  send, {space}
+  }
+return
+  
+;;;; start evernote with new note
+F1 & e::Run "C:\Users\ksj\AppData\Local\Apps\Evernote\Evernote\evernote.EXE" /newnote
+
+;;;;
+
+;;;; show outlook windows
+F1 & s::
+  SetTitleMatchMode, 2
+  GroupAdd, Outl, - Microsoft Outlook ahk_class rctrl_renwnd32
+  WinShow, ahk_group Outl
+  WinRestore, ahk_group Outl
+return
+;;;;
+
+
+
+
+;;;; To give F1 back it's original function (only on release of button without another button being pressed)
+;;;; niet met letters doen want bij snel typen lukt de letter niet meer
+F1::send {F1}
+F2::send {F2}
+;;;;
+
+
+;;;; launch browser with application or resp. launch application
+F1 & j::
+  global launchprogram =
+  inputbox, launchprogram, Launch in browser, which app do you want to run, , , 130, , , , 10
+  if launchprogram =
+    {
+    msgbox, , , type faster, 1
+    }
+  else if (launchprogram="ins") 
+      {
+      run outlook.exe /select outlook:Inbox
+      run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk"  --new-window https://inbox.google.com/
+      run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://inbox.google.com/     
+      return
+      }  
+
+;  else if (launchprogram="ins") 
+;      {
+;      run outlook.exe /select outlook:Inbox
+;      run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" https://inbox.google.com/
+;      run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" https://inbox.google.com/     
+;      return
+;      }  
+
+;run % "chrome.exe" ( winExist("ahk_class Chrome_WidgetWin_1") ? " --new-window " : " " ) url
+
+; other exceptions that don't lookup in input_array
+  
+  else
+    {
+    function_lut()
+    if target =
+      {
+      msgbox, 4, , I don't understand. Do you want to add "%launchprogram%" as a new shortcut?, 5
+      ifmsgbox timeout
+        return
+      ifmsgbox no
+        return
+      clipboard = %launchprogram% 
+      run "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
+      }
+  ;exceptions
+    IfInString, target, outlook.exe
+      {
+      run %target%
+      sleep 500
+      Send ^e
+      return
+      }
+  ;run the target
+    else
+      {   
+      run %target%
+      sleep 500
+      winactivate 
+;      Winmaximize, A
+      }
+    }
+return
+
+
+;;;; hotstrings not always active ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; only in Word
+#ifWinActive, ahk_class OpusApp
+  
+    ;;;; change font color to red in Word
+    F1 & r::
+      Send {Alt}
+      Send H
+      Send FC
+      Send {up}
+      Send {up}
+      Send {up}
+      send {right}
+      Send {right}
+      Send {enter}
+    return
+    ;;;;
+    
+    ;;;; change font color to black in Word
+    F1 & b::
+      Send {Alt}
+      Send H
+      Send FC
+      Send A
+    return
+    ;;;;
+  
+    ;;;; Yellow marker in Word
+    F1 & y::
+      Send {Altdown}HI{Altup}
+      Send {enter}
+    return
+    ;;;;
+
+    ;;;; Orange (Red) marker in Word
+    F1 & o::
+      Send {Altdown}HI{Altup}
+      Send {right}{right}{right}
+      Send {enter}
+    return
+    ;;;;
+
+    ;;;; NO marker in Word
+    F1 & n::
+      Send {Altdown}{Altup}HIN
+      ;Send {enter}
+    return
+    ;;;;
+
+  
+#ifwinactive
+;;;;
+
+;;;; only in Outlook meeting invitations
+#ifWinActive, Meeting
+    ;;;; Outlook: accept invitation(s) without response; first open them manually!!
+    F1 & a::
+     Send {Alt}
+      Send H
+      Send c
+      Send {tab}
+      Send {tab}
+      Send {down}
+      Send {enter}
+    return               
+    ;;;;
+#ifwinactive
+;;;;
+
+
+;;;; only in Outlook windows
+#ifWinActive, ahk_group grouptemp
+
+    ;;;; e-mail quick action = DONE
+    F1 & d::
+      send, {altdown}HQS{altup}{tab}{enter}                   
+    return
+    ;;;;
+
+    ;;;; e-mail quick action = Z_In
+    F1 & z::
+      send, {altdown}HQS{altup}{enter}
+    return
+        
+    ;;;;
+  
+#ifwinactive
+;;;;
+
+;;;; only in chrome
+#ifWinActive, ahk_class Chrome_WidgetWin_1
+
+  ;;;; pull tab into seperate window
+   F1 & w::
+    send, {F6}
+    sleep, 200
+    send, ^c
+    sleep, 200
+    send, ^n
+    sleep, 200
+    send, ^v{enter}
+    send, !{tab}
+    send, ^w
+    send, !{tab}
+  return
+  ;;;;
+  
+  
+    
+#ifwinactive
+;;;;
+
+
+
+
+
+
+
+
+
+
+
+;;;; include other ahk files in this script without pasting them in
+;#Include D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+function_lut() ;look up target
+{
+  global target = 
+  Loop, read, D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt
+  {
+;      counter1 += 1
+;      msgbox, , , lijn %counter1%,
+      Loop, parse, A_LoopReadLine, `;
+      {
+          if A_index = 1
+            {
+            first_field := A_loopfield
+            }
+          msgbox, , , first field = %first_field%
+          last_field := A_loopfield
+      }
+;          msgbox, , , lijn %counter1% lastfield is %last_field%,
+      Loop, parse, A_LoopReadLine, `;, %A_space%
+      {
+;          msgbox, , , lijn %counter1% -- A_loopfield is %A_loopfield%,
+;          msgbox, , , launchprogram is %launchprogram%
+          ifequal, A_loopfield, %launchprogram%
+            {
+;            msgbox , , , %A_loopfield% recognized
+            target = %last_field%
+;            msgbox, , , target is %target%
+;;; Find the first field of the row, check whether it is an integer if YES, add value with 1, if NO, create new first field with value of 1
+;            Loop, parse, A_LoopReadLine, `;, %A_space%
+;                {
+;                if A_index = 1
+;                  if A_loopfield = integer
+;                    {
+;                    new_first_field := %first_field% + 1
+;                    StringReplace, A_loopfield, A_loopfield
+;                    }
+;                }
+;;;;;;;;;;                 
+            return
+            }
+      }
+  }
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

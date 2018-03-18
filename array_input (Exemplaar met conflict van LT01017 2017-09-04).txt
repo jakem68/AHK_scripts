@@ -1,0 +1,199 @@
+; Target moet steeds in het laatste veld!
+
+▄▄▄▄▄INTERNET:
+7; chrome; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+650; jan; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.google.com/
+2414; ksj; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.google.com/
+132; rpi; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 2" --new-window --start-maximized http://drive.google.com/
+ever; evern; evernote; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.evernote.com/Home.action?__fp=a5FRWOmTir03yWPvuidLz-TPR6I9Jhx8&username=jansixtyeight&rememberMe=true&login=true&_sourcePage=nKoweBvMrvniMUD9T65RG_YvRLZ-1eYO3fqfqRu0fynRL_1nukNa4gH1t86pc1SP#ses=4&sh=2&sds=3&
+336; keep; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://keep.google.com/
+53; gcont; gcontacts; gcon; jcon; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://contacts.google.com/preview/all
+62; gcal; kcal; ksjcal; kcalendar; gcalendar; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://calendar.google.com/calendar/render?pli=1#main_7
+17; jcal; jancal; jcalendar; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://calendar.google.com/calendar/render?pli=1#main_7
+307; ana; asa; asana; as; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://app.asana.com/0/3699102645008/3699102645008
+1; rem; remind; reminder; reminders; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.google.be/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=remind`%20me
+249; cry; crystal; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://crystal.sirris.be/crystal11/index/index.php
+315; kin; kinbox; ksj inbox; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://inbox.google.com/
+524; jin; jinbox; jan inbox; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://inbox.google.com/
+9; hbvl; hb; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window http://www.hbvl.be/
+1; der; red; dered; deredactie; redactie; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" http://www.deredactie.be/
+44; you; yout; youtube; jyou; jyout; jyoutube; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window http://www.youtube.com
+53; kyou; kyout; kyoutube; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://www.youtube.com
+187; kmap; kmaps; gmaps; maps; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.google.be/maps/
+36; jmap; jmaps; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://www.google.be/maps/
+25; yess; iexplore.exe https://yess.attentia.be/Sirris/
+4; yelo; iexplore.exe www.yelo.tv
+103; sos; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://sos.sirris.be/home
+276; news; gnews; new; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://news.google.com/
+200; jdrive; jdir; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://drive.google.com/drive/#my-drive
+432; kdrive; kdir; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://drive.google.com/drive/#my-drive
+30; feedly; feed; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://feedly.com/i/my
+71; klad; gklad; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://docs.google.com/document/d/1H-hNTQ69d81cUjw1ZHAHigmGxS_rQPYxZrZJR3gsb9I/edit
+44; twitter; twit; tweet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://twitter.com/
+58; diigo; diig; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.diigo.com/user/vjqedgk
+5; zand; zandstuivers; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://sites.google.com/site/schoonbeekzandstuivers/
+48; hootlet; hoot; hootsuite; hoots; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://hootsuite.com/dashboard
+70; gtrans; trans; transl; translate; gt; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://translate.google.com/
+ino; inoreader; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://www.inoreader.com/all_articles
+149; link; lin; linked; linkedin; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.linkedin.com/hp/?dnr=Dc74qS0QIJh1G0jil-q4qDKhRie6kZnXiN-
+1; aup; aupeo; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://www.aupeo.com/
+music; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window http://www.symbaloo.com/home/mix/13eOhDcUdM
+51; wetr; wetransfer; wet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://sirris.wetransfer.com/
+56; po; pock; pocket; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://getpocket.com/a/queue/list/
+48; kphotos; kphoto; kpho; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://photos.google.com/u/0/
+46; jphotos; jphoto; jpho; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://photos.google.com/u/0/
+37; camcard; camc; cc; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.camcard.com/card/personalcard
+26; kplus; k+; ksj+; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://plus.google.com
+5; jplus; j+; jan+; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://plus.google.com
+1; wun; wu; wunderlist; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.wunderlist.com/#/lists/inbox
+1; write; writer; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window chrome-extension://aimodnlfiikjjnmdchihablmkdeobhad/xhtml/application.xhtml
+27; one; onedrive; sky; skydrive; doc; docs; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://onedrive.live.com/?id=BFD3BA4ABF9E503B%21204&cid=BFD3BA4ABF9E503B&group=0
+oklad; "C:\Users\ksj\OneDrive\Sirris\Klad.docx" 
+1; pos; positive; threepos; three; day; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://docs.google.com/document/d/1iaWUBTeKXZBPe6Nq1l9rWblzmjt16yJtkroSxshjUR0/edit
+sdrive; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://drive.google.com/drive/u/1/my-drive 
+9; owa; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://outlook.office.com/owa/
+28; smart; smarts; smartschool; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://hgi.smartschool.be/
+books; playbooks; book; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://play.google.com/books
+23; vtb; tkd; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://www.taekwondo.be/
+117; plex; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window http://192.168.0.10:32400/web/index.html
+26; khang; khangout; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://hangouts.google.com/
+3; jhang; jhangout; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://hangouts.google.com/
+30; flipboard; flipb; flip; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://flipboard.com/profile
+24; kflipboard; kflipb; kflip; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://flipboard.com/profile
+
+ninetyfour; ntf; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window http://levelstuck.com/94-percent-game-answers-level-11-12-13-14-15-16-17-18-19-20/
+5; grab; grabcad; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://workbench.grabcad.com/workbench/myprojects#/account/1678557/projects/my_projects
+11; git; github; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://github.com/
+2; kruis; kruiswoord; kruiswoordraadsel; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window http://www.cybercomm.nl/~zundert/mid/printen.html
+32; sone; sonedrive; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/_layouts/15/onedrive.aspx
+7; gantt; instagantt; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://instagantt.com/app/
+10; ilovepdf; mergepdf; joinpdf; jpdf; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://www.ilovepdf.com/merge_pdf
+30; kbc; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.kbc.be/
+3; doodle; dood; doo; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://doodle.com/nl/
+11; whatsapp; what; whats; wapp; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://web.whatsapp.com/
+73; air; airtable; airt; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://airtable.com/
+6; pal; myfitnesspal; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://www.myfitnesspal.com/
+4; stack; ip; transip; stackip; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://jeanke68.stackstorage.com/files
+insta; instap; instapaper; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window http://www.instapaper.com/
+6; buf; buff; buffer; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://buffer.com/app/profile/5963f5b71908cdfd438fd810/buffer/queue/list
+
+
+▄▄▄▄▄CHROME APP:                      
+43; journey; jour; dag; dagboek; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"  --profile-directory="Default" --app-id=jlncjaehedpdoinepaejmlpbmdkgmpog
+4; timer; stopwatch; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --app-id=eoiibkbchfmgmhlodifjceiginokllbj
+
+
+
+▄▄▄▄▄APPLICATIONS:
+22; ps; ; psp; pspad; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" /N
+qdir; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\Q-Dir_Portable\Q-Dir\Q-Dir.exe"
+53; jun; junos; "C:\Program Files (x86)\Common Files\Juniper Networks\JamUI\Pulse.exe"
+34; skype; "C:\Program Files\Microsoft Office\root\Office16\lync.exe"
+49; note; "C:\Users\ksj\OneDrive\Sirris\notes\------_---_Notes.docx"
+157; notes; "C:\Users\ksj\OneDrive\Sirris\notes"
+95; calc; "C:\Windows\system32\calc.exe"
+68; word; "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
+51; excel; "C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE"
+5; visio; "C:\Program Files\Microsoft Office\root\Office16\visio.EXE"
+50; sol; solidworks; solid; "C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\SLDWORKS"
+112; spo; spotify; spot; "C:\Users\ksj\AppData\Roaming\Spotify\Spotify.exe"
+31; put; putty; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\PuTTY\putty.exe"
+
+1814; ocal; cal; calendar; outlook.exe /select outlook:calendar
+3173; in; inbox; oin; oInbox; outlook.exe /select outlook:Inbox
+589; omail; mail; outlook.exe /c ipm.note
+359; os; osent; sent; outlook.exe /select outlook:Sent%20Items
+751; ozin; zin; oa; outlook.exe /select outlook:Z_in
+336; ocon; ocontacts; con; contacts; outlook.exe /select outlook:contacts
+32; odel; del; deleted items; outlook.exe /select outlook:Deleted%20Items
+785; out; outbox; ooutbox; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlookMailWeg.ahk"
+223; dr; draft; drafts; outlook.exe outlook:Drafts
+
+263; hoof; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-hoof.ahk"
+211; oof; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-oof.ahk"
+19; priv; private; pri; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-private.ahk"
+74; free; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-free.ahk"
+55; bnl; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-BusyNoLoc.ahk"
+64; fillweek; fw; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-fillweek.ahk"
+80; kme; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-KME.ahk"
+158; inv; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-INV.ahk"
+11; nocat; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
+151; mee; meet; meeting; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-MEE.ahk"
+10; imp; important; meeting; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-IMP.ahk"
+183; sd; shutdown; shutd; shut; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system shutdown.ahk"
+55; rest; restart; re; res; rs; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system restart.ahk"
+35; sleep; sl; standby; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system Sleep.ahk"
+43; hib; hibernate; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system Hibernate.ahk"
+9; i; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\word-i.ahk"
+3; n; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\word-n.ahk"
+48; outl; outlook; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlookStart.ahk"
+71; bl; block; blockline; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\asciiArt_blockLine.ahk"
+6; bll; blocklong; blocklinelong; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\asciiArt_blockLineLong.ahk"
+99; tentative; tent; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-tentative.ahk"
+252; ver; verplaatsing; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-verplaatsing.ahk"
+3; mailweg; mw; mweg; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlookMailWeg.ahk"
+12; untent; undotent; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-undo_tentative.ahk"
+
+2; folder; fol; fold; fo; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\folder.ahk"
+3; file; fi; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\file.ahk"
+116; pocktwit; twitpock; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\pocket, buffer(ksj).ahk"; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\pocket, hootlet(ksj).ahk"
+61; weer; meteo; met; weather; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\meteo.ahk"
+4; bru; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\BRU\Bulk Rename Utility.exe"
+4; powerp; powerpoint; "C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE"
+29; sub; sublime; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\Sublime\sublime_text.exe"
+4; vsc; code; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\VSCodePortable\VSCodePortable.exe"
+137; onenote; onen; onote; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe"
+2; tvgids; tv; gids; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\tvgids.ahk"
+
+
+▄▄▄▄▄EXPLORER:
+262; down; downloads; downl; C:\Users\ksj\Dropbox (Sirris)\Downloads
+59; greenshot; green; "C:\Users\ksj\Dropbox (Sirris)\My Pictures\Greenshot"
+4; c:; c:\\
+410; projecten; projects; project; proj; pro; C:\Users\ksj\Dropbox (Sirris)\_Projecten
+71; fom; fomeco; C:\Users\ksj\Dropbox (Sirris)\_Projecten\16-1057_Fomeco_-_ontbramen
+10; JTEkt; jte; jtek; jt; torsen; C:\Users\ksj\Dropbox (Sirris)\_Projecten\15-1959_JTektTorsen
+115; sin; sint; ber; bernardus; C:\Users\ksj\Dropbox (Sirris)\_Projecten\15-1933_SintBernardus
+197; temp; C:\Users\ksj\Dropbox (Sirris)\TEMP_KLAD
+12; pool; \\server06.sirris.be\pool
+34; vis; vs; C:\Users\ksj\Dropbox (Sirris)\_Projecten\11-0201_vis-smartfac
+220; viv; visiv; vvv; vist; vis2; vst; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\15-0274_VISiv Automatisering"
+13; pc; myc; mycomputer; "C:\Users\ksj\Links\Computer.lnk"
+share; freecom; "\\192.168.0.10\share"
+99; port; portable; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps"
+12; admin; administratie; "C:\Users\ksj\Dropbox (Sirris)\Administratie"
+182; cor; corn; cornet; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-0233_CORNET_cobot_polishing"
+25; pers; personal; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk"
+95; port; portable; "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps"
+104; bar; barco; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\16-1046_Barco"
+107; ahk; scripts; script; ahkscripts; C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts
+7; tti; C:\Users\ksj\Dropbox (Sirris)\_Projecten\proeftuinen voor west-vlaanderen
+2; arch; archief; "C:\Users\ksj\Dropbox (Sirris)\projecten - archiefC-schijf"
+12; bor; borit; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\16-1452_Borit"
+14; kri; kring; krin; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\15-2384_KringloopwinkelMarke"
+88; dropbox; dro; drop; dropb; sirris; sir; "C:\Users\ksj\Dropbox (Sirris)"
+11; desk; deskt; desktop; "C:\Users\ksj\Desktop"
+2; strat; strategie; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\strategieDiepenbeek2SmartFactory"
+14; asc; asco; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-1338_AscoIndustries"
+6; tadm; "\\backbone.sirris.be\sirris-tadm"
+95; mar; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\16-2585_Mariasteen"
+26; maat; opl; innovatie-maat; efro; salk; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\15-0287_EFRO_SALK_Innovatie-maat"
+51; at; atelier; machines; "C:\Users\ksj\Dropbox (Sirris)\Dropbox folders from others\Atelier Diepenbeek 2_tfp\Machines"
+2; others; oth; "C:\Users\ksj\Dropbox (Sirris)\Dropbox folders from others"
+109; sal; efr; maa; C:\Users\ksj\Dropbox (Sirris)\_Projecten\15-0287_EFRO_SALK_Innovatie-maat
+13; bin; trash; shell:::{645ff040-5081-101b-9f08-00aa002f954e}
+4; recent; rec; shell:::{22877a6d-37a1-461a-91b0-dbda5aaebc99}
+17; pres; presentatie; presentaties; C:\Users\ksj\Dropbox (Sirris)\presentaties, brochures
+7; lim; limar; C:\Users\ksj\Dropbox (Sirris)\_Projecten\16-3141_Limar
+2; dai; daikin; C:\Users\ksj\Dropbox (Sirris)\_Projecten\16-3155_Daikin
+102; are; arendo; afg; deca; decapac; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-1098_Arendo,AFG,Decapac"
+7; nit; nitto; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-1471_Nitto"
+2; pac; packo; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-1066_Packo"
+vdab; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-1993_VDAB"
+3; startup; "C:\Users\ksj\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+9; las; lasaut; autolas; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-0205_VISIV_lasaut"
+pla; plasmajet; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-2216_Plasmajet"
+5; asc2; asco2; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-2401_AscoIndustries (cobot)"
+4; asc3; asco3; "C:\Users\ksj\Dropbox (Sirris)\_Projecten\17-2412_AscoIndustries (automatisering)"
+
+▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀

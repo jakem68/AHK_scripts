@@ -1,0 +1,360 @@
+
+;===================================================================================================
+; KSJ experiments:
+;===================================================================================================
+
+;;;; start explorer in links
+#e::Run explorer.exe "C:\Users\ksj\Links"
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; start evernote with new note
+F1 & e::Run "C:\Users\ksj\AppData\Local\Apps\Evernote\Evernote\evernote.EXE" /newnote
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;; reload this script
+F2 & r::reload
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; edit this script
+F2 & e::Run "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\Scripts\KSJ_experiments.ahk", , max
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; pause script
+F2 & p::pause
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+;;;; To give F1 back it's original function (only on release of button without another button being pressed)
+;;;; niet met letters doen want bij snel typen lukt de letter niet meer
+F1::send {F1}
+F2::send {F2}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+;;;; change font color to red in Word
+if WinActive("ahk_class OpusApp")
+{
+F1 & r::
+  Send {Alt}
+  Send H
+  Send FC
+  Send {up}
+  Send {up}
+  Send {up}
+  send {right}
+  Send {right}
+  Send {enter}
+return
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; change font color to black in Word
+F1 & b::
+  Send {Alt}
+  Send H
+  Send FC
+  Send A
+return
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; launch browser with application, launch application
+F1 & j::
+  global launchprogram =
+  inputbox, launchprogram, Launch in browser, which app do you want to run, , , 130, , , , 10
+  function_lut()
+  runwait %target%
+  Winmaximize, A 
+  return
+
+
+
+
+
+
+;  if (launchprogram = "chrome")
+;    {
+;    RoA("ahk_class Chrome_WidgetWin_1", "C:\Users\ksj\AppData\Local\Google\Chrome\Application\chrome.exe")
+;     } 
+;  else if (launchprogram = "jan")
+;    {
+;;    settitlematchmode 2 
+;;    ifwinexist, Chrome
+;;      {
+;;      winmaximize
+;;      }
+;;    else
+;;      {
+;      Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk"
+;;      }
+;    } 
+;  else if (launchprogram = "ksj")
+;    {
+;    Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk"
+;    } 
+;  else if (launchprogram = "ever" OR launchprogram = "evernote")  
+;    {
+;    Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" https://www.evernote.com/Home.action?__fp=a5FRWOmTir03yWPvuidLz-TPR6I9Jhx8&username=jansixtyeight&rememberMe=true&login=true&_sourcePage=nKoweBvMrvniMUD9T65RG_YvRLZ-1eYO3fqfqRu0fynRL_1nukNa4gH1t86pc1SP#ses=4&sh=2&sds=3&, , max
+;    }
+;  else if (launchprogram = "keep")
+;    {
+;    Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" https://keep.google.com/, , max
+;    }
+;  else if (launchprogram = "gcont" OR launchprogram = "gcontacts" OR launchprogram = "gcon")
+;    {
+;      Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" https://mail.google.com/mail/u/0/#contacts, , max
+;    }
+;  else if (launchprogram = "gcal" OR launchprogram = "gcalendar")
+;    {
+;    Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" https://www.google.com/calendar/render?pli=1#g`%7Cweek-2+22920+22926+22923, , max 
+;     } 
+;  else if (launchprogram = "ana" OR launchprogram = "asa" OR launchprogram = "asana" OR launchprogram = "as")
+;    {
+;    Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" https://app.asana.com/0/3699102645008/3699102645008, , max
+;    } 
+;  else if (launchprogram = "remind" OR launchprogram = "reminder" OR launchprogram = "reminders")
+;    {
+;    Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" https://www.google.be/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=remind`%20me, , max
+;    } 
+;  else if (launchprogram = "cry" OR launchprogram = "crystal")
+;    {
+;    Run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" http://crystal.sirris.be/crystal11/index/index.php
+;    } 
+;  else if (launchprogram = "ps" OR launchprogram = "psp" OR launchprogram = "pspad")
+;    {
+;    Run "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" /N
+;    } 
+;  else if (launchprogram = "ocal" OR launchprogram = "cal" OR launchprogram = "calendar")
+;    {            
+;    Run outlook.exe /select outlook:calendar 
+;    } 
+;  else if (launchprogram = "in" OR launchprogram = "oin" OR launchprogram = "oInbox")
+;    {
+;    Run outlook.exe /select outlook:Inbox 
+;    } 
+;  else if (launchprogram = "omail" OR launchprogram = "mail")
+;    {
+;    Run outlook.exe /c ipm.note 
+;    } 
+;  else if (launchprogram = "os" OR launchprogram = "osent" OR launchprogram = "sent")
+;    {
+;    Run outlook.exe /select outlook:Sent`%20Items 
+;    sleep 1000
+;    send ^e 
+;    } 
+;  else if (launchprogram = "ozin" OR launchprogram = "zin"OR launchprogram = "oa")
+;    {
+;    Run outlook.exe /select outlook:Z_in 
+;    sleep 1000
+;    send ^e 
+;    } 
+;  else if (launchprogram = "ocon" OR launchprogram = "ocontacts" OR launchprogram = "con" OR launchprogram = "contacts")
+;    {
+;    Run outlook.exe /select outlook:contacts
+;    sleep 1000
+;    send ^e 
+;    } 
+;  else if (launchprogram = "odel" OR launchprogram = "del" OR launchprogram = "deleted items")
+;    {
+;    Run outlook.exe /select outlook:Deleted`%20Items 
+;    sleep 1000
+;    send ^e 
+;    }
+;  else if (launchprogram = "oof" OR launchprogram = "hoof" OR launchprogram = "test") 
+;    {
+;    sleep 50
+;    }   
+;  else 
+;    {
+;    if (errorlevel = 2) 
+;      {
+;      msgbox , , , type faster, 1 
+;      }
+;    else if (launchprogram <> "")
+;      {
+;      msgbox , , , I don't understand, 1
+;      }
+;    }
+    
+;PROGRAM             CODE
+;chrome              chrome
+;chrome-jan          jan
+;chrome-ksj          ksj
+;evernote            ever OR evernote
+;google-keep         keep
+;google-contacts     gcont OR gcontacts OR gcon
+;google-calendar     gcal OR gcalendar
+;asana               as OR ana OR asa OR asana
+;google-reminder     remind OR reminder
+;crystal             cry OR crystal
+;pspad               ps OR psp or pspad
+;outlook-calendar    ocal OR cal OR calendar
+;outlook-inbox       omail OR mail OR oin OR in OR oinbox
+;outlook-sent items  os OR osent OR sent
+;outlook-Z_In        ao OR ozin OR zin
+;outlook-contacts    ocon OR ocontacts OR con OR contacts
+;outlook-Deleted Items odel OR del OR deleted items   
+    
+return
+                    
+;    msgbox, , , you entered %launchprogram%, 2
+
+
+;;;; include other ahk files in this script without pasting them in
+#Include D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\Scripts 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; first function                    
+;F1::RoA("ahk_class CalcFrame", "calc")
+;F2::RoA("ahk_class Notepad", "Notepad")
+; etc...
+
+RoA(WinTitle, target) {	; RoA means "RunOrActivate"
+  IfWinExist, %WinTitle%
+		WinActivate, %WinTitle%
+	else
+;    msgbox %target%
+    Run %target%
+}               
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;; Outlook: accept invitation(s) without response
+F1 & a::
+ Send {Alt}
+  Send H
+  Send c
+  Send {tab}
+  Send {tab}
+  Send {down}
+  Send {enter}
+return               
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; Outlook: change appointment to "Out of office"
+F1 & o::
+  function_oof()
+return
+
+
+function_oof()
+{
+  setTitleMatchMode, 2
+  ifwinactive, Appointment
+  {
+    Send {Alt}
+    Send H
+    Send b
+    Send o
+    Send {enter}
+    Send !s
+    sleep 100
+  }
+  Else
+  {
+    msgbox appointment is not active
+  }
+}                 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; Outlook: change appointment to "Out of office" & "home"
+F1 & h::
+function_hoof()
+return               
+
+
+function_hoof()
+{
+  setTitleMatchMode, 2
+  ifwinactive, Appointment
+  {
+    Send {Alt}
+    sleep 50  
+    Send h
+    sleep 50
+    Send b
+    sleep 50
+    Send o
+    sleep 50
+    Send {enter}
+    sleep 100
+    mouseclick, left, 110, 180
+    SendInput {raw}(home)
+    sleep 100
+    Send !s
+    sleep 100
+  }
+  Else
+  {
+    msgbox appointment is not active
+  }
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;; aantal open outlook vensters tellen op voorhand, vervolgens na openen afspraken opnieuw tellen --> verschil is aantal keren dat bovenstaande functies in een loop moet doorlopen worden.
+
+open_and_count_opened_outlook_windows()
+{
+ winget, nr_OutWin_bef, count, ahk_class rctrl_renwnd32
+ winactivate, Calendar
+ send {enter}
+ sleep 2000
+ winget, nr_OutWin_aft, count, ahk_class rctrl_renwnd32
+ global nr_OutWin_opened := nr_OutWin_aft - nr_OutWin_bef               
+}
+
+function_lut() ;look up target
+{
+global target = 
+  Loop, read, D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\Scripts\array_input.txt
+  {
+;      counter1 += 1
+;      msgbox, , , lijn %counter1%,
+      Loop, parse, A_LoopReadLine, `;
+      {
+          last_field := A_loopfield
+      }
+;          msgbox, , , lijn %counter1% lastfield is %last_field%,
+      Loop, parse, A_LoopReadLine, `;, %A_space%
+      {
+;          msgbox, , , lijn %counter1% -- A_loopfield is %A_loopfield%,
+;          msgbox, , , launchprogram is %launchprogram%
+          ifequal, A_loopfield, %launchprogram%
+            {
+;            msgbox , , , %A_loopfield% recognized
+            target = %last_field%
+;            msgbox, , , target is %target%
+            return
+            }
+      }
+  }
+}
+
+
+#ifwinactive, Launch in browser 
+
+:b0:hoof::
+  open_and_count_opened_outlook_windows()
+  loop %nr_OutWin_opened%
+    {
+    winactivate, Appointment
+    function_hoof()
+    }
+return
+
+:b0:oof::
+  open_and_count_opened_outlook_windows()
+  loop, %nr_OutWin_opened%
+  {
+    winactivate, Appointment
+    function_oof()
+  }
+return
+
+#ifwinactive
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

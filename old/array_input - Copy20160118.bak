@@ -1,0 +1,137 @@
+; Target moet steeds in het laatste veld!
+
+INTERNET:
+chrome; "C:\Users\ksj\AppData\Local\Google\Chrome\Application\chrome.exe" 
+jan; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window http://www.google.com/
+ksj; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window --start-maximized http://www.google.com/
+ever; evern; evernote; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://www.evernote.com/Home.action?__fp=a5FRWOmTir03yWPvuidLz-TPR6I9Jhx8&username=jansixtyeight&rememberMe=true&login=true&_sourcePage=nKoweBvMrvniMUD9T65RG_YvRLZ-1eYO3fqfqRu0fynRL_1nukNa4gH1t86pc1SP#ses=4&sh=2&sds=3&
+keep; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window --start-maximized https://keep.google.com/
+gcont; gcontacts; gcon; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://contacts.google.com/preview/all
+gcal; kcal; ksjcal; kcalendar; gcalendar; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://calendar.google.com/calendar/render?pli=1#main_7%7Cmonth
+jcal; jancal; jcalendar; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://calendar.google.com/calendar/render?pli=1#main_7%7Cmonth
+ana; asa; asana; as; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://app.asana.com/0/3699102645008/3699102645008
+rem; remind; reminder; reminders; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://www.google.be/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=remind`%20me
+cry; crystal; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window http://crystal.sirris.be/crystal11/index/index.php
+kin; kinbox; ksj inbox; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://inbox.google.com/
+jin; jinbox; jan inbox;  "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://inbox.google.com/
+hbvl; hb; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window http://www.hbvl.be/
+der; red; dered; deredactie; redactie; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" http://www.deredactie.be/
+you; yout; youtube; jyou; jyout; jyoutube; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window http://www.youtube.com
+kyou; kyout; kyoutube; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window http://www.youtube.com
+kmap; kmaps; gmaps; maps; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://www.google.be/maps/
+jmap; jmaps; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://www.google.be/maps/
+yess; iexplore.exe https://yess.attentia.be/Agoria/
+yelo; iexplore.exe www.yelo.tv
+sos; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window http://sos.sirris.be/home
+grooveshark; groov; groove; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window http://grooveshark.com/#!/
+news; gnews; new; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://news.google.com/
+jdrive; jdir; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://drive.google.com/drive/#my-drive
+kdrive; kdir; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://drive.google.com/drive/#my-drive 
+feedly; feed; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window http://feedly.com/i/my
+klad; gklad; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://docs.google.com/document/d/1H-hNTQ69d81cUjw1ZHAHigmGxS_rQPYxZrZJR3gsb9I/edit
+twitter; twit; tweet; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://twitter.com/
+diigo; diig; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://www.diigo.com/user/vjqedgk 
+zand; zandstuivers; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://sites.google.com/site/schoonbeekzandstuivers/ 
+hootlet; hoot; hootsuite; hoots; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://hootsuite.com/dashboard
+gtrans; trans; transl; translate; gt; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://translate.google.com/
+ino; inoreader; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window http://www.inoreader.com/all_articles
+link; lin; linked; linkedin; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://www.linkedin.com/hp/?dnr=Dc74qS0QIJh1G0jil-q4qDKhRie6kZnXiN-
+aup; aupeo; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://www.aupeo.com/
+music; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window http://www.symbaloo.com/home/mix/13eOhDcUdM
+wetr; wetransfer; wet; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://sirris.wetransfer.com/ 
+po; pock; pocket; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://getpocket.com/a/queue/list/
+kphotos; kphoto; kpho; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://photos.google.com/u/0/  
+jphotos; jphoto; jpho; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\jan - Chrome.lnk" --new-window https://photos.google.com/u/0/  
+camcard; camc; cc; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://www.camcard.com/card/personalcard
+kplus; k+; ksj+; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://plus.google.com
+jplus; j+; jan+; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\jan - Chrome.lnk" --new-window https://plus.google.com
+wun; wu; wunderlist; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://www.wunderlist.com/#/lists/inbox
+write; writer; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window chrome-extension://aimodnlfiikjjnmdchihablmkdeobhad/xhtml/application.xhtml
+one; onedrive; sky; skydrive; doc; docs; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://onedrive.live.com/?id=BFD3BA4ABF9E503B%21204&cid=BFD3BA4ABF9E503B&group=0
+oklad; "D:\OneDrive\Sirris\Klad.docx" 
+pos; positive; threepos; three; day; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://docs.google.com/document/d/1iaWUBTeKXZBPe6Nq1l9rWblzmjt16yJtkroSxshjUR0/edit
+sdrive; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://drive.google.com/drive/u/1/my-drive 
+owa; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://owa.servicio.be/owa/
+smart; smarts; smartschool; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\jan - Chrome.lnk" --new-window https://hgi.smartschool.be/ 
+books; playbooks; book; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://play.google.com/books
+vtb; tkd; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\jan - Chrome.lnk" --new-window https://www.taekwondo.be/ 
+weer; meteo; weather; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\jan - Chrome.lnk" --new-window http://www.weeronline.nl/Europa/Belgie/Hoeselt/4055837 
+
+CHROME APP:
+journey; jour; dag; dagboek; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"  --profile-directory="Profile 2" --app-id=jlncjaehedpdoinepaejmlpbmdkgmpog
+
+TEMP
+; vtd; vivtd; vistd; VistoDo; "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" --new-window https://docs.google.com/document/d/1O3TJI_NJbUq7CaWOMm0MYxd_u_Ha9iTJqiPBDp-RiqA/edit
+
+
+APPLICATIONS:
+ps; ; psp; pspad; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" /N
+qdir; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\Q-Dir_Portable\Q-Dir\Q-Dir.exe"
+jun; junos; "C:\Program Files (x86)\Common Files\Juniper Networks\JamUI\Pulse.exe"
+skype; "C:\Program Files (x86)\Skype\Phone\Skype.exe"
+pop; "C:\Users\ksj\AppData\Local\Popcorn Time\Popcorn Time.exe"
+note; "D:\OneDrive\Sirris\------_---_Notes.docx"
+notes; "D:\OneDrive\Sirris" 
+calc; "C:\Windows\system32\calc.exe"
+word; "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office\Microsoft Word 2010.lnk"
+excel; "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office\Microsoft Excel 2010.lnk"
+visio; "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office\Microsoft Visio 2010.lnk"
+sol; solidworks; solid; "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\SOLIDWORKS 2015\SOLIDWORKS 2015 x64 Edition.lnk"
+spo; spotify; spot; "C:\Users\ksj\AppData\Roaming\Spotify\Spotify.exe"
+
+
+vsdb;sdb;vsdb; sfdb; vsdfdb; "C:\Users\ksj\Desktop\Shortcut to F_Search in VIS-smartfac_meetings_v1.accdb.MAF"
+
+ocal; cal; calendar; outlook.exe /select outlook:calendar 
+in; inbox; oin; oInbox; outlook.exe /select outlook:Inbox 
+omail; mail; outlook.exe /c ipm.note 
+os; osent; sent; outlook.exe /select outlook:Sent%20Items
+ozin; zin; oa; outlook.exe /select outlook:Z_in 
+ocon; ocontacts; con; contacts; outlook.exe /select outlook:contacts
+odel; del; deleted items; outlook.exe /select outlook:Deleted%20Items
+out; outbox; ooutbox; outlook.exe /select outlook:outbox
+dr; draft; drafts; outlook.exe /select outlook:Drafts
+
+hoof; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-hoof.ahk"
+oof; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-oof.ahk"
+bnl; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-BusyNoLoc.ahk"
+fillweek; fw; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-fillweek.ahk"
+kme; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-KME.ahk"
+inv; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-INV.ahk"
+nocat; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
+mee;meet;meeting; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-MEE.ahk" 
+sd; shutdown; shutd; shut; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system shutdown.ahk"
+rest; restart; re; res; rs; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system restart.ahk" 
+sleep; sl; standby; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system Sleep.ahk"
+hib; hibernate; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system Hibernate.ahk"
+i; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\word-i.ahk"
+n; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\word-n.ahk"
+
+
+folder; fol; fold; fo; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\folder.ahk"
+file; fi; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\file.ahk"
+pocktwit; twitpock; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\pocket, hootlet(ksj).ahk" 
+
+EXPLORER:
+down; downloads; downl; D:\Dropbox (Sirris)\Downloads
+greenshot; green; "D:\Dropbox (Sirris)\My Pictures\Greenshot"
+d:; d:\\
+projecten; projects; project; proj; pro; D:\Dropbox (Sirris)\_Projecten
+fom; fomeco; D:\Dropbox (Sirris)\_Projecten\6-1057_Fomeco_-_ontbramen
+JTEkt; jte; jtek; jt; torsen; D:\Dropbox (Sirris)\_Projecten\5-1959_JTektTorsen
+sin; sint; ber; bernardus; D:\Dropbox (Sirris)\_Projecten\5-1933_SintBernardus
+lib; libeert; D:\Dropbox (Sirris)\_Projecten\5-2109_Libeert 
+temp; D:\Dropbox (Sirris)\TEMP_KLAD
+pool; \\server06.sirris.be\pool
+vis; vs; \\Backbone.sirris.be\bedrijfsproc\p_funded_projects_and_frames\1-0201_vis-SmartFac
+viv; vvv; vist; vis2; vst; "D:\Dropbox (Sirris)\_Projecten\5-0274_VISiv Automatisering (local)"
+rol; roltex; rolt; D:\Dropbox (Sirris)\_Projecten\5-1685_Roltex
+ter; beke; D:\Dropbox (Sirris)\_Projecten\5-1248_TerBeke 
+tec; tech; technocampus; D:\Dropbox (Sirris)\_Projecten\5-1780_Technocampus
+van; vanlanduyt; D:\Dropbox (Sirris)\_Projecten\5-2749_VanLanduyt
+ar; ard; arduino; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\Arduino"
+myc; mycomputer; "C:\Users\ksj\Links\Computer.lnk"
+share; freecom; "\\192.168.0.10\share"
+port; portable; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps"
+visiv; vvv; visvv; "D:\Dropbox (Sirris)\_Projecten\5-0274_VISiv Automatisering (local)"
+admin; administratie; "D:\Dropbox (Sirris)\Administratie"
