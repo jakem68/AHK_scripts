@@ -34,7 +34,7 @@ return
   yr = %A_YYYY%
   mm = %A_MM%
   dd = %A_DD%
-  datum := dd "-" mm "-" yr
+  datum := dd "/" mm "/" yr
   SendInput,{Raw} %datum%
 return
 ;;;;;;;;
@@ -42,7 +42,7 @@ return
   yr = %A_YYYY%
   mm = %A_MM%
   dd = %A_DD%
-  datum := dd "-" mm "-" yr
+  datum := dd "/" mm "/" yr
   SendInput,{Raw} %datum%
 return
 ;;;;;;;;
@@ -50,7 +50,7 @@ return
   yr = %A_YYYY%
   mm = %A_MM%
   dd = %A_DD%
-  datum := dd "-" mm "-" yr
+  datum := dd "/" mm "/" yr
   SendInput,{Raw} %datum%
 return
 ;;;;;;;;
