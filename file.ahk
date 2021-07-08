@@ -3,9 +3,9 @@
   run c:\
   settitlematchmode, 2
   winwaitactive OS (C:)
-  send, {ctrl down}e{ctrl up}
-  send, filename:%targetfile%
-  send, {enter}
+  SendInput, {ctrl down}e{ctrl up}
+  SendInput, filename:%targetfile%
+  SendInput, {enter}
   winwaitactive, Search Results in DATAPART1 (D:)
-  send, {tab 3}
+  SendInput, {tab 3}
 exit

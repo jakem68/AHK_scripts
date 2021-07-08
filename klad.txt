@@ -1,0 +1,181 @@
+
+
+
+________________________________________________________________________________
+ 20201130
+
+, als we die drie dingen in Coock – Cobofin zouden kunnen testen:
+-	Gebruiksvriendelijk werken met Doosan, 
+-	gebruiksvriendelijkheid iiwa verhogen met Drag&Bot, en 
+-	Nordbo scansysteem en software gebruiken om programmatie complexe vormen op UR10 te vereenvoudigen
+
+Hebben we al heel wat insteken om onze deliverables te realiseren.
+
+
+________________________________________________________________________________
+
+
+
+guido lammens
+
+fin dir volvo cars: plan volgend
+
+hoge druk spuiten aluminium car bodies, kurt beghyn.
+
+Cobofin interesse 
+
+
+
+________________________________________________________________________________
+
+kaart 8
+
+In een slimme productie focussen technologie en productiepersoneel maximaal op het creëren van waarde voor klanten. Activiteiten die productiemiddelen of -personeel daarvan afleiden worden worden kritisch in vraag gesteld en waar mogelijk geëlimineerd en zoniet maximaal geautomatiseerd.
+
+De eerste stap hiervoor is werkmethodes en productieprocessen optimaliseren en eenduidig omschrijven. 
+
+Heeft uw productie duidelijk gedocumenteerde productieprocessen en 'standard work instructions'?
+
+________________________________________________________________________________
+
+
+complexe (gekromde oppervlakken of contouren) schuurtoepassingen uit het verleden die in de toekomst door Doosan kunnen:
+- CoPolMould 
+- Engie
+- Fomeco
+- to be done: ASCO
+
+fijngevoelige handling:
+- Ademas
+- Vandersanden
+- Horse
+
+
+Minder complexe en minder gevoelige schuurtoepassingen: 
+- Mariasteen: UR10 + Artiminds
+- Group Nivelles: UR10e
+- To be done: 
+
+
+Complexe assembly: 
+- Jtekt
+
+
+
+________________________________________________________________________________
+
+172.16.10.0/24
+172.16.10.00000000
+
+2 hosts:
+172.16.10.0/30
+172.16.10.11111100
+
+28 hosts:
+172.16.10.0/27
+172.16.10.11100000
+
+2 hosts:
+172.16.10.0/29
+172.16.10.11111000
+
+52 hosts:
+172.16.10.0/26
+172.16.10.11000000
+
+2 hosts:
+172.16.10.0/28
+172.16.10.11110000
+
+74 hosts:
+172.16.10.0/25
+172.16.10.10000000
+
+anders :
+
+74 hosts:
+172.16.10.0/25
+172.16.10.10000000
+
+52 hosts:
+172.16.10.0/26
+172.16.10.11000000
+
+28 hosts:
+172.16.10.0/27
+172.16.10.11100000
+
+2 hosts:
+172.16.10.0/30
+172.16.10.11111100
+
+2 hosts:
+172.16.10.0/29
+172.16.10.11111000
+
+2 hosts:
+172.16.10.0/28
+172.16.10.11111000
+
+Of
+2 hosts:
+172.16.10.0/30
+172.16.10.11111100
+
+28 hosts:
+172.16.10.4/27
+172.16.10.11100000
+
+2 hosts:
+172.16.10.32/26
+
+
+
+
+________________________________________________________________________________
+
+
+Hallo Marie,
+
+Stijn stelde voor om groepscoaching digitalisering en groepscoaching Industrie4.0 samen in een webinar naar buiten te brengen, lijkt me een goed idee aangezien beide thema’s bij elkaar aansluiten. Het thema Industrie4.0 komt daar alleszins prominent naar voren. 
+Misschien de thema’s ‘as-such’ door Agoria naar buiten te laten brengen? => komt meer “vraaggedreven vanuit industrie” over, bvb. Alain W. voor ‘smart’. De inhoudelijke antwoorden/invullingen komen kunnen dan van Sirris komen.
+
+Mvg,
+Jan. 
+
+
+________________________________________________________________________________
+
+
+beste leden van de gebruikersgroep CoPolMould,
+
+De laatste gebruikersgroepmeeting van het project CoPolMould zal doorgaan op 21 januari 2021.
+Dit is later dan oorspronkelijk gepland in de hoop dat tegen dan de meeting wel fysiek zal kunnen plaatsvinden en we ze kunnen combineren met een open demonstratie- en bezoekmoment. Moest dit tegen dan toch nog niet kunnen, zullen we alsnog beslissen om ze die dag te laten doorgaan, maar dan virtueel.
+
+Gelieve de datum alvast te noteren in jullie agenda, binnen enkele weken bezorgen we de agenda voor de meeting.
+
+Met vriendelijke groeten,
+Jan. 
+
+
+
+dear members of the CoPolMould user group ,
+
+The last user group meeting of the CoPolMould project will be on 21st January 2021.
+This is later than initially planned in the hope that by then the meeting can take place physically and that we can combine it with an open session of demonstrations and visit to the lab. If this is not possible by then, we will still decide to let meeting take place that day, but virtually.
+
+Please make a note of the date in your agenda, in a few weeks we will send the agenda for the meeting.
+
+Kind regards,
+Jan. 
+
+
+________________________________________________________________________________
+
+Of als het R1 moet zijn onder “\\backbone.sirris.be\sirris-common\p-commercial\2019\MINISTERIE_VAN_DE_VLAAMSE_GEMEENSCHAP_19-0234\02_Project_execution”
+
+________________________________________________________________________________
+
+ 20-11-2020
+
+ 

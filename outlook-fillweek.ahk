@@ -1,5 +1,7 @@
-Send, {ALTDOWN}dmm{ALTUP}
+Setkeydelay, 20, 15
+SendInput, {ALTDOWN}{ALTUP}jD{Escape}{Escape}
+SendInput, {ALTDOWN}{ALTUP}jDMM
 SetKeyDelay, 50
-Send, FillWeek
-Send, {ENTER}
+SendInput, FillWeek
+SendInput, {ENTER}
 exit

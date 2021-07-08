@@ -2,7 +2,7 @@
 #SingleInstance
  
 ;Path you wish to view.
-path = E:\
+path = E:\jakem data\my sounds\my music
  
 Gui, font,s12, Verdana
 Gui,add,ListView,List r11 w800 Sort Grid Checked -Multi,Name of Folder
@@ -47,7 +47,7 @@ MyListView:
       LV_GetText(Text, RowNumber)
       ;MsgBox %Text%
 
-      completeDir = E:\%Text%
+      completeDir = %path%\%Text%
       ;MsgBox %completeDir%
       create_playlist(completeDir)
 
@@ -60,6 +60,7 @@ Return
 create_playlist(Directory)
 {
   splitpath, Directory, file, dir
+  ;MsgBox Directory = %Directory%, File = %file%, Dir = %dir%
 
   m3u = %Directory%\%file%.m3u
   ;msgbox, , , m3u is %m3u%
@@ -67,7 +68,7 @@ create_playlist(Directory)
   Loop %Directory%\*.*
   {
     splitpath, A_LoopFileName, , , ext
-    if ext in WAV,AIFF,AIF,IFF,SVX,SND,AU,VOC,CUE,OGG,MPC,MP+,MPP,MP3,MP2,MP4,M4A,AAC,FLAC,FLA,APE,MAC,WV,SPX,SID,CDA
+    if ext in WAV,AIFF,AIF,IFF,SVX,SND,AU,VOC,CUE,OGG,MPC,MP+,MPP,MP3,MP2,MP4,M4A,AAC,FLAC,FLA,APE,MAC,WV,SPX,SID,CDA,WMA
     {
       filelist = %filelist%%A_LoopFileLongPath%`n
       count++

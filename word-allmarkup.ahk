@@ -1,4 +1,4 @@
 SetKeyDelay, 50
-Send, {ALTDOWN}{ALTUP}rtda
-Send, {ENTER}
+SendInput, {ALTDOWN}{ALTUP}rtda
+SendInput, {ENTER}
 exit

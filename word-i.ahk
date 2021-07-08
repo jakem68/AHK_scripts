@@ -1,5 +1,5 @@
 SetKeyDelay, 50
-Send, {ALTDOWN}{ALTUP}LPM
-Send,i
-Send, {ENTER}
+SendInput, {ALTDOWN}{ALTUP}LPM
+SendInput,i
+SendInput, {ENTER}
 exit

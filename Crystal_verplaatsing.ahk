@@ -1,5 +1,5 @@
-Send, {TAB 4}
-Send, {space}
+SendInput, {TAB 4}
+SendInput, {space}
 sleep 2000
-Send, {TAB 15}
+SendInput, {TAB 15}
 exit

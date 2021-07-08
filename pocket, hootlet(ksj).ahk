@@ -29,7 +29,7 @@ ArchiveArticles(Nr)
     {
     ToFirstEntry()
     sleep, 100
-    send, a
+    SendInput, a
     }  
   }
 
@@ -60,7 +60,7 @@ OpenHootletOnXWebsites(Nr)
       {
       setkeydelay, 50
       sleep 500
-      send, !h
+      SendInput, !h
       sleep 5000
       OneTabpageDown()
       sleep 1000
@@ -79,9 +79,9 @@ FillHootletOnXWebsites(Nr)
     sleep 1000
     mouseclick, left, 1000, 245
     SetKeyDelay, 50
-    send, {ctrldown}{end}{ctrlup}
-;    send, %hashtags%
-    send, {space}{#}MadeDifferent {#}Sirris
+    SendInput, {ctrldown}{end}{ctrlup}
+;    SendInput, %hashtags%
+    SendInput, {space}{#}MadeDifferent {#}Sirris
 ;    mouseclick, left, 790, 300
     sleep 500
     OneTabpageUp()
@@ -93,7 +93,7 @@ CloseOpenedWebsites(Nr)
   OneTabpageDown()
   loop, %Nr%
     {
-    send, {ctrldown} w {ctrlup}
+    SendInput, {ctrldown} w {ctrlup}
     sleep 200
     }
   }
@@ -101,26 +101,26 @@ CloseOpenedWebsites(Nr)
 ;;;;;;;;;;;;;;;;;;;;  
 ToFirstEntry()
   {
-  send, {k 25}
+  SendInput, {k 25}
   }
                                       
 OpenWebsite()
   {
-  send, o
+  SendInput, o
   }
 
 ToNextEntry()
   {
-  send, j
+  SendInput, j
   }
 
 OneTabpageUp()
   {
-  send, ^+{TAB}
+  SendInput, ^+{TAB}
   }
 OneTabpageDown()
   {
-   send, ^{Tab}
+   SendInput, ^{Tab}
   }
   
 Escape::

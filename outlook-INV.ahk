@@ -1,4 +1,6 @@
-Send, {ALTDOWN}DMM{ALTUP}
-Send,SetSelectedItem_Invoicable
-Send, {ENTER}
+Setkeydelay, 20, 15
+SendInput, {ALTDOWN}{ALTUP}jD{Escape}{Escape}
+SendInput, {ALTDOWN}{ALTUP}jDMM
+SendInput,SetSelectedItem_Invoicable
+SendInput, {ENTER}
 exit

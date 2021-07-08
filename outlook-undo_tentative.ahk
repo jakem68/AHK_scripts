@@ -1,6 +1,8 @@
-Send, {ALTDOWN}DMM{ALTUP}
-Send,SetSelectedItem_undo_Tentative
-Send, {ENTER}
-Send, {ALTDOWN}{ALTUP}H1
-Send, {ALTDOWN}{ALTUP}
+Setkeydelay, 20, 15
+SendInput, {ALTDOWN}{ALTUP}jD{Escape}{Escape}
+SendInput, {ALTDOWN}{ALTUP}jDMM
+SendInput,SetSelectedItem_undo_Tentative
+SendInput, {ENTER}
+SendInput, {ALTDOWN}{ALTUP}H1
+SendInput, {ALTDOWN}{ALTUP}
 exit

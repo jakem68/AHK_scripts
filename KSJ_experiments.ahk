@@ -4,8 +4,10 @@ Groupadd, grouptemp, Inbox - Jan.Kempeneers@sirris.be - Outlook
 ;Groupadd, grouptemp, Message 
 Groupadd, grouptemp, Sent Items - Jan.Kempeneers@sirris.be - Outlook                    
 Groupadd, grouptemp, Junk Email - Jan.Kempeneers@sirris.be - Outlook
-Groupadd, grouptemp, Inbox_later - Jan.Kempeneers@sirris.be - Outlook
-Setkeydelay, 20, 15
+Groupadd, grouptemp, In_prio1 - Jan.Kempeneers@sirris.be - Outlook
+Groupadd, grouptemp, In_prio2 - Jan.Kempeneers@sirris.be - Outlook
+Groupadd, grouptemp, In_prio3 - Jan.Kempeneers@sirris.be - Outlook
+;Setkeydelay, 20, 15
                                                        
 ;;;; hotkeys ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;/* 
@@ -17,53 +19,55 @@ Setkeydelay, 20, 15
 ; */
 
 ;program to detect what is entered in USB port and start program based on usb device entered if required.
-;run, "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\autostartUSB.ahk"
+;run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\autostartUSB.ahk"
 
 ;;;; reload this script
 F2 & r::reload
 
 ;;;; edit this script
-;F2 & e::Run "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk", , max
-F2 & e::Run "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\Sublime\sublime_text.exe" "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk", , max
+;F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk", , max
+F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk", , max
 
 ;;;; pause script
 F2 & p::pause
 
 ;;;; run windowinfo
-F2 & w::run "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\windowinfo.ahk"
+F2 & w::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\windowinfo.ahk"
 
-;;;; start explorer in links (=windows + e)
-#e::
-  {
-  Run explorer.exe "C:\Users\ksj\Links"
-  sleep 1000
-  send, {tab 5}
-  send, {space}
-  }
-return
+;;;; run temporary program
+F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\tmp.ahk"
+
+; ;;;; start explorer in links (=windows + e)
+; #e::
+;   {
+;   Run explorer.exe
+;   sleep 1000
+;   SendInput, {tab 7}
+;   }
+; return
   
 ;;;;
-Escape & l::
-  {
-  send, {CtrlDown}c{CtrlUp}
-  Sleep, 0.1
-  send, !{Tab}
-  Sleep, 0.1
-  send, {F6}
-  Sleep, 0.1
-  send, ^v
-;  send, %clipboard%
-  Sleep, 0.1
-  send, {Enter}
-  }
- return
+; Escape & l::
+;   {
+;   SendInput, {CtrlDown}c{CtrlUp}
+;   Sleep, 0.1
+;   SendInput, !{Tab}
+;   Sleep, 0.1
+;   SendInput, {F6}
+;   Sleep, 0.1
+;   SendInput, ^v
+; ;  SendInput, %clipboard%
+;   Sleep, 0.1
+;   SendInput, {Enter}
+;   }
+;  return
 
 ;;;; tile windows 
 ;F1 & v::DllCall( "TileWindows", uInt,0, Int,0, Int,0, Int,0, Int,0 ) ; Tile Vertically
 ;F1 & h::DllCall( "TileWindows", uInt,0, Int,1, Int,0, Int,0, Int,0 ) ; Tile Horizontally
-;Escape & v::DllCall( "TileWindows", uInt,0, Int,0) ; Tile Vertically
-;Escape & h::DllCall( "TileWindows", uInt,0, Int,1, Int,0, Int,0, Int,0 ) ; Tile Horizontally
-Escape & c::DllCall( "CascadeWindows", uInt,0, Int,4, Int,0, Int,0, Int,0) ; Cascade windows
+Escape & v::DllCall( "TileWindows", uInt,0, Int,0, Int,0, Int,0, Int,0) ; Tile Vertically
+; Escape & h::DllCall( "TileWindows", uInt,0, Int,1, Int,0, Int,0, Int,0) ; Tile Horizontally
+;Escape & c::DllCall( "CascadeWindows", uInt,0, Int,4, Int,0, Int,0, Int,0) ; Cascade windows
 ;;;;
 
 ;;;; show outlook windows
@@ -76,41 +80,32 @@ Escape & s::
 return
 ;;;;
 
-;;;; run temporary program
-F2 & t::run "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\temp.ahk"
-
 
 
 ;;;; To give F1 back it's original function (only on release of button without another button being pressed)
 ;;;; niet met letters doen want bij snel typen lukt de letter niet meer
-F1::send {F1}
-Escape::send {Escape}
-F2::send {F2}
+F1::SendInput {F1}
+Escape::SendInput {Escape}
+F2::SendInput {F2}
 ;;;;
 
 
 ;;;; launch browser with application or resp. launch application
 
 F1 & j::
-    msgbox, , , still mistaking :-), 1
+    msgbox, , , still mistaking :-), 2
 return
 
 Escape & j::
   global launchprogram =
-  inputbox, launchprogram, Launch in browser, which app do you want to run, , , 130, , , , 
+  inputbox, launchprogram, Launch , which app do you want to run, , , 130, , , , 60
   if errorlevel
     return
   if launchprogram =
     {
     msgbox, , , all revved up and nowhere to go, 1
+    return
     }
-  else if (launchprogram="ins") 
-      {
-      run outlook.exe /select outlook:Inbox
-      run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory=Default  --new-window https://inbox.google.com/
-      run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window https://inbox.google.com/     
-      return
-      } 
       
   else if (launchprogram="apps" or launchprogram = "kapps" or launchprogram = "japps")
     { 
@@ -118,20 +113,20 @@ Escape & j::
       { 
       run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory=Default  --new-window 
       sleep 500
-      send chrome://apps
-      send {enter} 
+      SendInput chrome://apps
+      SendInput {enter} 
       }
     else if(launchprogram="japps")
       { 
       run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window
       sleep 500
-      send chrome://apps
-      send {enter} 
+      SendInput chrome://apps
+      SendInput {enter} 
       }
       return
     }
  
-; add other exceptions that don't lookup in input_array here
+; add other exceptions that don't lookup in input_array here above
   
   else
     {
@@ -170,49 +165,52 @@ Escape & j::
       	}
       ifmsgbox no
       	{
-      	clipboard = %original_text% 
+      	clipboard = %original_text%
+        ; run "C:\Users\ksj\OneDrive - Sirris\_Projecten"
         return
         }
-      run "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
+      run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
       }
-  ;exceptions
-    IfInString, target, outlook.exe
+;exceptions
+    ; checks whether more than one word have been entered as input
+    if % launchprogram_array0 > 1
       {
-      ; checks whether more than one word have been entered as input
-      if % launchprogram_array0 > 1
-        {
-          run %target%
-          sleep 500
-          winactivate 
-;          Send, {LWin Down}{Up}{LWin Up}
-          Send, ^e
-          Send, %launchprogram_extension%
-          Send, {Enter}
-          sleep, 2500
-          Send, +`t
-        }
-    ;run the target
-      else        
-        {
-        run %target%
-        sleep 500
-        winactivate 
-;        Send, <#{Up}
-;        Winmaximize, A
-        }
+        ; checks for which program the remaining words are ment
+        IfInString, target, outlook.exe
+          {
+            run %target%
+            sleep, 1000
+            winactivate 
+  ;          SendInput, {LWin Down}{Up}{LWin Up}
+            SendInput, ^e
+            SendInput, %launchprogram_extension%
+            SendInput, {Enter}
+            sleep, 1250
+;            SendInput, +`t
+          }
+        IfInString, target, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+          {
+            run %target%
+            sleep 3000
+            winactivate
+            SendInput, %launchprogram_extension%
+            SendInput, {Enter}
+          }
       }
-  ;run the target
+    ; run the target
     else
       {   
-      run %target%
-      sleep 500
-      winactivate 
-;      Winmaximize, A
+        run %target%
+        ; msgbox, , , executed simple run
+
+        sleep 500
+        winactivate 
+        ; Winmaximize, A
       }
 return
 
 ^+h::
-run, "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\NewHotstringEntry.ahk"
+run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\hotstring_new_entry.ahk"
 return
 
 
@@ -224,64 +222,73 @@ return
 if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     ;;;; change font color to red in Word
     Escape & r::
-      Send {Alt}
-      Send H
-      Send FC
-      Send {Down 7}
-      send {Left 4}
-      Send {enter}
+      SendInput {Alt}
+      SendInput H
+      SendInput FC
+      SendInput {Down 7}
+      SendInput {Left 4}
+      SendInput {enter}
     return
     ;;;;
 
     ;;;; change font color to green in Word
     Escape & g::
-      Send {Alt}
-      Send H
-      Send FC
-      Send {Down 7}
-      Send {enter}
+      SendInput {Alt}
+      SendInput H
+      SendInput FC
+      SendInput {down 1}
+      SendInput {Right 4}
+      SendInput {enter}
     return
     ;;;;
     
     ;;;; change font color to pen (blue) in Word
     Escape & p::
-      Send {Alt}
-      Send H
-      Send FC
-      Send {down 7}
-      send {Right 2}
-      Send {enter}
+      SendInput {Alt}
+      SendInput H
+      SendInput FC
+      SendInput {down 1}
+      SendInput {left 1}
+      SendInput {enter}
     return
     ;;;;
 
     ;;;; change font color to black in Word
     Escape & b::
-      Send {Alt}
-      Send H
-      Send FC
-      Send A
+      SendInput {Alt}
+      SendInput H
+      SendInput FC
+      SendInput A
     return
     ;;;;
   
     ;;;; Yellow marker in Word
     Escape & y::
-      Send {Altdown}HI{Altup}
-      Send {enter}
+      SendInput {Altdown}HI{Altup}
+      SendInput {enter}
     return
     ;;;;
 
-    ;;;; Orange (Red) marker in Word
+    ;;;; Orange (Red, purple) marker in Word
     Escape & o::
-      Send {Altdown}HI{Altup}
-      Send {right}{right}{right}
-      Send {enter}
+      SendInput {Altdown}HI{Altup}
+      SendInput {right}{right}{right}
+      SendInput {enter}
+    return
+    ;;;;
+
+    ;;;; cyaan marker in Word
+    Escape & c::
+      SendInput {Altdown}HI{Altup}
+      SendInput {right}{right}
+      SendInput {enter}
     return
     ;;;;
 
     ;;;; NO marker in Word
     Escape & n::
-      Send {Altdown}HIN{Altup}
-      ;Send {enter}
+      SendInput {Altdown}HIN{Altup}
+      ;SendInput {enter}
     return
     ;;;;
 }
@@ -294,9 +301,9 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 ;
 ;    ;;;; e-mail quick action = SendToBack
 ;    Escape & b::
-;      send, {altdown}{altup}
+;      SendInput, {altdown}{altup}
 ;      sleep, 200
-;      send, JDAEK                   
+;      SendInput, JDAEK                   
 ;    return
 ;    ;;;;
 ;
@@ -307,92 +314,112 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 
 ;▀▄▀▄▀▄ [ outlook ] ▄▀▄▀▄▀
 ;;;; only in Outlook windows
-#ifWinActive, ahk_group grouptemp
+SetTitleMatchMode, 2
+;#ifWinActive, ahk_group grouptemp
+;#ifWinActive, ahk_class "rctrl_renwnd32"
+if(WinActive("ahk_exe OUTLOOK.EXE")){
 
     ;;;; e-mail quick action = DELETE
     Escape & d::
-     send, ^q
-     send, {altdown}{altup}
-     send, hd                   
+     run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
+     sleep 500
+     SendInput, ^d
     return
     ;;;;
 
     ;;;; e-mail quick action = Z_In
     Escape & a::
-      send, {altdown}{altup}
-      send, hqs
-      send, {enter}
+      run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
+      sleep 500
+      ControlGetFocus, current_control
+      ;WinGet, current_ID, ID, A
+      SendInput, {altdown}{altup}
+      SendInput, hmvo
+      SendInput, archive
+      SendInput, {enter}
+      sleep 500
+      ;WinMaximize, ahk_id %current_ID% 
+      ;WinActivate, ahk_id %current_ID%
+      ;ControlFocus, OutlookGrid1
+      ControlFocus, %current_control%
     return
 
     ;;;; e-mail quick action = Z_In
     Escape & l::
-      send, {altdown}{altup}
-      send, hmvo
-      send, inbox_later
-;      send, {Left}
-      send, {enter}
+      SendInput, {altdown}{altup}
+      SendInput, hmvo
+      SendInput, inbox_later
+;      SendInput, {Left}
+      SendInput, {enter}
     return
-        
+
+    ;;;; calendar open appointment in quartz
+    Escape & q::
+      SendInput, {enter}
+      SendInput, {altdown}{altup}
+      SendInput, h01
+    return
+
     ;;;;
-  
-#ifwinactive
+} 
+;#ifwinactive
 ;;;;
 
-;;;; Delete single outlook message when opened
+;;;; Same thing BUT when message OPENED
 #ifWinActive, Message
     Escape & d::
-;      send, {altdown}hd{altup}                   
-      send, !h
-      send, d
+     run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
+     sleep 500
+     SendInput, ^d
     return
   ;;;; e-mail quick action = Z_In
     Escape & a::
-      send, {altdown}{altup}
-      send, hqs
-      send, {enter}
+      SendInput, {altdown}{altup}
+      SendInput, hqs
+      SendInput, {enter}
     return
   ;;;; e-mail next item
     Escape & Down::
-      send, {altdown}{altup}
-      send, 5
+      SendInput, {altdown}{altup}
+      SendInput, 5
     return
   ;;;; e-mail previous item
     Escape & Up::
-      send, {altdown}{altup}
-      send, 4
+      SendInput, {altdown}{altup}
+      SendInput, 4
     return
-/*      send, {altdown}
+/*      SendInput, {altdown}
       sleep, 200
-      send, HQS
-      send, {altup}
-      send, {enter}
+      SendInput, HQS
+      SendInput, {altup}
+      SendInput, {enter}
 */
     return
   ;;;; e-mail the open message without deferring (=assign category sendNow and send)
     Escape & m::
-      run, "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-sendNow.ahk"
+      run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-sendNow.ahk"
     return
 
 
   ;;; color selected text RED 
     Escape & r::
-      Send {Alt}
-      Send H
-      Send FC
-      Send {up}
-      Send {up}
-      send {right}
-      Send {right}
-      Send {enter}
+      SendInput {Alt}
+      SendInput H
+      SendInput FC
+      SendInput {up}
+      SendInput {up}
+      SendInput {right}
+      SendInput {right}
+      SendInput {enter}
     return
     ;;;;
     
     ;;;; change font color to Automatic in Message
     Escape & b::
-      Send {Alt}
-      Send H
-      Send FC
-      Send A
+      SendInput {Alt}
+      SendInput H
+      SendInput FC
+      SendInput A
     return
     ;;;;
 
@@ -408,32 +435,32 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 
   ;;;; pull tab into seperate window
    Escape & w::
-    send, {F6}
+    SendInput, {F6}
     sleep, 200
-    send, ^c
+    SendInput, ^c
     sleep, 200
-    send, ^n
+    SendInput, ^n
     sleep, 200
-    send, ^v{enter}
-    send, !{tab}
-    send, ^w
-    send, !{tab}
+    SendInput, ^v{enter}
+    SendInput, !{tab}
+    SendInput, ^w
+    SendInput, !{tab}
   return
   ;;;;
   
   ;;;;verplaatsing vervolledigen in Crystal in twee stappen -->
-    Escape & v::
-      WinGetTitle, Title, A
-      if Title = ABSENCE_DASHBOARD(MIT) - Google Chrome
-      {
-        run "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\Crystal_verplaatsing.ahk"  
-      }
-    Escape & n::
-      WinGetTitle, Title, A
-      if Title = Crystal - Google Chrome
-      {
-        run "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\Crystal_verplaatsing2.ahk"  
-      }
+    ; Escape & v::
+    ;   WinGetTitle, Title, A
+    ;   if Title = ABSENCE_DASHBOARD(MIT) - Google Chrome
+    ;   {
+    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\Crystal_verplaatsing.ahk"  
+    ;   }
+    ; Escape & n::
+    ;   WinGetTitle, Title, A
+    ;   if Title = Crystal - Google Chrome
+    ;   {
+    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\Crystal_verplaatsing2.ahk"  
+    ;   }
       
     
 #ifwinactive
@@ -444,7 +471,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 
 
 ;;;; include other ahk files in this script without pasting them in
-;#Include C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts 
+;#Include C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -452,9 +479,9 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 function_lut() ;look up target
 {
   global target =
-  myFile := "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
-  post_myFile := "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input_post.txt"
-  pre_myFile := "C:\Users\ksj\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input_pre.txt"   
+  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
+  post_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input_post.txt"
+  pre_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input_pre.txt"   
   targetfound := ""
   space := " "
   Loop, read, %myFile%, %pre_myFile%
@@ -477,6 +504,21 @@ function_lut() ;look up target
           ifequal, A_loopfield, %launchprogram%
             {
             target = %last_field%
+
+
+            return
+            }
+      }
+  }
+  return
+}
+
+
+
+
+;;;;;;;;;;;;;commentet out everything below to avoid constant writing to array_input.txt
+            /*
+
             targetfound := 1
 
             ; loop the current line again in order to write as should be 
@@ -536,6 +578,7 @@ if ErrorLevel != 0
  	  }
   }
 }
+*/
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 /*
 block comment
