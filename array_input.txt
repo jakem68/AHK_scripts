@@ -2,181 +2,196 @@
 
 ; chrome vervangen door edge
 ;private:
-; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized 
-; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized
+; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized 
+; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized
 ; vervangen door
 ; "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --profile-directory="Profile 1" --new-window --start-maximized
 
 ;sirris:
-; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 2" --new-window --start-maximized
+; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 2" --new-window --start-maximized
 ; "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --profile-directory="Default" --new-window --start-maximized
 
 
 
 [INTERNET]
-    tcob; teamcob; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://teams.microsoft.com/l/channel/19%3a79ad3280cb264374b1fe5a4539e55fe5%40thread.skype/Cobofin%2520coock?groupId=2a0e00b0-880e-4d62-93ec-c1e817de654e&tenantId=d4c1d712-e8c2-4fdf-abce-18805891b5b0
-    decathlon; deca;  "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.decathlon.be/nl/"
-    oa; outdooractive; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.outdooractive.com/en/mypage/"
-    samenaankoop; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.samenaankoop.org/en
-    gitmind; gitmap; mindmap; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://gitmind.com/app/my
-    viewranger; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://my.viewranger.com/user/home
-    openai; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://beta.openai.com/playground?model=davinci-instruct-beta
-    vrtnws; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.vrt.be/vrtnws/nl/
-    bol; bolcom; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.bol.com/nl/rnwy/account/overzicht?bltgh=oto5N7ym2tH8ePKqhldI6w.2.3.Login
-    postman; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://web.postman.co/workspace/b5f61637-1499-4da8-8f8e-f92e53c292be/overview
-    netflix; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.netflix.com/browse
-    strava; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.strava.com/dashboard
-    fitbit; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.fitbit.com/
-    gather; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://gather.town/
-    goodhabitz; goodh; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://my.goodhabitz.com/nl-be/online-courses.html"
-    pinterest; pint; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized "https://www.pinterest.com/"
-    zml; lubach; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.npostart.nl/zondag-met-lubach/20-09-2015/VPWON_1243302
-    miro; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://miro.com/app/dashboard/
+    trinity; trin; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://trinityrobotics.eu/
+    flvto; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window "https://flv-to.com/en10"
+    forms; msforms; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.office.com/launch/forms?auth=2
+    cobpage; cobweb; cobsirris; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.sirris.be/nl/cobofin-gecobotiseerd-schuren-en-ontbramen
+    alie; aliexpress; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://www.aliexpress.com/
+    nostalgie; https://nl.nostalgie.be/radio-player/nostalgie
+    nostalgienl; nostnl; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://nl.nostalgie.be/radio-player/nostalgie-nl
+    nostalgienl; nostnl; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window https://nl.nostalgie.be/radio-player/nostalgie-nl
+    tnt; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://mytnt.tnt.com/?locale=nl_BE#/sign-in
+    draftin; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://draftin.com/documents
+    tcob; teamcob; cobteam; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://teams.microsoft.com/l/channel/19%3a79ad3280cb264374b1fe5a4539e55fe5%40thread.skype/Cobofin%2520coock?groupId=2a0e00b0-880e-4d62-93ec-c1e817de654e&tenantId=d4c1d712-e8c2-4fdf-abce-18805891b5b0
+    decathlon; deca;  "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.decathlon.be/nl/"
+    oa; outdooractive; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.outdooractive.com/en/mypage/"
+    samenaankoop; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.samenaankoop.org/en
+    gitmind; gitmap; mindmap; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://gitmind.com/app/my
+    viewranger; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://my.viewranger.com/user/home
+    openai; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://beta.openai.com/playground?model=davinci-instruct-beta
+    vrtnws; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.vrt.be/vrtnws/nl/
+    bol; bolcom; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.bol.com/nl/rnwy/account/overzicht?bltgh=oto5N7ym2tH8ePKqhldI6w.2.3.Login
+    postman; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://web.postman.co/workspace/b5f61637-1499-4da8-8f8e-f92e53c292be/overview
+    netflix; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.netflix.com/browse
+    strava; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.strava.com/dashboard
+    fitbit; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.fitbit.com/
+    gather; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://gather.town/
+    goodhabitz; goodh; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://my.goodhabitz.com/nl-be/online-courses.html"
+    pinterest; pint; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized "https://www.pinterest.com/"
+    zml; lubach; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.npostart.nl/zondag-met-lubach/20-09-2015/VPWON_1243302
+    miro; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://miro.com/app/dashboard/
     blogger; https://draft.blogger.com/blog/posts/4029129919807621585
-    belfirst; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://belfirst.bvdinfo.com/version-2020824/Home.serv?product=belfirstneo
-    aircob; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblQmOIiX4ojILOww/viwj6ngJULGibm6K2?blocks=hide
-    techniline; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://techniline.sirris.be/WO.wsc/webextra/prg/olContent3?vWebsessionID=20832&vUserID=94512&TopicID=5972&FAction=HOME
-    ifttt; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://ifttt.com/home
-    noisly; noisli; noise; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.noisli.com/favorites
-    refind; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://refind.com/
-    solo; sololearn; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://code.sololearn.com/cVY9LR5QSH1x/#java
-    raindr; raindrop; rain; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://app.raindrop.io/#/collection/0
-    mijnwifi; mijnrouter; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized 192.168.0.1
-    mijntelenet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://mijn.telenet.be/mijntelenet/rgw/settings.do?action=showAdvancedSettings&identifier=u401594
-    29; dee; deez; deezer; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.deezer.com/en/profile/295454445/playlists
-    9; chrome; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
-    1077; jc; janchrome; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.google.com/
-    4058; kc; ksjchrome; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized
-    144; rpi; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 2" --new-window --start-maximized http://drive.google.com/
-    576; keep; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://keep.google.com/
-    91; gcont; gcontacts; gcon; jcon; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://contacts.google.com/preview/all
-    kcont; kcontacts; kcon; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://contacts.google.com/preview/all
-    122; gcal; kcal; ksjcal; kcalendar; gcalendar; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://calendar.google.com/calendar/render?pli=1#main_7
-    34; jcal; jancal; jcalendar; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://calendar.google.com/calendar/render?pli=1#main_7
-    463; ana; asa; asana; as; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://app.asana.com/0/735617010080987/board
-    434; cry; crystal; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://crystal.sirris.be/crystal11/index/index.php
-    482; kin; kinbox; ksj inbox; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://mail.google.com/
-    842; jin; jinbox; jan inbox; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://mail.google.com/
-    18; hbvl; hb; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.hbvl.be/
-    1; der; red; dered; deredactie; redactie; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" http://www.deredactie.be/
-    66; you; yout; youtube; jyou; jyout; jyoutube; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.youtube.com
-    98; kyou; kyout; kyoutube; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.youtube.com
-    312; kmap; kmaps; gmaps; maps; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.google.be/maps/
-    70; jmap; jmaps; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.google.be/maps/
+    belfirst; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://belfirst.bvdinfo.com/version-2020824/Home.serv?product=belfirstneo
+    aircob; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblQmOIiX4ojILOww/viwj6ngJULGibm6K2?blocks=hide
+    techniline; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://techniline.sirris.be/WO.wsc/webextra/prg/olContent3?vWebsessionID=20832&vUserID=94512&TopicID=5972&FAction=HOME
+    ifttt; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://ifttt.com/home
+    noisly; noisli; noise; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.noisli.com/favorites
+    refind; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://refind.com/
+    solo; sololearn; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://code.sololearn.com/cVY9LR5QSH1x/#java
+    raindr; raindrop; rain; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://app.raindrop.io/#/collection/0
+    mijnwifi; mijnrouter; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized 192.168.0.1
+    mijntelenet; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://mijn.telenet.be/mijntelenet/rgw/settings.do?action=showAdvancedSettings&identifier=u401594
+    deezer; "C:\Users\ksj\shortcuts\Deezer Music - Shortcut.lnk"
+    29; dee; deez; deezer; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.deezer.com/en/profile/295454445/playlists
+    9; chrome; "C:\Program Files\Google\Chrome\Application\chrome.exe"
+    1077; jc; janchrome; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.google.com/
+    4058; kc; ksjchrome; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized
+    144; rpi; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 2" --new-window --start-maximized http://drive.google.com/
+    576; keep; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://keep.google.com/
+    91; gcont; gcontacts; gcon; jcon; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://contacts.google.com/preview/all
+    kcont; kcontacts; kcon; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://contacts.google.com/preview/all
+    122; gcal; kcal; ksjcal; kcalendar; gcalendar; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://calendar.google.com/calendar/render?pli=1#main_7
+    34; jcal; jancal; jcalendar; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://calendar.google.com/calendar/render?pli=1#main_7
+    463; ana; asa; asana; as; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://app.asana.com/0/735617010080987/board
+    434; cry; crystal; "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --profile-directory="Default" http://crystal.sirris.be/crystal11/index/index.php 
+    434; cry; crystal; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://crystal.sirris.be/crystal11/index/index.php
+    482; kin; kinbox; ksj inbox; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://mail.google.com/
+    842; jin; jinbox; jan inbox; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://mail.google.com/
+    18; hbvl; hb; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.hbvl.be/
+    1; der; red; dered; deredactie; redactie; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" http://www.deredactie.be/
+    66; you; yout; youtube; jyou; jyout; jyoutube; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.youtube.com
+    98; kyou; kyout; kyoutube; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.youtube.com
+    312; kmap; kmaps; gmaps; maps; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.google.be/maps/
+    70; jmap; jmaps; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.google.be/maps/
     44; yess; iexplore.exe https://yess.attentia.be/Sirris/
-    dots; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://auth.attentia.be/adfs/oauth2/authorize?response_type=id_token&client_id=96B4C151-8AEB-4007-9074-56B57E6CA2AE&redirect_uri=https%3A%2F%2Fdots.attentia.be%2Fportal%2Fauthentication%2F&state=53214b28-1529-4a2c-b1be-dada724f5878&client-request-id=5a26b5a2-afef-43c2-a8a5-2a346d47cc63&x-client-SKU=Js&x-client-Ver=1.0.14&nonce=626676e8-2651-4572-8177-a47c89f92b4f
-    11; yelo; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized  www.yelo.tv
-    401; news; gnews; new; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://news.google.com/
-    375; jdrive; jdir; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://drive.google.com/drive/#my-drive
-    652; kdrive; kdir; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://drive.google.com/drive/#my-drive
-    56; feedly; feed; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://feedly.com/i/my
-    kladsheet; klads; gsheet;"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/spreadsheets/d/13MySwBFCI-GBZZpP4i310P9kjsZNKWWl8ZRpR-xvkGg/edit#gid=0 
-    142; kklad; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/document/d/1H-hNTQ69d81cUjw1ZHAHigmGxS_rQPYxZrZJR3gsb9I/edit
-    56; twitter; twit; tweet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://twitter.com/
-    140; diigo; diig; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.diigo.com/user/vjqedgk
-    5; zand; zandstuivers; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://sites.google.com/site/schoonbeekzandstuivers/
-    75; hootlet; hoot; hootsuite; hoots; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://hootsuite.com/dashboard
-    73; gtrans; trans; transl; translate; gt; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://translate.google.com/
-    ino; inoreader; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.inoreader.com/all_articles
-    231; link; lin; linked; linkedin; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.linkedin.com/hp/?dnr=Dc74qS0QIJh1G0jil-q4qDKhRie6kZnXiN-
-    1; aup; aupeo; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.aupeo.com/
-    70; wetr; wetransfer; wet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://sirris.wetransfer.com/
-    83; po; pock; pocket; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://getpocket.com/a/queue/list/
-    103; kphotos; kphoto; kpho; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://photos.google.com/u/0/
-    81; jphotos; jphoto; jpho; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://photos.google.com/u/0/
-    63; camcard; camc; cc; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.camcard.com/card/personalcard
-    54; kplus; k+; ksj+; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://plus.google.com
-    13; jplus; j+; jan+; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://plus.google.com
-    1; wun; wu; wunderlist; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.wunderlist.com/#/lists/inbox
-    1; write; writer; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window chrome-extension://aimodnlfiikjjnmdchihablmkdeobhad/xhtml/application.xhtml
-    30; one; onedrive; sky; skydrive; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://onedrive.live.com/?id=BFD3BA4ABF9E503B%21204&cid=BFD3BA4ABF9E503B&group=0
-    1; pos; positive; threepos; three; day; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/document/d/1iaWUBTeKXZBPe6Nq1l9rWblzmjt16yJtkroSxshjUR0/edit
-    sdrive; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://drive.google.com/drive/u/1/my-drive 
-    9; owa; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://outlook.office.com/owa/
-    46; smart; smarts; smartschool; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://hgi.smartschool.be/
-    books; playbooks; book; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://play.google.com/books
-    40; vtb; tkd; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.taekwondo.be/
-    153; plex; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://192.168.0.12:32400/web/index.html
-    34; khang; khangout; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://hangouts.google.com/
-    3; jhang; jhangout; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://hangouts.google.com/
-    30; flipboard; flipb; flip; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://flipboard.com/profile
-    24; kflipboard; kflipb; kflip; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://flipboard.com/profile
-    22; mess; messenger; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.facebook.com/messages/t/1516981978384435
-    5; grab; grabcad; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://workbench.grabcad.com/workbench/myprojects#/account/1678557/projects/my_projects
-    36; git; github; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://github.com/
-    2; kruis; kruiswoord; kruiswoordraadsel; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.cybercomm.nl/~zundert/mid/printen.html
-    32; sone; sonedrive; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/_layouts/15/onedrive.aspx
-    7; gantt; instagantt; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://instagantt.com/app/
-    10; ilovepdf; mergepdf; joinpdf; jpdf; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.ilovepdf.com/merge_pdf
-    119; kbc; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.kbc.be/
-    6; doodle; dood; doo; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://doodle.com/nl/
-    16; whatsapp; what; whats; wapp; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://web.whatsapp.com/
-    232; air; airtable; airt; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/
-    6; pal; myfitnesspal; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.myfitnesspal.com/
-    4; stack; ip; transip; stackip; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://jeanke68.stackstorage.com/files
-    7; buf; buff; buffer; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://buffer.com/app/profile/5963f5b71908cdfd438fd810/buffer/queue/list
-    72; deepl; trans; transl; translate; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.deepl.com/translator"
-    30; smile; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "http://smile.sirris.be/en"
-    3; dict; dictate; dictator; speech; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://speechnotes.co/"
-    3; snip; snippets; snippet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/document/d/1SXqEoar9tON1AfFG-T-5vpctpCjwljNRmG5Vdcbiufk/edit#heading=h.vmq16t4wtutc
-    20; desmos; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.desmos.com/scientific"
-    2; html; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://htmlg.com/html-editor/"
-    3; sirris.be; sirrisbe; sbe; sirrisweb; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://sirris.be"
-    4; wk; fifa; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.fifa.com/worldcup/
-    5; wkg; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.fifa.com/worldcup/groups/
-    4; wkm; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.fifa.com/worldcup/matches/
-    22; trello; trel; trell; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://trello.com/b/HL8LjAHV/tasks"
-    17; insta; instag; instagram; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.instagram.com/?hl=en"
-    4; task; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://airtable.com/shrgMouL37LObK9S1"
-    airtasks; airta; tasks; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tbl1tnkGofuXBlS4S/viwI3VK9ffTmugXTL?blocks=hide
-    prioritylab; prioritylabo; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://demonstrator10.sirris.be
-    prioritysirris; priority; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://priority.sirris.be
-    radio2; r2; rtwee; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://radioplus.be/#/radio2-limburg/herbeluister
-
-    zap; zapier; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://zapier.com/app/dashboard"
-    2; blog; sirrisblog; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.sirris.be/blog"
-    1; integr; integromat; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.integromat.com/org/204323"
-    ics; helpdesk; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://sirrishelpdesk.topdesk.net/tas/public/ssp/d3fed130-0f6c-11e5-a6c0-1697f925ec7b"
-    last; lastpass; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/vault.html"
-    bit; bitwarden; bitw; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://vault.bitwarden.com/#/"
-    sms; smsonline; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://messages.google.com/web/conversations"
-    24; dropbox; dro; drop; dropb; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.dropbox.com/work"
-    dokter; dok; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.digitalewachtkamer.be/default.aspx?ID=32&Taal=&Talen=
-    mytelenet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www2.telenet.be/nl/klantenservice/#/menu=selfservice
-    webmail; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://mail.telenet.be/zimbra/mail?null=&client=advanced#1
-    lampen; lights; lamp; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblgFI5jNYiu4w67p/viwvupFTSOczzNZ4S
-    142; jklad; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://docs.google.com/document/d/1YN1y_M2R32z7rrW9yEpRXvqh2GUnikZJMUJf9u7pq1M/edit
-    jkladsheet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://docs.google.com/spreadsheets/d/1zhf7eFHjvfUcgdrYYhtk5nQ6kKs6JGH4PnGh8dZ0f_g/edit#gid=1378599597
-    copsheet; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/spreadsheets/d/1XEHeytuoEyNSSewyRiB4awk6v4Ha17wCXKaXd5q7-QA/edit#gid=0
-    aircop; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tbleZceGlEKP5GqdF/viw8TMShbfI5Ejtw5
-    winkel; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://keep.google.com/u/0/#LIST/140yT0RBgUDBQ98pSr_VS2f2V8Lq32DqYCsnvJfFb1CzixBZd9TkIJCKTe2aBWWket7uU
-    vandaag; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://keep.google.com/u/0/#LIST/13N0rsJiyddsrJef_1qwn-FHO9KDEXtNywfnIlhxztvaTzN-DRgl3cyr_0zWCSJPnRb4U
-    youtubemusic; ym; youm; kyoum; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://music.youtube.com/watch?v=mmIXwYkDs9k&list=RDMMEfa6BAWPm9o
+    dots; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://auth.attentia.be/adfs/oauth2/authorize?response_type=id_token&client_id=96B4C151-8AEB-4007-9074-56B57E6CA2AE&redirect_uri=https%3A%2F%2Fdots.attentia.be%2Fportal%2Fauthentication%2F&state=53214b28-1529-4a2c-b1be-dada724f5878&client-request-id=5a26b5a2-afef-43c2-a8a5-2a346d47cc63&x-client-SKU=Js&x-client-Ver=1.0.14&nonce=626676e8-2651-4572-8177-a47c89f92b4f
+    11; yelo; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized  www.yelo.tv
+    401; news; gnews; new; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://news.google.com/
+    375; jdrive; jdir; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://drive.google.com/drive/#my-drive
+    652; kdrive; kdir; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://drive.google.com/drive/#my-drive
+    56; feedly; feed; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://feedly.com/i/my
+    kladsheet; klads; gsheet;"C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/spreadsheets/d/13MySwBFCI-GBZZpP4i310P9kjsZNKWWl8ZRpR-xvkGg/edit#gid=0 
+    142; kklad; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/document/d/1H-hNTQ69d81cUjw1ZHAHigmGxS_rQPYxZrZJR3gsb9I/edit
+    56; twitter; twit; tweet; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://twitter.com/
+    140; diigo; diig; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.diigo.com/user/vjqedgk
+    5; zand; zandstuivers; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://sites.google.com/site/schoonbeekzandstuivers/
+    75; hootlet; hoot; hootsuite; hoots; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://hootsuite.com/dashboard
+    73; gtrans; trans; transl; translate; gt; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://translate.google.com/
+    ino; inoreader; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.inoreader.com/all_articles
+    231; link; lin; linked; linkedin; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.linkedin.com/hp/?dnr=Dc74qS0QIJh1G0jil-q4qDKhRie6kZnXiN-
+    1; aup; aupeo; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.aupeo.com/
+    70; wetr; wetransfer; wet; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://sirris.wetransfer.com/
+    83; po; pock; pocket; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://getpocket.com/a/queue/list/
+    103; kphotos; kphoto; kpho; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://photos.google.com/u/0/
+    81; jphotos; jphoto; jpho; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://photos.google.com/u/0/
+    63; camcard; camc; cc; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.camcard.com/card/personalcard
+    54; kplus; k+; ksj+; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://plus.google.com
+    13; jplus; j+; jan+; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://plus.google.com
+    1; wun; wu; wunderlist; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.wunderlist.com/#/lists/inbox
+    1; write; writer; writing; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://app.grammarly.com/
+    30; one; onedrive; sky; skydrive; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://onedrive.live.com/?id=BFD3BA4ABF9E503B%21204&cid=BFD3BA4ABF9E503B&group=0
+    1; pos; positive; threepos; three; day; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/document/d/1iaWUBTeKXZBPe6Nq1l9rWblzmjt16yJtkroSxshjUR0/edit
+    sdrive; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://drive.google.com/drive/u/1/my-drive 
+    9; owa; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://outlook.office.com/owa/
+    46; smart; smarts; smartschool; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://hgi.smartschool.be/
+    books; playbooks; book; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://play.google.com/books
+    40; vtb; tkd; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.taekwondo.be/
+    153; plex; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://192.168.0.12:32400/web/index.html
+    34; khang; khangout; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://hangouts.google.com/
+    3; jhang; jhangout; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://hangouts.google.com/
+    30; flipboard; flipb; flip; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://flipboard.com/profile
+    24; kflipboard; kflipb; kflip; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://flipboard.com/profile
+    22; mess; messenger; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.facebook.com/messages/t/1516981978384435
+    5; grab; grabcad; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://workbench.grabcad.com/workbench/myprojects#/account/1678557/projects/my_projects
+    36; git; github; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://github.com/
+    2; kruis; kruiswoord; kruiswoordraadsel; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.cybercomm.nl/~zundert/mid/printen.html
+    32; sone; sonedrive; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/_layouts/15/onedrive.aspx
+    7; gantt; instagantt; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://instagantt.com/app/
+    10; ilovepdf; mergepdf; joinpdf; jpdf; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.ilovepdf.com/merge_pdf
+    119; kbc; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized http://www.kbc.be/
+    6; doodle; dood; doo; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://doodle.com/nl/
+    16; whatsapp; what; whats; wapp; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://web.whatsapp.com/
+    232; air; airtable; airt; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/
+    6; pal; myfitnesspal; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized http://www.myfitnesspal.com/
+    4; stack; ip; transip; stackip; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://jeanke68.stackstorage.com/files
+    7; buf; buff; buffer; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://buffer.com/app/profile/5963f5b71908cdfd438fd810/buffer/queue/list
+    72; deepl; trans; transl; translate; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.deepl.com/translator"
+    30; smile; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "http://smile.sirris.be/en"
+    3; dict; dictate; dictator; speech; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://speechnotes.co/"
+    snip; snippets; snippet; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_snippets.ini"
+    3; snip; snippets; snippet; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/document/d/1SXqEoar9tON1AfFG-T-5vpctpCjwljNRmG5Vdcbiufk/edit#heading=h.vmq16t4wtutc
+    20; desmos; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.desmos.com/scientific"
+    2; html; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://htmlg.com/html-editor/"
+    3; sirris.be; sirrisbe; sbe; sirrisweb; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://sirris.be"
+    4; wk; fifa; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.fifa.com/worldcup/
+    5; wkg; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.fifa.com/worldcup/groups/
+    4; wkm; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.fifa.com/worldcup/matches/
+    22; trello; trel; trell; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://trello.com/b/HL8LjAHV/tasks"
+    17; insta; instag; instagram; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.instagram.com/?hl=en"
+    4; task; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://airtable.com/shrgMouL37LObK9S1"
+    airtasks; airta; tasks; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tbl1tnkGofuXBlS4S/viwI3VK9ffTmugXTL?blocks=hide
+    prioritylab; prioritylabo; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://demonstrator10.sirris.be
+    prioritysirris; priority; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://priority.sirris.be
+    radio2; r2; rtwee; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://radioplus.be/#/radio2-limburg/herbeluister
+    zap; zapier; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://zapier.com/app/dashboard"
+    2; blog; sirrisblog; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.sirris.be/blog"
+    1; integr; integromat; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.integromat.com/org/204323"
+    ics; helpdesk; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://sirrishelpdesk.topdesk.net/tas/public/ssp/d3fed130-0f6c-11e5-a6c0-1697f925ec7b"
+    last; lastpass; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/vault.html"
+    bit; bitwarden; bitw; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://vault.bitwarden.com/#/"
+    sms; smsonline; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://messages.google.com/web/conversations"
+    24; dropbox; dro; drop; dropb; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://www.dropbox.com/work"
+    dokter; dok; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www.digitalewachtkamer.be/default.aspx?ID=32&Taal=&Talen=
+    mytelenet; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://www2.telenet.be/nl/klantenservice/#/menu=selfservice
+    webmail; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://mail.telenet.be/zimbra/mail?null=&client=advanced#1
+    lampen; lights; lamp; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblgFI5jNYiu4w67p/viwvupFTSOczzNZ4S
+    142; jklad; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://docs.google.com/document/d/1YN1y_M2R32z7rrW9yEpRXvqh2GUnikZJMUJf9u7pq1M/edit
+    jkladsheet; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window --start-maximized https://docs.google.com/spreadsheets/d/1zhf7eFHjvfUcgdrYYhtk5nQ6kKs6JGH4PnGh8dZ0f_g/edit#gid=1378599597
+    copsheet; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://docs.google.com/spreadsheets/d/1XEHeytuoEyNSSewyRiB4awk6v4Ha17wCXKaXd5q7-QA/edit#gid=0
+    aircop; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tbleZceGlEKP5GqdF/viw8TMShbfI5Ejtw5
+    winkel; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://keep.google.com/u/0/#LIST/140yT0RBgUDBQ98pSr_VS2f2V8Lq32DqYCsnvJfFb1CzixBZd9TkIJCKTe2aBWWket7uU
+    vandaag; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://keep.google.com/u/0/#LIST/13N0rsJiyddsrJef_1qwn-FHO9KDEXtNywfnIlhxztvaTzN-DRgl3cyr_0zWCSJPnRb4U
+    youtubemusic; ym; youm; kyoum; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://music.youtube.com/
+    youtubemusic; ym; youm; kyoum; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://music.youtube.com/watch?v=mmIXwYkDs9k&list=RDMMEfa6BAWPm9o
     kf; ksjfirefox; "C:\Program Files\Mozilla Firefox\firefox.exe" -new-window
-    filtr; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.deezer.com/app/filtr
-    adobe; acrobat; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://documentcloud.adobe.com/link/home/
-    soundcloud; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://soundcloud.com/you/library"
-    airlin; airlinux; airl; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viwzjxvbtDcTvn68U?blocks=hide
-    airch;aircheat; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viwxeIBjxzJSwybNz?blocks=hide
-    airw; airwin; airwindows; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viw1TXmHjhE5GITNN?blocks=hide
-    airdock; aird; airdocker; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viwIR4w0AX3FzfiSJ?blocks=hide
-    airgit; airg; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viwIUyGovnCdCrWy0?blocks=hide
-    storm; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://weather.ambient-mixer.com/the-perfect-storm
-    underwater; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://underwater.ambient-mixer.com/scuba-diving https://underwater.ambient-mixer.com/underwater-angel https://underwater.ambient-mixer.com/safe-haven
-    beach; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://beach.ambient-mixer.com/calm-beach https://beach.ambient-mixer.com/peaceful-beach
-    repl; repl.it; replit; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://repl.it/~
-    pdf2go; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.pdf2go.com/
-    odootest; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://odootest.sirris.be/web#cids=1&home="
-    odoo; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://odoo.sirris.be/web#cids=1&home="
-    mindlab; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://mindlab.be/members/jankempeneerssirrisbe/modules/"
+    filtr; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.deezer.com/app/filtr
+    adobe; acrobat; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://documentcloud.adobe.com/link/home/
+    soundcloud; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://soundcloud.com/you/library"
+    airlin; airlinux; airl; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viwzjxvbtDcTvn68U?blocks=hide
+    airch;aircheat; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viwxeIBjxzJSwybNz?blocks=hide
+    airw; airwin; airwindows; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viw1TXmHjhE5GITNN?blocks=hide
+    airdock; aird; airdocker; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viwIR4w0AX3FzfiSJ?blocks=hide
+    airgit; airg; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://airtable.com/tblPniyVlszn4HuvT/viwIUyGovnCdCrWy0?blocks=hide
+    storm; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://weather.ambient-mixer.com/the-perfect-storm
+    underwater; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://underwater.ambient-mixer.com/scuba-diving https://underwater.ambient-mixer.com/underwater-angel https://underwater.ambient-mixer.com/safe-haven
+    beach; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://beach.ambient-mixer.com/calm-beach https://beach.ambient-mixer.com/peaceful-beach
+    repl; repl.it; replit; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://repl.it/~
+    pdf2go; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://www.pdf2go.com/
+    odootest; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://odootest.sirris.be/web#cids=1&home="
+    odoo; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://portal.sirris.be/web#cids=1&home="
+    mindlab; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized "https://mindlab.be/members/jankempeneerssirrisbe/modules/"
 
 [FIREFOX]
     test; "C:\Program Files\Mozilla Firefox\firefox.exe" -new-window
 
 [CHROME APP]
-    5; timer; stopwatch; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --app-id=eoiibkbchfmgmhlodifjceiginokllbj
+    1; timer; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\timer.ahk"
 
 [APPLICATIONS]
+    ubuntu; "C:\Users\ksj\VMWare_PCs\VMware_Ubuntu\Ubuntu 64-bit.vmx"
+    ocr; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\Capture2Text_v4.1.0_64bit\Capture2Text.exe"
     webcam; panasonic; "http://xx00652.site06.wtcm.be/"
     teams; "C:\Users\ksj\shortcuts\Microsoft Teams.lnk"
     audacity; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AudacityPortable\AudacityPortable.exe"
@@ -207,10 +222,10 @@
     in1; outlook.exe /select outlook:In_prio1
     in2; outlook.exe /select outlook:In_prio2
     in3; outlook.exe /select outlook:In_prio3
-    6; omail; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://outlook.office.com/?path=/mail/action/compose
-    4; oin; oInbox; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://outlook.office.com/?path=/mail
-    2; ocal; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://outlook.office.com/owa/?path=/calendar/view/WorkWeek
-    oone; oonen; onlineonenote; oon; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/_layouts/15/WopiFrame.aspx?sourcedoc={b7ced5f1-1df5-49d0-9d49-84d76e1b0361}&action=edit&wd=target%282019_logs.one%7Ccdd7f367-33d8-4025-b415-f3133208c8eb%2FAugust%7Ccf15a2ee-8a44-48e1-bd63-d56ff7aab100%2F%29
+    6; omail; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://outlook.office.com/?path=/mail/action/compose
+    4; oin; oInbox; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://outlook.office.com/?path=/mail
+    2; ocal; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://outlook.office.com/owa/?path=/calendar/view/WorkWeek
+    oone; oonen; onlineonenote; oon; "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/_layouts/15/WopiFrame.aspx?sourcedoc={b7ced5f1-1df5-49d0-9d49-84d76e1b0361}&action=edit&wd=target%282019_logs.one%7Ccdd7f367-33d8-4025-b415-f3133208c8eb%2FAugust%7Ccf15a2ee-8a44-48e1-bd63-d56ff7aab100%2F%29
     31; ton; taskson; toff; taskoff; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-tasks_onoff.ahk"
 
     960; mail; outlook.exe /c ipm.note
@@ -264,13 +279,15 @@
     32; powerp; powerpoint; "C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE"
     41; sub; sublime; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\Sublime\sublime_text.exe"
     45; vsc; code; vscode; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64\Code.exe"
-    vfolder; vscfolder; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\vsc_folder.ahk"
+    vfolder; vscfol; vfol; vscfolder; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\vsc_folder.ahk"
+    vfile; vscfile; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\vsc_file.ahk"
     ; "C:\Users\ksj\Desktop\OneNote - Shortcut.lnk"
     onenote; onen; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe"
     bart; bartvragen; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe" /hyperlink onenote:https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/Documents/Jan%20@%20Sirris/Allerlei.one#Afstemming%20Bart%20vragen&section-id={C42965D1-4BFC-4BFC-8E62-82ED08811DCC}&page-id={ABD89AF0-E63C-45B2-8C49-799ACEB3707B}&end 
     onenjournal; onenj; journal; jour; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe" /hyperlink onenote:https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/Documents/Notebooks/bullet_journal/2021_logs.one#Journal%20logs&section-id={DAAADE0B-BF34-1F4B-9D0A-A9A4EAB084DF}&page-id={F84D0CBF-2CC7-E54B-A44D-A0E0264A2C32}&end
     omeet; onenmeet; meet; onenotemeetings; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe" /hyperlink onenote:https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/Documents/Jan%20@%20Sirris/Meet_21.one#TOP&section-id={414D8F40-8CDA-4B05-AF56-82E9684B7C72}&page-id={63EF3707-094B-4F40-8ACE-70F330637DA7}&end    
     oblog; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe" /hyperlink onenote:https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/Documents/Notebooks/Artikels@Sirris/
+    oklad; onenklad; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\onenote_docked.ahk"
     oklad; onenklad; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe" /hyperlink onenote:https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/Documents/Jan%20@%20Sirris/Allerlei.one#Kladblok%20&section-id={C42965D1-4BFC-4BFC-8E62-82ED08811DCC}&page-id={6647551B-0C2F-4FED-A942-74E2A687B1AF}&end
     teams_dead; "C:\Users\ksj\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Microsoft Teams.lnk"
     todo; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\WinstoreAppLinks\Microsoft To Do - Shortcut.lnk"
@@ -295,17 +312,17 @@
     surr; sur; surround; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\surround.ahk"
     3; gif; lice; licecap; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\LICEcapPortable = gif creator\LICEcapPortable.exe"
     pdfcreator; pdf; "C:\Program Files (x86)\PDFCreator\PDFCreator.exe"
-    everything; every; ever; "C:\Program Files\Everything\Everything.exe"
+    everything; every; ever; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\Everything-1.4.1.935.x64\Everything.exe"
     ins; inboxes; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\inboxes_show.ahk"
     draytek; "C:\Program Files (x86)\DrayTek\Smart VPN Client\SmartVPNClient.exe"
-    krita; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\krita-x64-4.2.8 = sketching\bin\krita.exe"
-    obs; "C:\Program Files\obs-studio\bin\64bit\obs64.exe"
+    krita; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\krita-x64\bin\krita.exe"
 
 [EXPLORER FILES]
+    obs; "C:\Users\ksj\Dropbox (Personal)\Pictures\OBS_animations"
     hotstr; hotstrings; hotkeys; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_hotstrings.ahk"
     exp; experiments; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk"
 
-    8; array; input; inputarray; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
+    8; array; input; inputarray; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.ini"
     klad; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\klad.txt"
 
 [EXPLORER ALGEMEEN]
@@ -323,7 +340,6 @@
     print; "C:\Users\ksj\Dropbox (Personal)\print"
     406; temp; down; print; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\Q-Dir\Favoriten\3p.qdr"
     19; pool; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\Q-Dir\Favoriten\3p.qdr"; "\\server06.sirris.be\pool"
-    pc; myc; mycomputer; "C:\Users\ksj\OneDrive - Sirris\_Projecten\" 
     36; pc; myc; mycomputer; shell:::{20D04FE0-3AEA-1069-A2D8-08002B30309D}
     share; freecom; "\\192.168.0.10\share"
     131; port; portable; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps"
@@ -362,6 +378,10 @@
     shortcuts; short; shortcut; "C:\Users\ksj\shortcuts"
 
 [EXPLORER PROJECTEN]
+    pomfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\POMLimburg_21-2506"
+    mcbfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\17-0207_Fokus-MCB"
+    volfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Volvo_car_21-2122"
+    cibfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Cibo_21-2035_CobotsInProductie"
     269; cop; copfol; cor; corn; cornet; "C:\Users\ksj\OneDrive - Sirris\ksj_archief\projecten_archiefC-schijf\00_conventions+internal\17-0233_CORNET-cobot-polishing"
     2; int; intfol; interreg; "C:\Users\ksj\OneDrive - Sirris\_Projecten\16-0260_InterregMach4.0"
     cobfol; cobfin; cobfinfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\20-0224_Coock-Cobofin\" "C:\Users\ksj\OneDrive - Sirris\_Projecten\20-0224_Coock-Cobofin\"
@@ -379,13 +399,13 @@
     moofol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\08-0701,28_FoF_MOOC"
     ascfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\ASCO_18-0235"
     bogfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\BogaertsGreenhouseLogistics_20-1790"
-    orafol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Oracdecor_20-1762"
+    orafol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\OracDecor_20-2213"
     bpofol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\BPost_20-0281"
     deffol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Deforche Engineering_20-2242"
-    malfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Malmar_2016-0260+2021-1545\Malmar_2021-1545"
+    malfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\21-0236_TrinityII_Malmar"
     bilfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\BIL_20-2484"
     confol; indfol; minfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\MINISTERIE_VAN_DE_VLAAMSE_GEMEENSCHAP_19-0234,11"
-    fokfol; "\\backbone.sirris.be\sirris-common\p-internal-projects\2020\Workshop Connected Factory"
+    fokfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\17-0207_Fokus-Kenniscluster_Cobots"
     amrfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\08-0840,89_AMR_MasterClass_ContractOndernemerschap"  
     foffol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\_i_190000_FoF-MadeDifferent"
     purfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Puratos_20-2600_FOFAssessments2020"
@@ -397,4 +417,7 @@
     diafol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Diametal_21-1185"
     artfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Arteco-coolant_21-1672"
     teafol; teamfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\TeamIndustries_21-1767"
+    alufol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Alupelt_2021-1774"
+    adbfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\ADBSafegate_21-2354"
+    capfol; "C:\Users\ksj\OneDrive - Sirris\_Projecten\Capaul_21-2247"
     ___________________________________________________________

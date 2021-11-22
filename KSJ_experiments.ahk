@@ -169,7 +169,7 @@ Escape & j::
         ; run "C:\Users\ksj\OneDrive - Sirris\_Projecten"
         return
         }
-      run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
+      run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.ini"
       }
 ;exceptions
     ; checks whether more than one word have been entered as input
@@ -186,7 +186,7 @@ Escape & j::
             SendInput, %launchprogram_extension%
             SendInput, {Enter}
             sleep, 1250
-;            SendInput, +`t
+           SendInput, +{TAB 3}
           }
         IfInString, target, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
           {
@@ -223,6 +223,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     ;;;; change font color to red in Word
     Escape & r::
       SendInput {Alt}
+      Sleep, 100
       SendInput H
       SendInput FC
       SendInput {Down 7}
@@ -234,6 +235,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     ;;;; change font color to green in Word
     Escape & g::
       SendInput {Alt}
+      Sleep, 100
       SendInput H
       SendInput FC
       SendInput {down 1}
@@ -245,6 +247,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     ;;;; change font color to pen (blue) in Word
     Escape & p::
       SendInput {Alt}
+      Sleep, 100
       SendInput H
       SendInput FC
       SendInput {down 1}
@@ -256,22 +259,28 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     ;;;; change font color to black in Word
     Escape & b::
       SendInput {Alt}
+      Sleep, 100
       SendInput H
       SendInput FC
-      SendInput A
+      SendInput {enter}
+      ; SendInput A
     return
     ;;;;
   
     ;;;; Yellow marker in Word
     Escape & y::
-      SendInput {Altdown}HI{Altup}
+      SendInput {Alt}
+      Sleep, 100
+      SendInput HI
       SendInput {enter}
     return
     ;;;;
 
     ;;;; Orange (Red, purple) marker in Word
     Escape & o::
-      SendInput {Altdown}HI{Altup}
+      SendInput {Alt}
+      Sleep, 100
+      SendInput HI
       SendInput {right}{right}{right}
       SendInput {enter}
     return
@@ -279,7 +288,9 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 
     ;;;; cyaan marker in Word
     Escape & c::
-      SendInput {Altdown}HI{Altup}
+      SendInput {Alt}
+      Sleep, 100
+      SendInput HI
       SendInput {right}{right}
       SendInput {enter}
     return
@@ -287,7 +298,9 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 
     ;;;; NO marker in Word
     Escape & n::
-      SendInput {Altdown}HIN{Altup}
+      SendInput {Alt}
+      Sleep, 100
+      SendInput HIN
       ;SendInput {enter}
     return
     ;;;;
@@ -323,6 +336,7 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
     Escape & d::
      run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
      sleep 500
+     sendInput, ^q
      SendInput, ^d
     return
     ;;;;
@@ -331,6 +345,7 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
     Escape & a::
       run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
       sleep 500
+      sendInput, ^q
       ControlGetFocus, current_control
       ;WinGet, current_ID, ID, A
       SendInput, {altdown}{altup}
@@ -434,17 +449,11 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 #ifWinActive, ahk_class Chrome_WidgetWin_1
 
   ;;;; pull tab into seperate window
-   Escape & w::
+   Alt & w::
     SendInput, {F6}
-    sleep, 200
-    SendInput, ^c
-    sleep, 200
-    SendInput, ^n
-    sleep, 200
-    SendInput, ^v{enter}
-    SendInput, !{tab}
-    SendInput, ^w
-    SendInput, !{tab}
+    Sleep, 100
+    SendInput, {ctrldown}{c}{ctrlup}
+    SendInput, {ctrldown}{w}{n}{v}{ctrlup}{Enter}
   return
   ;;;;
   
@@ -479,7 +488,7 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 function_lut() ;look up target
 {
   global target =
-  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
+  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.ini"
   post_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input_post.txt"
   pre_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input_pre.txt"   
   targetfound := ""
