@@ -138,94 +138,94 @@ qdir; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\Q-Dir_Portabl
 178; spo; spotify; spot; "C:\Users\ksj\AppData\Roaming\Spotify\Spotify.exe"
 32; put; putty; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\PuTTY\putty.exe"
 
-3176; cal; calendar; outlook.exe /select outlook:calendar
-5145; in; inbox; outlook.exe /select outlook:Inbox
-in1; outlook.exe /select outlook:In_prio1
-in2; outlook.exe /select outlook:In_prio2
-in3; outlook.exe /select outlook:In_prio3
+3176; cal; calendar; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:calendar
+5145; in; inbox; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Inbox
+in1; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:In_prio1
+in2; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:In_prio2
+in3; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:In_prio3
 6; omail; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized; "C:\Program Files\Mozilla Firefox\firefox.exe" -new-window https://outlook.office.com/?path=/mail/action/compose
 4; oin; oInbox; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized; "C:\Program Files\Mozilla Firefox\firefox.exe" -new-window https://outlook.office.com/?path=/mail
 4; oin; oInbox; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized; "C:\Program Files\Mozilla Firefox\firefox.exe" -new-window https://outlook.office.com/?path=/mail
 2; ocal; "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized; "C:\Program Files\Mozilla Firefox\firefox.exe" -new-window https://outlook.office.com/owa/?path=/calendar/view/WorkWeek
-31; ton; taskson; toff; taskoff; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-tasks_onoff.ahk"
+31; ton; taskson; toff; taskoff; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-tasks_onoff.ahk"
 
-960; mail; outlook.exe /c ipm.note
-514; os; osent; sent; outlook.exe /select outlook:Sent%20Items
-396; oarc; arc; archive; oa; outlook.exe /select outlook:Archive
-969; ozin; zin; outlook.exe /select outlook:Z_in
-576; ocon; ocontacts; con; contacts; outlook.exe /select outlook:contacts
-51; odel; del; deleted items; outlook.exe /select outlook:Deleted%20Items
-1457; out; outbox; ooutbox; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlookMailWeg.ahk"
-393; dr; draft; drafts; outlook.exe outlook:Drafts
-ft; tf; fromto; tofrom; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-search_archive_from_to.ahk"
+960; mail; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.note
+514; os; osent; sent; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Sent%20Items
+396; oarc; arc; archive; oa; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Archive
+969; ozin; zin; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Z_in
+576; ocon; ocontacts; con; contacts; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:contacts
+51; odel; del; deleted items; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Deleted%20Items
+1457; out; outbox; ooutbox; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlookMailWeg.ahk"
+393; dr; draft; drafts; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" outlook:Drafts
+ft; tf; fromto; tofrom; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-search_archive_from_to.ahk"
 
-484; hoof; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-hoof.ahk"
-294; oof; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-oof.ahk"
-64; priv; private; pri; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-private.ahk"
-170; free; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-free.ahk"
-36; rem; reminder; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-reminder.ahk"
-83; bnl; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-BusyNoLoc.ahk"
-81; fillweek; fw; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-fillweek.ahk"
-157; kme; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-KME.ahk"
-276; inv; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-INV.ahk"
-29; nocat; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
-299; mee; meet; meeting; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-MEE.ahk"
-36; imp; important; meeting; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-IMP.ahk"
-prio1; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-prio1.ahk"
-prio2; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-prio2.ahk"
-prio3; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-prio3.ahk"
-298; sd; shutdown; shutd; shut; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system shutdown.ahk"
-86; rest; restart; re; res; rs; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system restart.ahk"
-57; sleep; sl; standby; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system Sleep.ahk"
-143; hib; hibernate; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\system Hibernate.ahk"
-11; i; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\word-i.ahk"
-10; n; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\word-n.ahk"
-48; outl; outlook; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlookStart.ahk"
-71; bl; block; blockline; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\asciiArt_blockLine.ahk"
-6; bll; blocklong; blocklinelong; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\asciiArt_blockLineLong.ahk"
-194; tentative; tent; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-tentative.ahk"
-384; ver; verplaatsing; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-verplaatsing.ahk"
-3; mailweg; mw; mweg; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlookMailWeg.ahk"
-47; untent; undotent; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-undo_tentative.ahk"
-dirlist; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\directoryfilelist.ahk"
+484; hoof; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-hoof.ahk"
+294; oof; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-oof.ahk"
+64; priv; private; pri; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-private.ahk"
+170; free; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-free.ahk"
+36; rem; reminder; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-reminder.ahk"
+83; bnl; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-BusyNoLoc.ahk"
+81; fillweek; fw; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-fillweek.ahk"
+157; kme; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-KME.ahk"
+276; inv; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-INV.ahk"
+29; nocat; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-NoCat.ahk"
+299; mee; meet; meeting; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-MEE.ahk"
+36; imp; important; meeting; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-IMP.ahk"
+prio1; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-prio1.ahk"
+prio2; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-prio2.ahk"
+prio3; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-prio3.ahk"
+298; sd; shutdown; shutd; shut; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\system shutdown.ahk"
+86; rest; restart; re; res; rs; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\system restart.ahk"
+57; sleep; sl; standby; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\system Sleep.ahk"
+143; hib; hibernate; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\system Hibernate.ahk"
+11; i; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\word-i.ahk"
+10; n; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\word-n.ahk"
+48; outl; outlook; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlookStart.ahk"
+71; bl; block; blockline; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\asciiArt_blockLine.ahk"
+6; bll; blocklong; blocklinelong; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\asciiArt_blockLineLong.ahk"
+194; tentative; tent; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-tentative.ahk"
+384; ver; verplaatsing; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-verplaatsing.ahk"
+3; mailweg; mw; mweg; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlookMailWeg.ahk"
+47; untent; undotent; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-undo_tentative.ahk"
+dirlist; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\directoryfilelist.ahk"
 
-2; folder; fol; fold; fo; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\folder.ahk"
-8; file; fi; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\file.ahk"
-138; pocktwit; twitpock; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\pocket, buffer(ksj).ahk"; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\pocket, hootlet(ksj).ahk"
-93; weer; meteo; met; weather; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\meteo.ahk"
+2; folder; fol; fold; fo; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\folder.ahk"
+8; file; fi; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\file.ahk"
+138; pocktwit; twitpock; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\pocket, buffer(ksj).ahk"; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\pocket, hootlet(ksj).ahk"
+93; weer; meteo; met; weather; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\meteo.ahk"
 23; bru; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\BRU\Bulk Rename Utility.exe"
 32; powerp; powerpoint; "C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE"
 41; sub; sublime; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\Sublime\sublime_text.exe"
 45; vsc; code; vscode; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe"
 499; onenote; onen; onote; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe"
 bart; bartvragen; "C:\Program Files\Microsoft Office\root\Office16\onenote.exe" /hyperlink onenote:https://sirrisbe-my.sharepoint.com/personal/jan_kempeneers_sirris_be/Documents/Jan%20@%20Sirris/Allerlei.one#Afstemming%20Bart%20vragen&section-id={C42965D1-4BFC-4BFC-8E62-82ED08811DCC}&page-id={ABD89AF0-E63C-45B2-8C49-799ACEB3707B}&end 
-3; tvgids; tv; gids; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\tvgids.ahk"
-25; nrp; ; noreadingpane; rpon; readingpaneon; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-readingpaneon.ahk"
-21; rpoff; readingpaneoff; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-readingpaneoff.ahk"
-16; amu; amup; allmarkup; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\word-allmarkup.ahk"
-35; nmu; nmup; nomarkup; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\word-nomarkup.ahk"
-84; tmp; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\tmp_Draftsight-cleanupDxf.ahk"
+3; tvgids; tv; gids; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\tvgids.ahk"
+25; nrp; ; noreadingpane; rpon; readingpaneon; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-readingpaneon.ahk"
+21; rpoff; readingpaneoff; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-readingpaneoff.ahk"
+16; amu; amup; allmarkup; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\word-allmarkup.ahk"
+35; nmu; nmup; nomarkup; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\word-nomarkup.ahk"
+84; tmp; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\tmp_Draftsight-cleanupDxf.ahk"
 33; rdk; robodk; "C:\RoboDK\Start RoboDK.lnk"
-37; csdf; calsdf; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-calendars_ppau_fvin.ahk"
-cmrleuven; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-calendars_mrleuven.ahk"
-cmrdiep; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-calendars_mrdiepenbeek.ahk"
-52; copen; calopen; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-calendars_open.ahk"
+37; csdf; calsdf; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-calendars_ppau_fvin.ahk"
+cmrleuven; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-calendars_mrleuven.ahk"
+cmrdiep; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-calendars_mrdiepenbeek.ahk"
+52; copen; calopen; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-calendars_open.ahk"
 37; calc; calculator; speedcrunch; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\speedcrunch-0.12-win32 = calculator\speedcrunch.exe"
-2; top; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\window_on_top.ahk"
-1; timer; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\timer.ahk"
-htb; htblock; htmlblock; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\htmlblock.ahk"
-ht; htsur; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\htmlsurround.ahk"
-sur; surround; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\surround.ahk"
+2; top; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\window_on_top.ahk"
+1; timer; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\timer.ahk"
+htb; htblock; htmlblock; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\htmlblock.ahk"
+ht; htsur; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\htmlsurround.ahk"
+sur; surround; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\surround.ahk"
 
 3; gif; lice; licecap; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\LICEcapPortable = gif creator\LICEcapPortable.exe"
 
 ________________________________________________________________________________ 
 _____FILES:
 ________________________________________________________________________________ 
-hotstr; hotstrings; hotkeys; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_hotstrings.ahk"
-exp; experiments; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk"
+hotstr; hotstrings; hotkeys; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings.ahk"
+exp; experiments; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk"
 
-8; array; input; inputarray; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.txt"
+8; array; input; inputarray; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input.txt"
 
 
 ________________________________________________________________________________ 
@@ -243,7 +243,7 @@ share; freecom; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\exp
 31; admin; administratie; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"; "C:\Users\ksj\OneDrive - Sirris\Administratie"
 35; pers; personal; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk"
 127; port; portable; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps"
-162; ahk; scripts; script; ahkscripts; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts"
+162; ahk; scripts; script; ahkscripts; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts"
 2; arch; archief; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"; "C:\Users\ksj\OneDrive - Sirris\projecten - archiefC-schijf"
 44; sirris; sir; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"; "C:\Users\ksj\OneDrive - Sirris"
 18; desk; deskt; desktop; "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"; "C:\Users\ksj\Desktop"

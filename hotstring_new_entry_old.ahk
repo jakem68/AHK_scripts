@@ -1,6 +1,6 @@
 ; Script to enter new hotstring
 
-global destinationfile := "C:\users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_hotstrings.ahk"
+global destinationfile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings.ahk"
 global abbr
 global longText
 
@@ -114,8 +114,8 @@ f_checkForExisting()
 
 f_findAndReplaceEntry() 
 {
-  preMyFile := "C:\users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_hotstrings_pre.txt"
-  postMyFile := "C:\users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_hotstrings_post.txt"
+  preMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_pre.txt"
+  postMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_post.txt"
   
   fileRead, fileContent, %destinationfile%
   string = :*:%abbr%``t::
@@ -137,8 +137,8 @@ f_findAndReplaceEntry()
 
 f_swapfiles() 
 {
-  preMyFile := "C:\users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_hotstrings_pre.txt"
-  postMyFile := "C:\users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_hotstrings_post.txt"
+  preMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_pre.txt"
+  postMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_post.txt"
   filecopy, %destinationfile%, %postMyFile%, 1
   sleep, 80
   filemove, %preMyFile%, %destinationfile%, 1                

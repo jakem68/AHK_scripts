@@ -62,7 +62,7 @@ F1 & j::
     }
   else if (launchprogram="ins") 
       {
-      run outlook.exe /select outlook:Inbox
+      run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Inbox
       run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk"  --new-window https://inbox.google.com/
       run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" --new-window https://inbox.google.com/     
       return
@@ -70,7 +70,7 @@ F1 & j::
 
 ;  else if (launchprogram="ins") 
 ;      {
-;      run outlook.exe /select outlook:Inbox
+;      run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Inbox
 ;      run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\ksj - Chrome.lnk" https://inbox.google.com/
 ;      run "C:\Users\ksj\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\Jan - Chrome.lnk" https://inbox.google.com/     
 ;      return

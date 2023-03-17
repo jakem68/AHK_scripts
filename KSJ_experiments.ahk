@@ -18,24 +18,30 @@ Groupadd, grouptemp, In_prio3 - Jan.Kempeneers@sirris.be - Outlook
 ;&	An ampersand may be used between any two keys or mouse buttons to combine them into a custom hotkey. See below for details.
 ; */
 
+;;; run at startup
+;Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Inbox
+Run, "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://app.asana.com/0/3699102645008/board
+
+
 ;program to detect what is entered in USB port and start program based on usb device entered if required.
-;run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\autostartUSB.ahk"
+;run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\autostartUSB.ahk"
 
 ;;;; reload this script
 F2 & r::reload
 
 ;;;; edit this script
-;F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk", , max
-F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\KSJ_experiments.ahk", , max
+;F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
+F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
 
 ;;;; pause script
 F2 & p::pause
 
 ;;;; run windowinfo
-F2 & w::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\windowinfo.ahk"
+F2 & w::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\windowinfo.ahk"
 
 ;;;; run temporary program
-F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\tmp.ahk"
+; F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\tmp.ahk"
+F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\experiments\clicks_ksj.ahk"
 
 ; ;;;; start explorer in links (=windows + e)
 ; #e::
@@ -96,6 +102,10 @@ F1 & j::
     msgbox, , , still mistaking :-), 2
 return
 
+; Escape & k::
+;   run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\programming scripts\python\venv\Scripts\pythonw.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\programming scripts\python\pc_automation\ksj_experiments_replacement.pyw"
+; return
+
 Escape & j::
   global launchprogram =
   inputbox, launchprogram, Launch , which app do you want to run, , , 130, , , , 60
@@ -153,7 +163,8 @@ Escape & j::
       }
 ;
 
-    function_lut()
+
+    function_lut()   ; line 517
 
     if target =
       {
@@ -169,7 +180,7 @@ Escape & j::
         ; run "C:\Users\ksj\OneDrive - Sirris\_Projecten"
         return
         }
-      run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.ini"
+      run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input.ini"
       }
 ;exceptions
     ; checks whether more than one word have been entered as input
@@ -201,6 +212,7 @@ Escape & j::
     else
       {   
         run %target%
+        
         ; msgbox, , , executed simple run
 
         sleep 500
@@ -210,7 +222,7 @@ Escape & j::
 return
 
 ^+h::
-run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\hotstring_new_entry.ahk"
+run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\hotstring_new_entry.ahk"
 return
 
 
@@ -223,12 +235,18 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     ;;;; change font color to red in Word
     Escape & r::
       SendInput {Alt}
+      SendInput ZR
+      SendInput {Down 2}
+      SendInput {enter}
+      Sleep, 100
+      SendInput {Alt}
       Sleep, 100
       SendInput H
       SendInput FC
       SendInput {Down 7}
-      SendInput {Left 4}
+      SendInput {Right 1 }
       SendInput {enter}
+      f_if_windowNotMax_pressAlt()
     return
     ;;;;
 
@@ -241,6 +259,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
       SendInput {down 1}
       SendInput {Right 4}
       SendInput {enter}
+      f_if_windowNotMax_pressAlt()
     return
     ;;;;
     
@@ -251,8 +270,9 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
       SendInput H
       SendInput FC
       SendInput {down 1}
-      SendInput {left 1}
+      SendInput {left 4}
       SendInput {enter}
+      f_if_windowNotMax_pressAlt()
     return
     ;;;;
 
@@ -263,7 +283,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
       SendInput H
       SendInput FC
       SendInput {enter}
-      ; SendInput A
+      f_if_windowNotMax_pressAlt()
     return
     ;;;;
   
@@ -271,18 +291,26 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     Escape & y::
       SendInput {Alt}
       Sleep, 100
-      SendInput HI
+      if WinActive("ahk_class OpusApp") 
+          SendInput HI
+      if WinActive("ahk_exe OUTLOOK.EXE") 
+          SendInput HI1
       SendInput {enter}
-    return
+      f_if_windowNotMax_pressAlt()
+      return
     ;;;;
 
     ;;;; Orange (Red, purple) marker in Word
     Escape & o::
       SendInput {Alt}
       Sleep, 100
-      SendInput HI
+      if WinActive("ahk_class OpusApp") 
+          SendInput HI
+      if WinActive("ahk_exe OUTLOOK.EXE") 
+          SendInput HI1
       SendInput {right}{right}{right}
       SendInput {enter}
+      f_if_windowNotMax_pressAlt()
     return
     ;;;;
 
@@ -290,9 +318,13 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     Escape & c::
       SendInput {Alt}
       Sleep, 100
-      SendInput HI
+      if WinActive("ahk_class OpusApp") 
+          SendInput HI
+      if WinActive("ahk_exe OUTLOOK.EXE") 
+          SendInput HI1
       SendInput {right}{right}
       SendInput {enter}
+      f_if_windowNotMax_pressAlt()
     return
     ;;;;
 
@@ -300,12 +332,14 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     Escape & n::
       SendInput {Alt}
       Sleep, 100
-      SendInput HIN
-      ;SendInput {enter}
+      if WinActive("ahk_class OpusApp") 
+          SendInput HIN
+      if WinActive("ahk_exe OUTLOOK.EXE") 
+          SendInput HI1N
+      f_if_windowNotMax_pressAlt()
     return
     ;;;;
 }
-  
 
 ;Temporary 
 ;▀▄▀▄▀▄ [ powerpoint ] ▄▀▄▀▄▀
@@ -334,29 +368,30 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 
     ;;;; e-mail quick action = DELETE
     Escape & d::
-     run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
-     sleep 500
-     sendInput, ^q
-     SendInput, ^d
+      sleep 100
+      sendInput, ^q
+      sleep 100
+      SendInput, ^d
     return
     ;;;;
 
     ;;;; e-mail quick action = Z_In
     Escape & a::
-      run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
-      sleep 500
       sendInput, ^q
       ControlGetFocus, current_control
       ;WinGet, current_ID, ID, A
+      sleep 100
       SendInput, {altdown}{altup}
+      sleep 100
       SendInput, hmvo
+      sleep 100
       SendInput, archive
+      sleep 100
       SendInput, {enter}
-      sleep 500
       ;WinMaximize, ahk_id %current_ID% 
       ;WinActivate, ahk_id %current_ID%
       ;ControlFocus, OutlookGrid1
-      ControlFocus, %current_control%
+      ; ControlFocus, %current_control%
     return
 
     ;;;; e-mail quick action = Z_In
@@ -383,14 +418,16 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 ;;;; Same thing BUT when message OPENED
 #ifWinActive, Message
     Escape & d::
-     run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-NoCat.ahk"
      sleep 500
      SendInput, ^d
     return
   ;;;; e-mail quick action = Z_In
     Escape & a::
+      sleep, 100
       SendInput, {altdown}{altup}
+      sleep, 100
       SendInput, hqs
+      sleep, 100
       SendInput, {enter}
     return
   ;;;; e-mail next item
@@ -412,7 +449,7 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
     return
   ;;;; e-mail the open message without deferring (=assign category sendNow and send)
     Escape & m::
-      run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-sendNow.ahk"
+      run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-sendNow.ahk"
     return
 
 
@@ -462,13 +499,13 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
     ;   WinGetTitle, Title, A
     ;   if Title = ABSENCE_DASHBOARD(MIT) - Google Chrome
     ;   {
-    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\Crystal_verplaatsing.ahk"  
+    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing.ahk"  
     ;   }
     ; Escape & n::
     ;   WinGetTitle, Title, A
     ;   if Title = Crystal - Google Chrome
     ;   {
-    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\Crystal_verplaatsing2.ahk"  
+    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing2.ahk"  
     ;   }
       
     
@@ -480,7 +517,7 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 
 
 ;;;; include other ahk files in this script without pasting them in
-;#Include C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts 
+;#Include C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -488,9 +525,9 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 function_lut() ;look up target
 {
   global target =
-  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input.ini"
-  post_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input_post.txt"
-  pre_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\array_input_pre.txt"   
+  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input.ini"
+  post_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input_post.txt"
+  pre_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input_pre.txt"   
   targetfound := ""
   space := " "
   Loop, read, %myFile%, %pre_myFile%
@@ -522,6 +559,14 @@ function_lut() ;look up target
   return
 }
 
+f_if_windowNotMax_pressAlt()
+{
+  WinGet,WinState,MinMax
+  If WinState = 0   ; window is neither maximized nor minimized
+    SendInput {AltDown}
+    SendInput {AltUp}
+  ; MsgBox, helaba
+}
 
 
 

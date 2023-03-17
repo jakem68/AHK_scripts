@@ -1,7 +1,13 @@
 SetKeyDelay, 25
-SendInput, {AltDown}h{AltUp}
-SendInput, zcoco
+SendInput, {CtrlDown}{Tab}{Tab}{Tab}{CtrlUp}}
+SendInput, {Space}
 exit
+
+
+; Via menu bar --> was no longer working
+; SendInput, {AltDown}h{AltUp}
+; SendInput, oco
+; exit
 
 ;old version:
 ;SetKeyDelay, 25

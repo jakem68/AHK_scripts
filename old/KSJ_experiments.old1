@@ -128,37 +128,37 @@ F1 & j::
 ;    } 
 ;  else if (launchprogram = "ocal" OR launchprogram = "cal" OR launchprogram = "calendar")
 ;    {            
-;    Run outlook.exe /select outlook:calendar 
+;    Run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:calendar 
 ;    } 
 ;  else if (launchprogram = "in" OR launchprogram = "oin" OR launchprogram = "oInbox")
 ;    {
-;    Run outlook.exe /select outlook:Inbox 
+;    Run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Inbox 
 ;    } 
 ;  else if (launchprogram = "omail" OR launchprogram = "mail")
 ;    {
-;    Run outlook.exe /c ipm.note 
+;    Run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.note 
 ;    } 
 ;  else if (launchprogram = "os" OR launchprogram = "osent" OR launchprogram = "sent")
 ;    {
-;    Run outlook.exe /select outlook:Sent`%20Items 
+;    Run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Sent`%20Items 
 ;    sleep 1000
 ;    send ^e 
 ;    } 
 ;  else if (launchprogram = "ozin" OR launchprogram = "zin"OR launchprogram = "oa")
 ;    {
-;    Run outlook.exe /select outlook:Z_in 
+;    Run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Z_in 
 ;    sleep 1000
 ;    send ^e 
 ;    } 
 ;  else if (launchprogram = "ocon" OR launchprogram = "ocontacts" OR launchprogram = "con" OR launchprogram = "contacts")
 ;    {
-;    Run outlook.exe /select outlook:contacts
+;    Run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:contacts
 ;    sleep 1000
 ;    send ^e 
 ;    } 
 ;  else if (launchprogram = "odel" OR launchprogram = "del" OR launchprogram = "deleted items")
 ;    {
-;    Run outlook.exe /select outlook:Deleted`%20Items 
+;    Run "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Deleted`%20Items 
 ;    sleep 1000
 ;    send ^e 
 ;    }

@@ -82,15 +82,15 @@ spo; spotify; spot; "C:\Users\ksj\AppData\Roaming\Spotify\Spotify.exe"
 
 vsdb;sdb;vsdb; sfdb; vsdfdb; "C:\Users\ksj\Desktop\Shortcut to F_Search in VIS-smartfac_meetings_v1.accdb.MAF"
 
-ocal; cal; calendar; outlook.exe /select outlook:calendar 
-in; inbox; oin; oInbox; outlook.exe /select outlook:Inbox 
-omail; mail; outlook.exe /c ipm.note 
-os; osent; sent; outlook.exe /select outlook:Sent%20Items
-ozin; zin; oa; outlook.exe /select outlook:Z_in 
-ocon; ocontacts; con; contacts; outlook.exe /select outlook:contacts
-odel; del; deleted items; outlook.exe /select outlook:Deleted%20Items
-out; outbox; ooutbox; outlook.exe /select outlook:outbox
-dr; draft; drafts; outlook.exe /select outlook:Drafts
+ocal; cal; calendar; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:calendar 
+in; inbox; oin; oInbox; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Inbox 
+omail; mail; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.note 
+os; osent; sent; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Sent%20Items
+ozin; zin; oa; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Z_in 
+ocon; ocontacts; con; contacts; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:contacts
+odel; del; deleted items; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Deleted%20Items
+out; outbox; ooutbox; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:outbox
+dr; draft; drafts; "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Drafts
 
 hoof; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-hoof.ahk"
 oof; "D:\Dropbox (Sirris)\ksj persoonlijk\PortableApps\AutoHotKey\AHKScripts\outlook-oof.ahk"

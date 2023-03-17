@@ -105,32 +105,32 @@ DateParse(str, americanOrder=0)
 
 function_fillday1(cds)
 {
-  Run, Outlook.exe /c ipm.appointment
+  Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.appointment
   WinWaitActive Untitled - Appointment
   function_cryrap(cds)
   sleep 200
-  Run, Outlook.exe /c ipm.appointment
+  Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.appointment
   WinWaitActive Untitled - Appointment
   function_newsletter(cds)
   sleep 200
-  Run, Outlook.exe /c ipm.appointment
+  Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.appointment
   WinWaitActive Untitled - Appointment
   function_email(cds)
   sleep 200
-  Run, Outlook.exe /c ipm.appointment
+  Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.appointment
   WinWaitActive Untitled - Appointment
   function_lunch(cds)
 }
 
 function_fillotherday(cds)
 {
-  Run, Outlook.exe /c ipm.appointment
+  Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.appointment
   WinWaitActive Untitled - Appointment
   function_newsletter(cds)
-  Run, Outlook.exe /c ipm.appointment
+  Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.appointment
   WinWaitActive Untitled - Appointment
   function_email(cds)
-  Run, Outlook.exe /c ipm.appointment
+  Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /c ipm.appointment
   WinWaitActive Untitled - Appointment
   function_lunch(cds)
 }
