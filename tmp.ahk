@@ -15,5 +15,13 @@
 ; SendInput, {F5}
 ; Sleep, 100
 
-WinActivate, ahk_id 0xa0f92
+; WinActivate, ahk_id 0xa0f92
+
+; SendInput, {F2}
+; Sleep, 100
+; SendInput, {Home}{DEL}{'}{ENTER}
+
+pp_text := "Hello World"
+MsgBox  % pp_text
+
 exit

@@ -27,7 +27,17 @@ return
   mm = %A_MM%
   dd = %A_DD%
   rdate := yr mm dd
-  SendInput,{Raw} %rdate%
+  SendInput,{Raw}%rdate%
+return
+;;;;;;;;
+:*:rdt`t::
+  yr = %A_YYYY%
+  mm = %A_MM%
+  dd = %A_DD%
+  hr = %A_hour%
+  min = %A_min%
+  rdatetime := yr mm dd "_" hr min
+  SendInput,{Raw}%rdatetime%
 return
 ;;;;;;;;
 :*:sdate`t::
@@ -170,13 +180,6 @@ Atlas Copco
 )
 SendInput,{Raw}%A_space%
 Return
-:*:acro`t::
-SendInput,{Raw}
-(
-ACRO (KUL - UCLL)
-)
-SendInput,{Raw}%A_space%
-Return
 :*:ad`t::
 SendInput,{Raw}
 (
@@ -228,13 +231,6 @@ afhankelijk
 )
 SendInput,{Raw}%A_space%
 Return
-:*:agv`t::
-SendInput,{Raw}
-(
-Automated Guided Vehicles 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:agvs`t::
 SendInput,{Raw}
 (
@@ -270,13 +266,6 @@ Aluro CNC
 )
 SendInput,{Raw}%A_space%
 Return
-:*:alur`t::
-SendInput,{Raw}
-(
-15-1039/c40/Aluro CNC verwerking scan
-)
-SendInput,{Raw}%A_space%
-Return
 :*:ancor`t::
 SendInput,{Raw}
 (
@@ -292,13 +281,6 @@ Return
 SendInput,{Raw}
 (
 Agentschap Ondernemen 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:app`t::
-SendInput,{Raw}
-(
-approximately 
 )
 SendInput,{Raw}%A_space%
 Return
@@ -332,13 +314,6 @@ SendInput,{Raw}
 )
 ;::scr::+{BS}@
 Return
-:*:atl`t::
-SendInput,{Raw}
-(
-16-2097/c40/Atlas Copco, cobot case rotor assemblage
-)
-SendInput,{Raw}%A_space%
-Return
 :*:aug`t::
 SendInput,{Raw}
 (
@@ -364,13 +339,6 @@ Return
 SendInput,{Raw}
 (
 Bedankt alvast en groetjes,
-)
-SendInput,{Raw}%A_space%
-Return
-:*:bar`t::
-SendInput,{Raw}
-(
-16-1046,01/c40/Barco interesse LWR robot - toekomstvisie 
 )
 SendInput,{Raw}%A_space%
 Return
@@ -473,14 +441,6 @@ Return
 SendInput,{Raw}
 (
 Best regards,
-)
-SendInput,{Raw}%A_space%
-Return
-:*:br`t::
-SendInput,{Raw}
-(
-Best regards,
-Jan.
 )
 SendInput,{Raw}%A_space%
 Return
@@ -719,7 +679,7 @@ Return
 :*:dov`t::
 SendInput,{Raw}
 (
-Véronique Dossogne 
+Véronique Dossogne
 )
 SendInput,{Raw}%A_space%
 Return
@@ -769,20 +729,6 @@ Return
 SendInput,{Raw}
 (
 en dergelijke 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:efro`t::
-SendInput,{Raw}
-(
-SALK MadeDifferent, Innovatie-Maat, 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:efrocr`t::
-SendInput,{Raw}
-(
-15-0287/c40/SALK MadeDifferent, Innovatie-Maat, 
 )
 SendInput,{Raw}%A_space%
 Return
@@ -1410,13 +1356,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:int`t::
-SendInput,{Raw}
-(
-interesse 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:inta`t::
 SendInput,{Raw}
 (
@@ -1442,13 +1381,6 @@ Return
 SendInput,{Raw}
 (
 Fraunhofer-IPA 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:ips`t::
-SendInput,{Raw}
-(
-14-2515/c40/Ipsum CNC
 )
 SendInput,{Raw}%A_space%
 Return
@@ -1772,13 +1704,6 @@ maandag
 )
 SendInput,{Raw}%A_space%
 Return
-:*:maat`t::
-SendInput,{Raw}
-(
-SALK MadeDifferent, Innovatie-Maat, 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:maatcr`t::
 SendInput,{Raw}
 (
@@ -1910,13 +1835,6 @@ Return
 SendInput,{Raw}
 (
 maand 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:moest`t::
-SendInput,{Raw}
-(
-Moest geen van deze data passen stel dan gerust enkele alternatieven voor.
 )
 SendInput,{Raw}%A_space%
 Return
@@ -2176,13 +2094,6 @@ Return
 SendInput,{Raw}
 (
 ontwikkeling 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:oo`t::
-SendInput,{Raw}
-(
-operatorondersteuning 
 )
 SendInput,{Raw}%A_space%
 Return
@@ -2596,13 +2507,6 @@ seminarie
 )
 SendInput,{Raw}%A_space%
 Return
-:*:sen`t::
-SendInput,{Raw}
-(
-scenario 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:sep`t::
 SendInput,{Raw}
 (
@@ -2808,14 +2712,6 @@ simultane product en productieontwikkeling
 )
 SendInput,{Raw}%A_space%
 Return
-:*:ss,`t::
-SendInput,{Raw}
-(
-Sincères salutations,
-Jan Kempeneers.
-)
-SendInput,{Raw}%A_space%
-Return
 :*:stava`t::
 SendInput,{Raw}
 (
@@ -2915,13 +2811,6 @@ To-Do's:
 )
 SendInput,{Raw}%A_space%
 Return
-:*:tech`t::
-SendInput,{Raw}
-(
-Technocampus 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:techno`t::
 SendInput,{Raw}
 (
@@ -2932,7 +2821,7 @@ Return
 :*:technol`t::
 SendInput,{Raw}
 (
-technologieïn 
+technologieën 
 )
 SendInput,{Raw}%A_space%
 Return
@@ -3045,13 +2934,6 @@ ten gevolge van
 )
 SendInput,{Raw}%A_space%
 Return
-:*:ti`t::
-SendInput,{Raw}
-(
-ter informatie ... 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:tia`t::
 SendInput,{Raw}
 (
@@ -3072,13 +2954,6 @@ Return
 SendInput,{Raw}
 (
 TipTop Belting 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:tit`t::
-SendInput,{Raw}
-(
-"SmartFactory for a sustainable production"
 )
 SendInput,{Raw}%A_space%
 Return
@@ -3275,13 +3150,6 @@ Return
 SendInput,{Raw}
 (
 Vandenbulcke Confiserie 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:verlof`t::
-SendInput,{Raw}
-(
-Inactive/A00/verlof
 )
 SendInput,{Raw}%A_space%
 Return
@@ -3506,13 +3374,6 @@ vvv-flexaut
 )
 SendInput,{Raw}%A_space%
 Return
-:*:wat`t::
-SendInput,{Raw}
-(
-14-2436,01/c40/IGWatteeuw 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:watt`t::
 SendInput,{Raw}
 (
@@ -3624,11 +3485,11 @@ Return
 :*:wwwh`t::
 SendInput,{Raw}
 (
+Wie?
+
 Wat?
 
 Waarom?
-
-Wie?
 
 Hoe?
 
@@ -3697,13 +3558,6 @@ Return
 SendInput,{Raw}
 (
 ----
-)
-SendInput,{Raw}%A_space%
-Return
-:*:lim`t::
-SendInput,{Raw}
-(
-16-3141/c40/Limar vraag ivm. optimalisatie productie (belading, digitalisatie,...) 
 )
 SendInput,{Raw}%A_space%
 Return
@@ -3931,13 +3785,6 @@ Fraunhofer ILT
 )
 SendInput,{Raw}%A_space%
 Return
-:*:rob`t::
-SendInput,{Raw}
-(
-17-1377/c40/RoboJob Industrie4.0
-)
-SendInput,{Raw}%A_space%
-Return
 :*:aluro`t::
 SendInput,{Raw}
 (
@@ -4013,13 +3860,6 @@ Return
 SendInput,{Raw}
 (
 versus
-)
-SendInput,{Raw}%A_space%
-Return
-:*:are`t::
-SendInput,{Raw}
-(
-17-1098,01/c40/Arendo Decapac AFG-matrijzen gerobotiseerd polijsten van matrijzen
 )
 SendInput,{Raw}%A_space%
 Return
@@ -4173,14 +4013,6 @@ Jan.
 )
 SendInput,{Raw}%A_space%
 Return
-:*:amp`t::
-SendInput,{Raw}
-(
-16-0262/C40/Demonstrator AM pilotEFRO - 
-)
-SendInput,{Raw}%A_space%
-Return
-
 :*:iot`t::
 SendInput,{Raw}
 (
@@ -4284,13 +4116,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:ist`t::
-SendInput,{Raw}
-(
-15-0272/b40/interreg smart tooling - ITIS UR10
-)
-SendInput,{Raw}%A_space%
-Return
 :*:imaa`t::
 SendInput,{Raw}
 (
@@ -4380,13 +4205,6 @@ Return
 SendInput,{Raw}
 (
 maart
-)
-SendInput,{Raw}%A_space%
-Return
-:*:oh`t::
-SendInput,{Raw}
-(
-Ophardt Horse
 )
 SendInput,{Raw}%A_space%
 Return
@@ -4785,13 +4603,6 @@ COPOLMOULD:
 )
 SendInput,{Raw}%A_space%
 Return
-:*:tamif`t::
-SendInput,{Raw}
-(
-AMIF:
-)
-SendInput,{Raw}%A_space%
-Return
 :*:tprov`t::
 SendInput,{Raw}
 (
@@ -4837,7 +4648,7 @@ SendInput,{Raw}%A_space%
 Return
 :*:geint`t::
 SendInput,{Raw}
-(
+(h
 geïnteresseerd
 )
 SendInput,{Raw}%A_space%
@@ -4861,7 +4672,7 @@ Return
 :*:gsk3pr`t::
 SendInput,{Raw}
 (
-18-2260,01/c40/démonstrateur dépalletisation chez GSK -
+18-2260,01/c40/démonstrateur dépalettisation chez GSK -
 )
 SendInput,{Raw}%A_space%
 Return
@@ -4901,13 +4712,6 @@ SendInput,{Raw}
 (
 mvg,
 Jan.
-)
-SendInput,{Raw}%A_space%
-Return
-:*:siradr`t::
-SendInput,{Raw}
-(
-Wetenschapspark 9, 3590 Diepenbeek
 )
 SendInput,{Raw}%A_space%
 Return
@@ -5025,13 +4829,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:tec`t::
-SendInput,{Raw}
-(
-TE Connectivity
-)
-SendInput,{Raw}%A_space%
-Return
 :*:teco`t::
 SendInput,{Raw}
 (
@@ -5119,13 +4916,6 @@ ________________________________________________________________________________
 ________________________________________________________________________________
 
 )
-Return
-:*:sp`t::
-SendInput,{Raw}
-(
-Smart Production Systems
-)
-SendInput,{Raw}%A_space%
 Return
 :*:oeo`t::
 SendInput,{Raw}
@@ -5305,20 +5095,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:socpro`t::
-SendInput,{Raw}
-(
-13-0064,06/C40/t-sdf-ak - social-act - 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:crypro`t::
-SendInput,{Raw}
-(
-13-0064,06/C40/t-sdf-ak - C*
-)
-SendInput,{Raw}%A_space%
-Return
 :*:twpro`t::
 SendInput,{Raw}
 (
@@ -5365,13 +5141,6 @@ Return
 SendInput,{Raw}
 (
 light weight robots
-)
-SendInput,{Raw}%A_space%
-Return
-:*:lgr`t::
-SendInput,{Raw}
-(
-lichtgewichtrobots
 )
 SendInput,{Raw}%A_space%
 Return
@@ -5632,13 +5401,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:se`t::
-SendInput,{Raw}
-(
-seitan-eindproduct
-)
-SendInput,{Raw}%A_space%
-Return
 :*:kse`t::
 SendInput,{Raw}
 (
@@ -5672,46 +5434,6 @@ Return
 SendInput,{Raw}
 (
 19-1794,01/c40/Group Nivelles - schuurtoepassing automatiseren - 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:meet`t::
-SendInput,{Raw}
-(
-________________________________________________________________________________
-MEETING:
-* Date:
-* Present:
-* Objective:
-
-________________________________________________________________________________
-NOTES:
-*
-
-)
-SendInput,{Raw}%A_space%
-Return
-:*:meetl`t::
-SendInput,{Raw}
-(
-________________________________________________________________________________
-MEETING:
-* Date:
-* Present:
-* Objective:
-
-________________________________________________________________________________
-AGENDA:
-*
-
-________________________________________________________________________________
-ACTION ITEMS:
-*
-
-________________________________________________________________________________
-NOTES:
-*
-
 )
 SendInput,{Raw}%A_space%
 Return
@@ -5771,13 +5493,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:crypro`t::
-SendInput,{Raw}
-(
-13-0064,06/C40/t-sdf-ak - C*
-)
-SendInput,{Raw}%A_space%
-Return
 :*:dit`t::
 SendInput,{Raw}
 (
@@ -5817,13 +5532,6 @@ Return
 SendInput,{Raw}
 (
 18-0283/c40/MD-Digital Wallonia 2018: pour le financement de Missionner des experts Industrie 4.0 pour approcher les entreprises et réaliser des scans approfondis -
-)
-SendInput,{Raw}%A_space%
-Return
-:*:conf`t::
-SendInput,{Raw}
-(
-Confiserie Elise
 )
 SendInput,{Raw}%A_space%
 Return
@@ -5926,13 +5634,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:verpro`t::
-SendInput,{Raw}
-(
-17-0253,01/c40/ic-futprodlight-oa-kul -
-)
-SendInput,{Raw}%A_space%
-Return
 :*:mader`t::
 SendInput,{Raw}
 (
@@ -5966,13 +5667,6 @@ Return
 SendInput,{Raw}
 (
 19-1097,01/c40/Bertyn - optimalisatie productieproces bio-seitan -
-)
-SendInput,{Raw}%A_space%
-Return
-:*:mgtpro`t::
-SendInput,{Raw}
-(
-13-0064,02/b50/t-sdf-mgt -
 )
 SendInput,{Raw}%A_space%
 Return
@@ -6103,13 +5797,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:vanpro`t::
-SendInput,{Raw}
-(
-19-2772,01/C40/Vandersanden -
-)
-SendInput,{Raw}%A_space%
-Return
 :*:overleggen`t::
 SendInput,{Raw}
 (
@@ -6202,13 +5889,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:bgl`t::
-SendInput,{Raw}
-(
-Bogaerts Greenhouse Logistics
-)
-SendInput,{Raw}%A_space%
-Return
 :*:sm`t::
 SendInput,{Raw}
 (
@@ -6237,17 +5917,10 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:vd`t::
-SendInput,{Raw}
-(
-van de
-)
-SendInput,{Raw}%A_space%
-Return
 :*:bat`t::
 SendInput,{Raw}
 (
-Bien à toi,
+Bien á toi,
 Jan.
 )
 SendInput,{Raw}%A_space%
@@ -6324,13 +5997,6 @@ Return
 SendInput,{Raw}
 (
 out-of-the-box
-)
-SendInput,{Raw}%A_space%
-Return
-:*:co`t::
-SendInput,{Raw}
-(
-Contract Ondernemerschap
 )
 SendInput,{Raw}%A_space%
 Return
@@ -6454,13 +6120,6 @@ Industrie Partnerschap
 )
 SendInput,{Raw}%A_space%
 Return
-:*:gm`t::
-SendInput,{Raw}
-(
-'Geconnecteerde machines'
-)
-SendInput,{Raw}%A_space%
-Return
 :*:gebg`t::
 SendInput,{Raw}
 (
@@ -6509,20 +6168,6 @@ Return
 SendInput,{Raw}
 (
 19-0234,11/C40/Contract Ondernemerschap - Groepscoaching connecting machines - 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:minpro`t::
-SendInput,{Raw}
-(
-19-0234,11/C40/Contract Ondernemerschap - Groepscoaching connecting machines - 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:st`t::
-SendInput,{Raw}
-(
-Stijn Lambrechts
 )
 SendInput,{Raw}%A_space%
 Return
@@ -6675,20 +6320,6 @@ don't hesitate to contact us for any further information.
 )
 SendInput,{Raw}%A_space%
 Return
-:*:hegpro`t::
-SendInput,{Raw}
-(
-21-1184/c40/Hegge, Mogelijkheden cobot voor handling,
-)
-SendInput,{Raw}%A_space%
-Return
-:*:gropro`t::
-SendInput,{Raw}
-(
-21-1238/c40/Group Nivelles - gieten solid surface met x-y automatisering, 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:coocob`t::
 SendInput,{Raw}
 (
@@ -6783,13 +6414,6 @@ Return
 SendInput,{Raw}
 (
 15-0309/C40/opleiding -
-)
-SendInput,{Raw}%A_space%
-Return
-:*:emapro`t::
-SendInput,{Raw}
-(
-13-0064,06/C40/t-sdf-ak - e-mail
 )
 SendInput,{Raw}%A_space%
 Return
@@ -6903,13 +6527,6 @@ Wetenschapspark 9, 3590 Diepenbeek
 )
 SendInput,{Raw}%A_space%
 Return
-:*:sirrisadr`t::
-SendInput,{Raw}
-(
-Wetenschapspark 9, 3590 Diepenbeek 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:sirrisadres`t::
 SendInput,{Raw}
 (
@@ -6953,24 +6570,10 @@ Bij vragen of onduidelijkheden, geef dan een seintje, dan kunnen we kort overleg
 )
 SendInput,{Raw}%A_space%
 Return
-:*:teapro`t::
-SendInput,{Raw}
-(
-21-1767/c40/TeamIndustries, cobotschuren -
-)
-SendInput,{Raw}%A_space%
-Return
 :*:team`t::
 SendInput,{Raw}
 (
 TeamIndustries
-)
-SendInput,{Raw}%A_space%
-Return
-:*:oplpro`t::
-SendInput,{Raw}
-(
-15-0309/C40/opleiding -
 )
 SendInput,{Raw}%A_space%
 Return
@@ -6999,13 +6602,6 @@ Return
 SendInput,{Raw}
 (
 TeamIndustries
-)
-SendInput,{Raw}%A_space%
-Return
-:*:coopro`t::
-SendInput,{Raw}
-(
-20-0224/c40/Coock COBOFIN -
 )
 SendInput,{Raw}%A_space%
 Return
@@ -7262,39 +6858,10 @@ face-to-face
 )
 SendInput,{Raw}%A_space%
 Return
-:*:cob`t::
-SendInput,{Raw}
-(
-COBOFIN
-)
-SendInput,{Raw}%A_space%
-Return
-:*:cobpro`t::
-SendInput,{Raw}
-(
-20-0224/c40/Coock COBOFIN -
-)
-SendInput,{Raw}%A_space%
-Return
-:*:coock`t::
-SendInput,{Raw}
-(
-Coock-COBOFIN
-)
-SendInput,{Raw}%A_space%
-Return
-
 :*:tripro`t::
 SendInput,{Raw}
 (
 2021-0236/c40/Trinity II, Malmar  -
-)
-SendInput,{Raw}%A_space%
-Return
-:*:malpro`t::
-SendInput,{Raw}
-(
-2021-0236/c40/Trinity II_Malmar -
 )
 SendInput,{Raw}%A_space%
 Return
@@ -7352,13 +6919,6 @@ Smart & Digital Factory
 )
 SendInput,{Raw}%A_space%
 Return
-:*:mcbpro`t::
-SendInput,{Raw}
-(
-17-0207/c40/Fokus-MCB - voorstelling 4.0MadeReal - 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:tbt`t::
 SendInput,{Raw}
 (
@@ -7370,13 +6930,6 @@ Return
 SendInput,{Raw}
 (
 21-2506/c40/POMLimburg - robotisatie -
-)
-SendInput,{Raw}%A_space%
-Return
-:*:adbpro`t::
-SendInput,{Raw}
-(
-21-2354,01/c40/ADB Safegate - Coaching regarding RFQ and offer evaluation for "automation assy reliance taxiway 8in" - 
 )
 SendInput,{Raw}%A_space%
 Return
@@ -7436,13 +6989,6 @@ Igor Kovac
 )
 SendInput,{Raw}%A_space%
 Return
-:*:jsi`t::
-SendInput,{Raw}
-(
-Jožef Stefan Institute
-)
-SendInput,{Raw}%A_space%
-Return
 :*:waapro`t::
 SendInput,{Raw}
 (
@@ -7464,14 +7010,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:th`t::
-SendInput,{Raw}
-(
-Terumo Haasrode
-)
-SendInput,{Raw}%A_space%
-Return
-
 :*:bu`t::
 SendInput,{Raw}
 (
@@ -7535,13 +7073,6 @@ Return
 SendInput,{Raw}
 (
 22-1036/c40/exmore - interesse cobot -schroeven -visie, -bin-picking -
-)
-SendInput,{Raw}%A_space%
-Return
-:*:coo`t::
-SendInput,{Raw}
-(
-COOCK
 )
 SendInput,{Raw}%A_space%
 Return
@@ -7755,13 +7286,6 @@ main()
 )
 SendInput,{Raw}%A_space%
 Return
-:*:fokpro`t::
-SendInput,{Raw}
-(
-17-0207/c40/interreg-fokus -
-)
-SendInput,{Raw}%A_space%
-Return
 :*:sirbtw`t::
 SendInput,{Raw}
 (
@@ -7776,20 +7300,14 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:vragen`t::
-SendInput,{Raw}
-(
-Bij vragen, aarzel niet! 
-)
-SendInput,{Raw}%A_space%
-Return
 :*:vragenuitleg`t::
 SendInput,{Raw}
 (
 Bij vragen of voor bijkomende uitleg, aarzel niet! 
 )
 SendInput,{Raw}%A_space%
-Return
+Return
+
 :*:abo`t::
 SendInput,{Raw}
 (
@@ -7803,18 +7321,12 @@ SendInput,{Raw}
 #cobot #finishing @sirris #cobofin
 )
 SendInput,{Raw}%A_space%
-Return
+Return
+
 :*:sanpro`t::
 SendInput,{Raw}
 (
 22-1757,01/c40/Sanha fittings - cobot automatisering montage en verpakking - 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:sf`t::
-SendInput,{Raw}
-(
-Sanha Fittings
 )
 SendInput,{Raw}%A_space%
 Return
@@ -7855,13 +7367,6 @@ Return
 SendInput,{Raw}
 (
 Grtjs, Jan. 
-)
-SendInput,{Raw}%A_space%
-Return
-:*:mr`t::
-SendInput,{Raw}
-(
-4.0MadeReal_v3
 )
 SendInput,{Raw}%A_space%
 Return
@@ -7920,12 +7425,14 @@ SendInput,{Raw}
 Inactive/A00/ziek
 )
 SendInput,{Raw}%A_space%
-Return
+Return
+
 :*:sirrisis2`t::
+:*:sirrisisnew`t::
 SendInput,{Raw}
 (
-Sirris is een ongebonden innovatie-centrum met expertise in o.a. industrie 4.0, IOT, data en artificial intelligence , circulaire economie en materialen, 3D printing,…
-Ons doel is om bedrijven op een onafhankelijke manier te ondersteunen en het vermijden van een vendor-push in een vroeg stadium. Om dit te realiseren hebben we 160 experten die naast hun ervaring binnen Sirris doorgaans ook een relevante ervaring hebben opgedaan bij technologie- en productiebedrijven. Daarnaast hebben we de beschikking over verschillende application labs waarin we demonstratoren kunnen realiseren aan beperkte kost om kritische zaken te testen . Hiermee kunnen risico’s ge-elimineerd worden en een betere inschatting gemaakt worden voor beoogde investeringen.
+Sirris is een ongebonden innovatie-centrum met expertise in o.a. industrie 4.0, IOT, data en artificial intelligence , circulaire economie en materialen, 3D printing,...
+Ons doel is om bedrijven op een onafhankelijke manier te ondersteunen en het vermijden van een vendor-push in een vroeg stadium. Om dit te realiseren hebben we 160 experten die naast hun ervaring binnen Sirris doorgaans ook een relevante ervaring hebben opgedaan bij technologie- en productiebedrijven. Daarnaast hebben we de beschikking over verschillende application labs waarin we demonstratoren kunnen realiseren aan beperkte kost om kritische zaken te testen . Hiermee kunnen risico's ge-elimineerd worden en een betere inschatting gemaakt worden voor beoogde investeringen.
 Sirris heeft uitgebreide ervaring met robots , cobots en automatisatie in het algemeen:
 https://www.sirris.be/nl/cobots
 https://youtu.be/gdy5v4qmEOM
@@ -7944,7 +7451,12 @@ SendInput,{Raw}
 Mvg, Jan.
 )
 SendInput,{Raw}%A_space%
-Return
+Return
+
+
+
+
+
 :*:mss`t::
 SendInput,{Raw}
 (
@@ -7968,13 +7480,6 @@ Jan.
 )
 SendInput,{Raw}%A_space%
 Return
-:*:akpro`t::
-SendInput,{Raw}
-(
-t-sdf-ak/C40/
-)
-SendInput,{Raw}%A_space%
-Return
 :*:collab`t::
 SendInput,{Raw}
 (
@@ -7993,7 +7498,7 @@ Return
 SendInput,{Raw}
 (
 Bedankt voor de mooie wensen. Hopelijk alles goed bij ____ en met jou!
-Alleszins ook voor jou, je collega’s en familie, fijne eindejaarsfeesten en een geweldig 2023 gewenst!
+Alleszins ook voor jou, je collega's en familie, fijne eindejaarsfeesten en een geweldig 2023 gewenst!
 Vriendelijke groeten,
 Jan. 
 )
@@ -8003,16 +7508,9 @@ Return
 SendInput,{Raw}
 (
 Bedankt voor de mooie wensen. Hopelijk alles goed bij ____ en met jou!
-Alleszins ook voor jou, je collega’s en familie, fijne eindejaarsfeesten en een geweldig 2023 gewenst!
+Alleszins ook voor jou, je collega's en familie, fijne eindejaarsfeesten en een geweldig 2023 gewenst!
 Vriendelijke groeten,
 Jan.
-)
-SendInput,{Raw}%A_space%
-Return
-:*:wensen`t::
-SendInput,{Raw}
-(
-Allereerst de beste wensen voor 2023!
 )
 SendInput,{Raw}%A_space%
 Return
@@ -8024,7 +7522,8 @@ Kind regards,
 Jan.
 )
 SendInput,{Raw}%A_space%
-Return
+Return
+
 :*:xline`t::
 SendInput,{Raw}
 (
@@ -8047,24 +7546,10 @@ oppervlakteruwheid
 )
 SendInput,{Raw}%A_space%
 Return
-:*:admin`t::
-SendInput,{Raw}
-(
-lt01223\ksjadmin
-)
-SendInput,{Raw}%A_space%
-Return
 :*:kmar`t::
 SendInput,{Raw}
 (
 Kristof Martens
-)
-SendInput,{Raw}%A_space%
-Return
-:*:grepro`t::
-SendInput,{Raw}
-(
-23-1120/c40/Greenergy - automatisering bouten aandraaien -
 )
 SendInput,{Raw}%A_space%
 Return
@@ -8075,13 +7560,6 @@ SendInput,{Raw}
 )
 SendInput,{Raw}%A_space%
 Return
-:*:cibpro`t::
-SendInput,{Raw}
-(
-23_1182/c40/cobotschuren -
-)
-SendInput,{Raw}%A_space%
-Return
 :*:etr`t::
 SendInput,{Raw}
 (
@@ -8089,10 +7567,1026 @@ Euro Tap Rent
 )
 SendInput,{Raw}%A_space%
 Return
+:*:fe`t::
+SendInput,{Raw}
+(
+for example
+)
+SendInput,{Raw}%A_space%
+Return
 :*:eurpro`t::
 SendInput,{Raw}
 (
-23-1237/c40/EuroTapRent - automatisering
+23-1237,01/c40/EuroTapRent, automatisering -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:recpro`t::
+:*:coopro`t::
+:*:rpapro`t::
+SendInput,{Raw}
+(
+23-0252/c40/Coock+_RPAS -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:walpro`t::
+SendInput,{Raw}
+(
+20-0296,05/c40/EDIH-Walhub_webinarCobots -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:madpro`t::
+:*:coo`t::
+SendInput,{Raw}
+(
+Coock+
+)
+SendInput,{Raw}%A_space%
+Return
+:*:etrpro`t::
+SendInput,{Raw}
+(
+23-1237,01/c40/EuroTapRent, automatisering -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:gropro`t::
+SendInput,{Raw}
+(
+23-1440/c40/Group Nivelles - gieten solid surface23-1440/c40/Group Nivelles - gieten solid surface simulatie -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:henpro`t::
+SendInput,{Raw}
+(
+23-1480/c40/Henco, vraag automatisering assemblage nieuw product -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:coock`t::
+SendInput,{Raw}
+(
+Coock+ ROBUST
+)
+SendInput,{Raw}%A_space%
+Return
+:*:robust`t::
+SendInput,{Raw}
+(
+Reconfigurable cOBotic prodUction AsSistanT (ROBUST)
+)
+SendInput,{Raw}%A_space%
+Return
+:*:coock+`t::
+SendInput,{Raw}
+(
+Coock+ ROBUST (Reconfigurable cOBotic prodUction AsSistanT)
+)
+SendInput,{Raw}%A_space%
+Return
+:*:enquete`t::
+SendInput,{Raw}
+(
+enquête
+)
+SendInput,{Raw}%A_space%
+Return
+:*:rob`t::
+SendInput,{Raw}
+(
+ROBUST
+)
+SendInput,{Raw}%A_space%
+Return
+:*:heipro`t::
+SendInput,{Raw}
+(
+23-1581/c40/Heinen Doors - cobots,
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cr`t::
+SendInput,{Raw}
+(
+Cibo Robotics
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cs`t::
+SendInput,{Raw}
+(
+CNC-Solutions
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cc`t::
+SendInput,{Raw}
+(
+CAD/CAM
+)
+SendInput,{Raw}%A_space%
+Return
+:*:stepro`t::
+SendInput,{Raw}
+(
+22-1608/c40/Stewal finishing -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:kk`t::
+SendInput,{Raw}
+(
+koelkasten
+)
+SendInput,{Raw}%A_space%
+Return
+:*:ca`t::
+SendInput,{Raw}
+(
+Cibo Abrasives
+)
+SendInput,{Raw}%A_space%
+Return
+:*:qdrloc`t::
+SendInput,{Raw}
+(
+C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\Q-Dir\Favoriten\projecten.qdr
+)
+SendInput,{Raw}%A_space%
+Return
+:*:ppu`t::
+SendInput,{Raw}
+(
+pay-per-use
+)
+SendInput,{Raw}%A_space%
+Return
+:*:vtes`t::
+SendInput,{Raw}
+(
+VTE's
+)
+SendInput,{Raw}%A_space%
+Return
+:*:nikpro`t::
+SendInput,{Raw}
+(
+23-1203,01/c40/Niko, cobotschuurtest -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:arcpro`t::
+SendInput,{Raw}
+(
+2023-1831/c44/Architectural Metals: haalbaarheidsstudie cobot
+)
+SendInput,{Raw}%A_space%
+Return
+:*:bgl`t::
+SendInput,{Raw}
+(
+begeleidingsgroepleden
+)
+SendInput,{Raw}%A_space%
+Return
+:*:malpro`t::
+SendInput,{Raw}
+(
+2023-1892/c40/Malmar, ondersteuning sturing cobot-LVD
+)
+SendInput,{Raw}%A_space%
+Return
+:*:sf`t::
+SendInput,{Raw}
+(
+smartfactory
+)
+SendInput,{Raw}%A_space%
+Return
+:*:minpro`t::
+SendInput,{Raw}
+(
+19-0234,11/C40/VLAIO-co-FoF algemeen - master class cobotschuren 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:acupro`t::
+SendInput,{Raw}
+(
+Ser-sem-ws-Acumen-20231016-27/c40/08-0843,54 - 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:sappro`t::
+SendInput,{Raw}
+(
+08-0843,08/c40/Sapim -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:titpro`t::
+SendInput,{Raw}
+(
+23-1874,01/c40/Titamed - kwaliteitscontrole 3D printed parts, 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:manpro`t::
+SendInput,{Raw}
+(
+2008-0843,72/c40/Mfd20233,
+)
+SendInput,{Raw}%A_space%
+Return
+:*:ksjfol`t::
+SendInput,{Raw}
+(
+c:\users\ksj
+)
+SendInput,{Raw}%A_space%
+Return
+:*:mfdpro`t::
+SendInput,{Raw}
+(
+2008-0843,72/c40/Mfd20233,
+)
+SendInput,{Raw}%A_space%
+Return
+:*:moest`t::
+SendInput,{Raw}
+(
+Moest geen van deze datums passen 
+stel dan gerust enkele alternatieven voor.
+dan zoeken we verder. 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:geen datum`t::
+SendInput,{Raw}
+(
+Moest geen van deze datums passen
+stel dan gerust enkele alternatieven voor.
+dan zoeken we verder.
+)
+SendInput,{Raw}%A_space%
+Return
+:*:vlapro`t::
+SendInput,{Raw}
+(
+vlaio-co-FA/C40/Contract Ondernemerschap - master class cobotschuren
+)
+SendInput,{Raw}%A_space%
+Return
+:*:hegpro`t::
+SendInput,{Raw}
+(
+23-2168/c40/Hegge, Mogelijkheden cobotschuren -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:coorob`t::
+SendInput,{Raw}
+(
+Coock+ ROBUST
+)
+SendInput,{Raw}%A_space%
+Return
+:*:wensen`t::
+SendInput,{Raw}
+(
+Allereerst de beste wensen voor het nieuwe jaar!
+
+)
+SendInput,{Raw}%A_space%
+Return
+:*:mstpro`t::
+SendInput,{Raw}
+(
+t-mst/c40/algemene activiteiten - 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:mgtpro`t::
+SendInput,{Raw}
+(
+t-mst-mgt/c40/management activiteiten -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:oplpro`t::
+SendInput,{Raw}
+(
+t-mst-learning/c40/deelname aan opleidingen, seminaries, conferenties -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:crypro`t::
+SendInput,{Raw}
+(
+t-mst-mgt/c40/management activiteiten - C*
+)
+SendInput,{Raw}%A_space%
+Return
+:*:socpro`t::
+SendInput,{Raw}
+(
+t-mst-team/c40/team activiteiten - social-act
+)
+SendInput,{Raw}%A_space%
+Return
+:*:teapro`t::
+SendInput,{Raw}
+(
+t-mst-team/c40/team activiteiten - social-act 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:atepro`t::
+SendInput,{Raw}
+(
+t-mst-atelier-Genk/c40/activiteiten werkplaats
+)
+SendInput,{Raw}%A_space%
+Return
+:*:sirrisadr`t::
+SendInput,{Raw}
+(
+Sirris, Thor park 8027 (FacThory), 3600 Genk
+)
+SendInput,{Raw}%A_space%
+Return
+:*:beon`t::
+SendInput,{Raw}
+(
+be- en ontladen
+)
+SendInput,{Raw}%A_space%
+Return
+:*:akpro`t::
+SendInput,{Raw}
+(
+2013-0078/C40/t-mst, algemene activiteiten, 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:crypro`t::
+SendInput,{Raw}
+(
+2013-0078/C40/t-mst, algemene activiteiten, C*
+)
+SendInput,{Raw}%A_space%
+Return
+:*:emapro`t::
+SendInput,{Raw}
+(
+2013-0078/C40/t-mst, algemene activiteiten, e-mail
+)
+SendInput,{Raw}%A_space%
+Return
+:*:adbs`t::
+SendInput,{Raw}
+(
+ADB Safegate
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:broodjes`t::
+SendInput,{Raw}
+(
+Dag Sarah,
+
+Kan je voor aanstaande vrijdagmiddag (25/08/2023) broodjes bestellen voor 3 personen voor levering in Diepenbeek?
+Projectnr. Is 23-1182
+
+Alvast bedankt!
+Met vriendelijke groeten,
+Jan. 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:broodjesbestellen`t::
+SendInput,{Raw}
+(
+Dag Sarah,
+
+Kan je voor aanstaande vrijdagmiddag (25/08/2023) broodjes bestellen voor 3 personen voor levering in Diepenbeek?
+Projectnr. Is 23-1182
+
+Alvast bedankt!
+Met vriendelijke groeten,
+Jan.
+)
+SendInput,{Raw}%A_space%
+Return
+:*:broodjesbest`t::
+SendInput,{Raw}
+(
+Dag Sarah,
+
+Kan je voor aanstaande vrijdagmiddag (25/08/2023) broodjes bestellen voor 3 personen voor levering in Diepenbeek?
+Projectnr. Is 23-1182
+
+Alvast bedankt!
+Met vriendelijke groeten,
+Jan.
+)
+SendInput,{Raw}%A_space%
+Return
+:*:downpat`t::
+SendInput,{Raw}
+(
+C:\Users\ksj\Downloads
+)
+SendInput,{Raw}%A_space%
+Return
+:*:siradr`t::
+SendInput,{Raw}
+(
+Sirris, Thor park 8027 (FacThory), 3600 Genk
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cw`t::
+SendInput,{Raw}
+(
+car-wash 2-cce-594
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:inhoudsvragen`t::
+SendInput,{Raw}
+(
+Wie:
+Wat:
+Waar:
+Wanneer:
+Waarom: 
+Hoe: 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:vijfwh`t::
+SendInput,{Raw}
+(
+Wie:%A_Tab%Wat:%A_Tab%Waar:%A_Tab%Wanneer:%A_Tab%Waarom:%A_Tab%Hoe:
+
+)
+SendInput,{Raw}%A_space%
+Return
+:*:labpro`t::
+SendInput,{Raw}
+(
+24-1138/c40/Laborex - robotreiniging, visie, 3dvisie -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:acro`t::
+SendInput,{Raw}
+(
+KUL-ACRO
+)
+SendInput,{Raw}%A_space%
+Return
+:*:gm`t::
+SendInput,{Raw}
+(
+gebruiksgemak
+)
+SendInput,{Raw}%A_space%
+Return
+:*:danpro`t::
+SendInput,{Raw}
+(
+24-1019,01/c40/Dana, coaching cobots - 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:pm`t::
+SendInput,{Raw}
+(
+projectmanagement
+)
+SendInput,{Raw}%A_space%
+Return
+:*:ui`t::
+SendInput,{Raw}
+(
+user interface
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cob`t::
+SendInput,{Raw}
+(
+COBOTASSIST
+)
+SendInput,{Raw}%A_space%
+Return
+:*:intcob`t::
+SendInput,{Raw}
+(
+Interreg-COBOTASSIST
+)
+SendInput,{Raw}%A_space%
+Return
+:*:robhbc`t::
+SendInput,{Raw}
+(
+HBC.2023.0463
+)
+SendInput,{Raw}%A_space%
+Return
+:*:carwash`t::
+SendInput,{Raw}
+(
+car-wash 2-cce-594
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:vijfws`t::
+SendInput,{Raw}
+(
+Wie:	Wat:	Waar:	Wanneer:	Waarom:	Hoe:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:vijfw`t::
+SendInput,{Raw}
+(
+Wie:	Wat:	Waar:	Wanneer:	Waarom:	Hoe:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:5w`t::
+SendInput,{Raw}
+(
+Wie:	Wat:	Waar:	Wanneer:	Waarom:	Hoe:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:ti`t::
+SendInput,{Raw}
+(
+ter info:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:notemd`t::
+SendInput,{Raw}
+(
+> [!Note]
+)
+SendInput,{Raw}%A_space%
+Return
+:*:wvng`t::
+SendInput,{Raw}
+(
+Ward Vanongeval
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:mvgtd`t::
+SendInput,{Raw}
+(
+Met vriendelijke groeten en tot dan!
+Jan. 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:kompro`t::
+SendInput,{Raw}
+(
+2024-1551/c40/Komotion(Vitalo) -
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:ikv`t::
+SendInput,{Raw}
+(
+in kader van
+)
+SendInput,{Raw}%A_space%
+Return
+:*:htn`t::
+SendInput,{Raw}
+(
+HighTechNL
+)
+SendInput,{Raw}%A_space%
+Return
+:*:verpro`t::
+SendInput,{Raw}
+(
+Inactive/A00/verlof
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:amipro`t::
+SendInput,{Raw}
+(
+22-0288/c40/Dig-mgt _efro-pilootlijn - 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:vragen`t::
+SendInput,{Raw}
+(
+Bij vragen, aarzel niet! 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:mr`t::
+SendInput,{Raw}
+(
+4.0 Made Real
+)
+SendInput,{Raw}%A_space%
+Return
+:*:sirleuadr`t::
+SendInput,{Raw}
+(
+Gaston Geenslaan 8, 3001 Heverlee
+)
+SendInput,{Raw}%A_space%
+Return
+:*:exppro`t::
+SendInput,{Raw}
+(
+2013-0078,06
+)
+SendInput,{Raw}%A_space%
+Return
+:*:tbd`t::
+SendInput,{Raw}
+(
+teach-by-demonstration
+)
+SendInput,{Raw}%A_space%
+Return
+:*:tvt`t::
+SendInput,{Raw}
+(
+terugverdientijd
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:lgr`t::
+SendInput,{Raw}
+(
+lichtgewichtrobot 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:pedpro`t::
+SendInput,{Raw}
+(
+2024-1697,01/c40/Pedeo-schuren met cobot - 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:bwa`t::
+SendInput,{Raw}
+(
+Ook van mij de beste wensen voor 2025!
+)
+SendInput,{Raw}%A_space%
+Return
+:*:kg`t::
+SendInput,{Raw}
+(
+klankbordgroep
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:htnl`t::
+SendInput,{Raw}
+(
+HighTech NL 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:br`t::
+SendInput,{Raw}
+(
+Best regards,
+Jan.
+)
+SendInput,{Raw}%A_space%
+Return
+:*:breda`t::
+SendInput,{Raw}
+(
+Breda Robotics
+)
+SendInput,{Raw}%A_space%
+Return
+:*:brero`t::
+SendInput,{Raw}
+(
+Breda Robotics
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cols`t::
+SendInput,{Raw}
+(
+collaboratieve robots
+)
+SendInput,{Raw}%A_space%
+Return
+:*:col`t::
+SendInput,{Raw}
+(
+collaboratieve robot
+)
+SendInput,{Raw}%A_space%
+Return
+:*:brob`t::
+SendInput,{Raw}
+(
+Breda Robotics
+)
+SendInput,{Raw}%A_space%
+Return
+:*:berob`t::
+SendInput,{Raw}
+(
+Breda Robotics
+)
+SendInput,{Raw}%A_space%
+Return
+:*:syntra`t::
+SendInput,{Raw}
+(
+Syntra PXL
+)
+SendInput,{Raw}%A_space%
+Return
+:*:brerob`t::
+SendInput,{Raw}
+(
+Breda Robotics
+)
+SendInput,{Raw}%A_space%
+Return
+:*:fc`t::
+SendInput,{Raw}
+(
+flexibele cobotschuurcel
+)
+SendInput,{Raw}%A_space%
+Return
+:*:ducpro`t::
+SendInput,{Raw}
+(
+25-1216/c40/Duco - techno-economische haalbaarheidsstudie naar het automatiseren van het beladen/ontladen van een teststation en verpakking
+)
+SendInput,{Raw}%A_space%
+Return
+:*:kbg`t::
+SendInput,{Raw}
+(
+klankbordgroep
+)
+SendInput,{Raw}%A_space%
+Return
+:*:vd`t::
+SendInput,{Raw}
+(
+van de
+)
+SendInput,{Raw}%A_space%
+Return
+:*:robpro`t::
+SendInput,{Raw}
+(
+23-0252,03/c40/Coock+_ROBUST - 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:pilpro`t::
+SendInput,{Raw}
+(
+22-0288,02/c40/Dig-mgt _efro-pilootlijn - 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:efrpro`t::
+SendInput,{Raw}
+(
+22-0288,02/c40/Dig-mgt _efro-pilootlijn - 
+)
+SendInput,{Raw}%A_space%
+Return
+
+
+:*:eripro`t::
+SendInput,{Raw}
+(
+25-1261/c40/Eric Banden, interesse inzetbaarheid humanoid robots,
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cobpro`t::
+SendInput,{Raw}
+(
+22-0235,02/b50/Interreg-CobotAssist -
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:cdcpro`t::
+SendInput,{Raw}
+(
+25-1271/c40/CDC - Constructs, cobot finishing, 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:adbpro`t::
+SendInput,{Raw}
+(
+2024-1187/c40/ADB Safegate - new layout warehouse and production Project fase 2 - optimalisatie logistieke flows en operaties 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cdc`t::
+SendInput,{Raw}
+(
+CD Constructs
+)
+SendInput,{Raw}%A_space%
+Return
+
+:*:Wanneer:`t::
+SendInput,{Raw}
+(
+Waarom:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:meetl`t::
+SendInput,{Raw}
+(
+________________________________________________________________________________
+MEETING:
+* Date:
+* Present:
+* Objective:
+
+________________________________________________________________________________
+AGENDA:
+*
+
+________________________________________________________________________________
+ACTION ITEMS:
+* what, who, when
+
+________________________________________________________________________________
+NOTES:
+*
+
+)
+SendInput,{Raw}%A_space%
+Return
+:*:meet`t::
+SendInput,{Raw}
+(
+________________________________________________________________________________
+MEETING:
+* Date:
+* Present:
+* Objective:
+
+________________________________________________________________________________
+NOTES:
+* 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:intcoblink`t::
+SendInput,{Raw}
+(
+https://interregvlaned.eu/cobotassist/over-ons
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cibpro`t::
+SendInput,{Raw}
+(
+23-2091/c40/Cibo, cobotschuren - 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:roses`t::
+SendInput,{Raw}
+(
+Role: your are ,Objective: , Scenario:, Expected outcome: , Steps:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:rosesme`t::
+SendInput,{Raw}
+(
+Role: your are me. A consultant for manufacturing companies with expertise in cobots for finishing operations and expertise in flexible automation for high-mix low volume manufacturing in general. ,Objective: , Scenario:, Expected outcome: , Steps:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:punpro`t::
+SendInput,{Raw}
+(
+25-1471/c40/punchMetals, cobotschuren -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:www`t::
+SendInput,{Raw}
+(
+wie:
+waarom:
+wat:
+wanneer:
+hoe: 
+)
+SendInput,{Raw}%A_space%
+Return
+:*:inter`t::
+SendInput,{Raw}
+(
+Interreg
+)
+SendInput,{Raw}%A_space%
+Return
+:*:tts`t::
+SendInput,{Raw}
+(
+text-to-speech
+)
+SendInput,{Raw}%A_space%
+Return
+:*:vanpro`t::
+SendInput,{Raw}
+(
+2025-1274/B50/Vandewiele,
+)
+SendInput,{Raw}%A_space%
+Return
+:*:replypr`t::
+SendInput,{Raw}
+(
+Antwoord op mail in bijlage: Inhoud:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:prmail`t::
+SendInput,{Raw}
+(
+Mail aan: Inhoud:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:prreply`t::
+SendInput,{Raw}
+(
+Antwoord op mail in bijlage: Inhoud:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:mailpr`t::
+SendInput,{Raw}
+(
+Mail aan: Inhoud:
+)
+SendInput,{Raw}%A_space%
+Return
+:*:cobopro`t::
+SendInput,{Raw}
+(
+20-0224/c40/COOCK COBOFIN, rapport 2 jaar na afloop
+)
+SendInput,{Raw}%A_space%
+Return
+:*:stapro`t::
+SendInput,{Raw}
+(
+25-1389,01/c40/Stas_OnO_voorbereiding_paprika_knip_oplossing -
+)
+SendInput,{Raw}%A_space%
+Return
+:*:nodejs`t::
+SendInput,{Raw}
+(
+run --name nodejs -it --rm --entrypoint sh node:22-alpine
 )
 SendInput,{Raw}%A_space%
 Return

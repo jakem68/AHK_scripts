@@ -7,7 +7,7 @@ loop, % rooms.MaxIndex()
   SendInput, % "mr-leuven-" rooms[A_index]
   ;msgbox % roomstr
   SendInput, {Enter}
-  sleep, 0.5
+  sleep, 3000
   }
 exit
 , "pascal (Leuven)", "tesla (leuven)", "archimedes (leuven)", "da vinci (leuven)", "newton (leuven)", "1 watt (leuven)", "2 watt (leuven)", "3 watt (leuven)"

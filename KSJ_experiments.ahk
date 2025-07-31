@@ -7,8 +7,40 @@ Groupadd, grouptemp, Junk Email - Jan.Kempeneers@sirris.be - Outlook
 Groupadd, grouptemp, In_prio1 - Jan.Kempeneers@sirris.be - Outlook
 Groupadd, grouptemp, In_prio2 - Jan.Kempeneers@sirris.be - Outlook
 Groupadd, grouptemp, In_prio3 - Jan.Kempeneers@sirris.be - Outlook
-;Setkeydelay, 20, 15
-                                                       
+Setkeydelay, 20, 15
+
+_array := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\array_input.ini"
+
+; browser variable names as used in array file (these references are used in line 196)
+; _jc := """C:\Program Files\Google\Chrome\Application\chrome.exe"" --profile-directory=""Profile 1"" --new-window --start-maximized"
+; _kc := """C:\Program Files\Google\Chrome\Application\chrome.exe"" --profile-directory=""Default"" --new-window --start-maximized"
+; _sc := """C:\Program Files\Google\Chrome\Application\chrome.exe"" --profile-directory=""Profile 2"" --new-window --start-maximized"
+; _ke := """C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"" --profile-directory=""Profile 1"" --new-window --start-maximized"
+; _je := """C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"" --profile-directory="""" --new-window --start-maximized"
+; _se := """C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"" --profile-directory=""Default"" --new-window --start-maximized"
+; _kb := """C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"" --profile-directory=""Profile 1"" --new-window --start-maximized"
+; _sb := """C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"" --profile-directory=""Default"" --new-window --start-maximized"
+
+global browsers := {brave_profile_ksj : """C:\Users\ksj\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe"" --profile-directory=""Profile 1"" --new-window --start-maximized"
+  ,chrome_profile_ksj : """C:\Program Files\Google\Chrome\Application\chrome.exe"" --profile-directory=""Default"" --new-window --start-maximized"
+  ,chrome_profile_sirris : """C:\Program Files\Google\Chrome\Application\chrome.exe"" --profile-directory=""Profile 2"" --new-window --start-maximized"
+  ,chrome_profile_jan : """C:\Program Files\Google\Chrome\Application\chrome.exe"" --profile-directory=""Profile 1"" --new-window --start-maximized"
+  ,edge_profile_ksj : """C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"" --profile-directory=""Profile 1"" --new-window --start-maximized"
+  ,edge_profile_jan : """C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"" --profile-directory=""Profile 1"" --new-window --start-maximized"
+  ,edge_profile_sirris : """C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"" --profile-directory=""Default"" --new-window --start-maximized"}
+  ; ,_kb : """C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"" --profile-directory=""Profile 1"" --new-window --start-maximized"}
+  global default_browser := browsers["brave_profile_ksj"]
+  ; default_browser := browsers["edge_profile_ksj"]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; MsgBox % _chrome
+; run % _chrome
+
+; MsgBox % _jc
+; run % _jc
+; exit
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;;;; hotkeys ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;/* 
 ;#	Win 
@@ -20,28 +52,28 @@ Groupadd, grouptemp, In_prio3 - Jan.Kempeneers@sirris.be - Outlook
 
 ;;; run at startup
 ;Run, "C:\Program Files\Microsoft Office\root\Office16\outlook.exe" /select outlook:Inbox
-Run, "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://app.asana.com/0/3699102645008/board
+; Run, "C:\Program Files\Google\Chrome\Application\chrome.exe" --profile-directory="Default" --new-window --start-maximized https://app.asana.com/0/3699102645008/board
 
 
 ;program to detect what is entered in USB port and start program based on usb device entered if required.
-;run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\autostartUSB.ahk"
+;run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\autostartUSB.ahk"
 
 ;;;; reload this script
 F2 & r::reload
 
 ;;;; edit this script
-;F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
-F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
+;F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\PSPad editor\PSPad.exe" "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
+F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
 
 ;;;; pause script
 F2 & p::pause
 
 ;;;; run windowinfo
-F2 & w::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\windowinfo.ahk"
+F2 & w::run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\windowinfo.ahk"
 
 ;;;; run temporary program
-; F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\tmp.ahk"
-F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\experiments\clicks_ksj.ahk"
+F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\tmp.ahk"
+; F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\experiments\clicks_ksj.ahk"
 
 ; ;;;; start explorer in links (=windows + e)
 ; #e::
@@ -52,22 +84,6 @@ F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHot
 ;   }
 ; return
   
-;;;;
-; Escape & l::
-;   {
-;   SendInput, {CtrlDown}c{CtrlUp}
-;   Sleep, 0.1
-;   SendInput, !{Tab}
-;   Sleep, 0.1
-;   SendInput, {F6}
-;   Sleep, 0.1
-;   SendInput, ^v
-; ;  SendInput, %clipboard%
-;   Sleep, 0.1
-;   SendInput, {Enter}
-;   }
-;  return
-
 ;;;; tile windows 
 ;F1 & v::DllCall( "TileWindows", uInt,0, Int,0, Int,0, Int,0, Int,0 ) ; Tile Vertically
 ;F1 & h::DllCall( "TileWindows", uInt,0, Int,1, Int,0, Int,0, Int,0 ) ; Tile Horizontally
@@ -86,8 +102,6 @@ Escape & s::
 return
 ;;;;
 
-
-
 ;;;; To give F1 back it's original function (only on release of button without another button being pressed)
 ;;;; niet met letters doen want bij snel typen lukt de letter niet meer
 F1::SendInput {F1}
@@ -97,13 +111,12 @@ F2::SendInput {F2}
 
 
 ;;;; launch browser with application or resp. launch application
-
 F1 & j::
     msgbox, , , still mistaking :-), 2
 return
 
 ; Escape & k::
-;   run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\programming scripts\python\venv\Scripts\pythonw.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\programming scripts\python\pc_automation\ksj_experiments_replacement.pyw"
+;   run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\programming scripts\python\venv\Scripts\pythonw.exe" "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\programming scripts\python\pc_automation\ksj_experiments_replacement.pyw"
 ; return
 
 Escape & j::
@@ -116,113 +129,127 @@ Escape & j::
     msgbox, , , all revved up and nowhere to go, 1
     return
     }
-      
-  else if (launchprogram="apps" or launchprogram = "kapps" or launchprogram = "japps")
-    { 
-    if (launchprogram = "apps" or launchprogram = "kapps")
-      { 
-      run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory=Default  --new-window 
-      sleep 500
-      SendInput chrome://apps
-      SendInput {enter} 
-      }
-    else if(launchprogram="japps")
-      { 
-      run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1" --new-window
-      sleep 500
-      SendInput chrome://apps
-      SendInput {enter} 
-      }
-      return
-    }
- 
 ; add other exceptions that don't lookup in input_array here above
   
   else
     {
-; separate user entered string in first part (= launchprogram) and second part (= everything else), first part is used to run function_lut(), second part can be used in exceptions to do something extra
-;    clipboard = %launchprogram%  -- deactivated because too annoying
+; separate 'user entered string' in first part (= launchprogram) and second part (= everything else), 
+; first part is used to run function_lut(), second part can be used in exceptions to do something extra
+;    clipboard = %launchprogram%  ;-- deactivated because too annoying
     original_text = %launchprogram%
     StringSplit, launchprogram_array, launchprogram, %A_Space% ;, .  ; Omits periods
 
-      launchprogram = %launchprogram_array1%
+    launchprogram = %launchprogram_array1%
 
-      launchprogram_extension = %launchprogram_array2%          
-      counter := launchprogram_array0 - 2
-      Loop, %counter%
-        {
-        launchprogram_extension := launchprogram_extension . A_Space
-        i := a_index + 2
-        launchprogram_extension := launchprogram_extension . launchprogram_array%i%
-        }
+    launchprogram_extension = %launchprogram_array2%          
+    counter := launchprogram_array0 - 2
+    Loop, %counter%
+      {
+      launchprogram_extension := launchprogram_extension . A_Space
+      i := a_index + 2
+      launchprogram_extension := launchprogram_extension . launchprogram_array%i%
+      }
 ; clear the launchprogram_array so stuff doesn't stay in for the next time
-      Loop, % launchprogram_array0
-        {
-        launchprogram_array%a_index% := ""
-        }
-      }
-;
-
-
-    function_lut()   ; line 517
-
-    if target =
+    Loop, % launchprogram_array0
       {
-      msgbox, 4, , I don't understand. Do you want to add "%launchprogram%" as a new shortcut?, 5
-      ifmsgbox timeout
-      	{
-      	clipboard = %original_text% 
-        return
-      	}
-      ifmsgbox no
-      	{
-      	clipboard = %original_text%
-        ; run "C:\Users\ksj\OneDrive - Sirris\_Projecten"
-        return
-        }
-      run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input.ini"
+      launchprogram_array%a_index% := ""
+      }    
+    }
+
+  function_lut()   ; line 569, here global variable 'target' is set
+
+  if target =
+    {
+    msgbox, 4, , I don't understand. Do you want to add "%launchprogram%" as a new shortcut?, 5
+    clipboard = %original_text% 
+    ifmsgbox timeout
+      {
+      ; clipboard = %original_text% 
+      return
       }
+    ifmsgbox no
+      {
+      ; clipboard = %original_text%
+      ; run "C:\Users\ksj\OneDrive - Sirris\_Projecten"
+      return
+      }
+    run % _array
+    return
+    }
 ;exceptions
-    ; checks whether more than one word have been entered as input
-    if % launchprogram_array0 > 1
-      {
-        ; checks for which program the remaining words are ment
-        IfInString, target, outlook.exe
-          {
-            run %target%
-            sleep, 1000
-            winactivate 
-  ;          SendInput, {LWin Down}{Up}{LWin Up}
-            SendInput, ^e
-            SendInput, %launchprogram_extension%
-            SendInput, {Enter}
-            sleep, 1250
-           SendInput, +{TAB 3}
-          }
-        IfInString, target, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
-          {
-            run %target%
-            sleep 3000
-            winactivate
-            SendInput, %launchprogram_extension%
-            SendInput, {Enter}
-          }
-      }
-    ; run the target
-    else
-      {   
-        run %target%
-        
-        ; msgbox, , , executed simple run
+; check for browser specification in target 
+  browser := f_browser_in_target(target)
+  directory := f_target_is_directory(target)
 
-        sleep 500
+  ; checks whether more than one word have been entered as input after Escape & j
+  if % launchprogram_array0 > 1
+    {
+    ; checks for which program the remaining words are meant
+    ; if target has the term outlook.exe, remaining text is for outlook
+    IfInString, target, outlook.exe
+      {
+      run %target%
+      sleep, 1500
+      winactivate 
+;          SendInput, {LWin Down}{Up}{LWin Up}
+      sleep, 125
+      SendInput, ^e
+      SendInput, %launchprogram_extension%
+      SendInput, {Enter}
+      SendInput, +{TAB 3}
+      }    
+    ; if target starts with browser shortcut, remaining text is for browser input
+    if RegExMatch(target, "^(https?://|www\.)[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(/\S*)?$")
+      {
+        Run, %default_browser%
+        sleep, 1000
         winactivate 
-        ; Winmaximize, A
+        SendInput, %launchprogram_extension%
+        SendInput, {Enter}
       }
+    }
+  ; If only one word was entered in input field after escape & j 
+  ; and the target contains a browser shortcut
+  if(browser)
+    {
+    StringSplit, target_array, target, %A_Space%
+    url := % target_array2
+    if (launchprogram_extension)
+    {
+      Run, %browser% %url%
+      sleep, 2000
+      winactivate 
+      SendInput, %launchprogram_extension%
+      SendInput, {Enter}
+    } else {
+      Run, %browser% %url%
+    }
+    browser := ""
+    }
+  ; run the target
+  ; check if target is url, then choose default browser (new window, maximized) and run url
+  else if RegExMatch(target, "^(https?://|www\.)[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(/\S*)?$")
+    {
+      Run, %default_browser% %target%
+    }
+  ; check if target is directory, then choose file explorer and run dir path
+  else if(directory)
+    {
+      ; MsgBox, % "Directory found: " . target
+      file_explorer := "C:\Users\ksj\AppData\Local\Microsoft\WindowsApps\onecommander.exe"
+      Run, %file_explorer% %target%
+    }
+  else if % launchprogram_array0 < 2
+    {
+    run %target%
+    sleep 500
+    winactivate
+    }
 return
 
+; run enter new hotstring script
 ^+h::
-run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\hotstring_new_entry.ahk"
+run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\hotstring_new_entry.ahk"
 return
 
 
@@ -264,15 +291,29 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     ;;;;
     
     ;;;; change font color to pen (blue) in Word
+    ; Escape & p::
+    ;   SendInput {Alt}
+    ;   Sleep, 100
+    ;   SendInput H
+    ;   SendInput FC
+    ;   SendInput {down 1}
+    ;   SendInput {right 4}
+    ;   SendInput {enter}
+    ;   f_if_windowNotMax_pressAlt()
+    ; return
     Escape & p::
       SendInput {Alt}
       Sleep, 100
       SendInput H
-      SendInput FC
-      SendInput {down 1}
-      SendInput {left 4}
-      SendInput {enter}
-      f_if_windowNotMax_pressAlt()
+      SendInput FCM
+      Sleep, 200
+      MouseClick, Left, 100, 50
+      SendInput {TAB 7}
+      SendInput {#}
+      SendInput, 0070C0
+      SendInput {TAB}
+      SendInput {Enter}
+      ; f_if_windowNotMax_pressAlt()
     return
     ;;;;
 
@@ -329,7 +370,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     ;;;;
 
     ;;;; NO marker in Word
-    Escape & n::
+    Escape & w::
       SendInput {Alt}
       Sleep, 100
       if WinActive("ahk_class OpusApp") 
@@ -337,6 +378,18 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
       if WinActive("ahk_exe OUTLOOK.EXE") 
           SendInput HI1N
       f_if_windowNotMax_pressAlt()
+    return
+
+    ;;;; legal numbering 1
+    Escape & i::
+    if WinActive("ahk_class OpusApp") 
+      run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\word-i.ahk"
+  return
+
+    ;;;; legal numbering > 1
+    Escape & n::
+      if WinActive("ahk_class OpusApp") 
+        run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\word-n.ahk"
     return
     ;;;;
 }
@@ -449,7 +502,7 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
     return
   ;;;; e-mail the open message without deferring (=assign category sendNow and send)
     Escape & m::
-      run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-sendNow.ahk"
+      run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\outlook-sendNow.ahk"
     return
 
 
@@ -481,16 +534,19 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 
 
 
-;▀▄▀▄▀▄ [ chrome ] ▄▀▄▀▄▀
+;▀▄▀▄▀▄ [ chrome, Edge, Visual Studio Code ] ▄▀▄▀▄▀
 ;;;; only in chrome
 #ifWinActive, ahk_class Chrome_WidgetWin_1
 
   ;;;; pull tab into seperate window
-   Alt & w::
-    SendInput, {F6}
-    Sleep, 100
-    SendInput, {ctrldown}{c}{ctrlup}
-    SendInput, {ctrldown}{w}{n}{v}{ctrlup}{Enter}
+   Escape & w::
+    SendInput, !d
+    sleep 250
+    SendInput, ^c
+    SendInput, ^w
+    SendInput, ^n
+    SendInput, ^v
+    SendInput, {Enter}
   return
   ;;;;
   
@@ -499,13 +555,13 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
     ;   WinGetTitle, Title, A
     ;   if Title = ABSENCE_DASHBOARD(MIT) - Google Chrome
     ;   {
-    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing.ahk"  
+    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing.ahk"  
     ;   }
     ; Escape & n::
     ;   WinGetTitle, Title, A
     ;   if Title = Crystal - Google Chrome
     ;   {
-    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing2.ahk"  
+    ;     run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing2.ahk"  
     ;   }
       
     
@@ -513,11 +569,8 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 ;;;;
 
 
-
-
-
 ;;;; include other ahk files in this script without pasting them in
-;#Include C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts 
+;#Include C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -525,9 +578,9 @@ if(WinActive("ahk_exe OUTLOOK.EXE")){
 function_lut() ;look up target
 {
   global target =
-  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input.ini"
-  post_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input_post.txt"
-  pre_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input_pre.txt"   
+  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\array_input.ini"
+  post_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\array_input_post.txt"
+  pre_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\array_input_pre.txt"   
   targetfound := ""
   space := " "
   Loop, read, %myFile%, %pre_myFile%
@@ -550,8 +603,6 @@ function_lut() ;look up target
           ifequal, A_loopfield, %launchprogram%
             {
             target = %last_field%
-
-
             return
             }
       }
@@ -559,13 +610,89 @@ function_lut() ;look up target
   return
 }
 
+f_browser_in_target(target)
+{
+  for key, value in browsers
+    IfInString, target, %key%
+    {
+      browser := value
+    }
+  return browser
+}
+
+; directory matcher
+; f_target_is_directory(target)
+; {
+;   StringLower, target_lower, target
+;   target_lower := SubStr(target_lower, 2, StrLen(target_lower)-2) ; removes file extension
+;   pattern1 := "^c:\\.*"
+;   pattern2 := "^\\\\backbone.sirris.be\\.*"
+;   pattern3 := ".*shortcut\.lnk$"
+;   if (RegExMatch(target_lower, pattern1)) {
+;     ; Check if the string starts with "c:\" and contains no "."
+;     if !InStr(target_lower, ".") {
+;       directory := 1
+;     } else if (RegExMatch(target_lower, pattern3)) {
+;       ; a shortcut was found, containing the word shortcut, by ksj convention then it is still a directory
+;       directory := 1
+;     }
+;   } else if (RegExMatch(target_lower, pattern2)) {
+;     ; Extract the remainder of the string after "\\backbone.sirris.be\"
+;     remainder := SubStr(target_lower, StrLen("\\backbone.sirris.be\\") + 1)
+;     ; Check if the remainder contains no "."
+;     if !InStr(remainder, ".") {
+;       directory := 1
+;     }
+;   }
+;   return directory
+; }
+
+f_target_is_directory(target)
+{
+  StringLower, target_lower, target
+  remove_words := {"4.0":"", "backbone.sirris.be":""}
+  target_lower := f_remove_substrings(target_lower, remove_words)
+    if !InStr(target_lower, ".") {
+      directory := 1
+    }
+  ; pattern1 := "^c:\\.*"
+  ; pattern2 := "^\\\\backbone.sirris.be\\.*"
+  ; pattern3 := ".*shortcut\.lnk$"
+  ; if (RegExMatch(target_lower, pattern1)) {
+  ;   ; Check if the string starts with "c:\" and contains no "."
+  ;   if !InStr(target_lower, ".") {
+  ;     directory := 1
+  ;   } else if (RegExMatch(target_lower, pattern3)) {
+  ;     ; a shortcut was found, containing the word shortcut, by ksj convention then it is still a directory
+  ;     directory := 1
+  ;   }
+  ; } else if (RegExMatch(target_lower, pattern2)) {
+  ;   ; Extract the remainder of the string after "\\backbone.sirris.be\"
+  ;   remainder := SubStr(target_lower, StrLen("\\backbone.sirris.be\\") + 1)
+  ;   ; Check if the remainder contains no "."
+  ;   if !InStr(remainder, ".") {
+  ;     directory := 1
+  ;   }
+  ; }
+  return directory
+}
+
+
+f_remove_substrings(my_string, substrings)
+{
+  For word, new_word in substrings {
+    StringReplace, my_string, my_string, %word%, %new_word%, All 
+  }
+  return my_string
+}
+
+
 f_if_windowNotMax_pressAlt()
 {
   WinGet,WinState,MinMax
   If WinState = 0   ; window is neither maximized nor minimized
     SendInput {AltDown}
     SendInput {AltUp}
-  ; MsgBox, helaba
 }
 
 

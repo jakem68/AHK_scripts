@@ -1,3 +1,4 @@
+; script to call cleanmail macro in outlook
 Setkeydelay, 50, 10
 Send {Alt}
 SendInput, jdmm

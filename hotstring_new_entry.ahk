@@ -1,6 +1,6 @@
 ; Script to enter new hotstring
 
-global destinationfile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings.ahk"
+global destinationfile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings.ahk"
 global abbr
 global longText
 global returnCode
@@ -49,7 +49,7 @@ else if (returnCode = 2)
     f_swapfiles()
   }
 }
-run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotkey_1.1.35.00\Template.ahk"
+run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotkey_1.1.35.00\Template.ahk"
 
 ExitApp
 
@@ -143,8 +143,8 @@ f_checkForExisting()
 
 f_findAndDeleteEntry() 
 {
-  preMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_pre.txt"
-  postMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_post.txt"
+  preMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_pre.txt"
+  postMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_post.txt"
   
   fileRead, fileContent, %destinationfile%
   string = :*:%abbr%``t::
@@ -166,8 +166,8 @@ f_findAndDeleteEntry()
 
 f_swapfiles() 
 {
-  preMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_pre.txt"
-  postMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_post.txt"
+  preMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_pre.txt"
+  postMyFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_hotstrings_post.txt"
   filecopy, %destinationfile%, %postMyFile%, 1
   sleep, 80
   filemove, %preMyFile%, %destinationfile%, 1                

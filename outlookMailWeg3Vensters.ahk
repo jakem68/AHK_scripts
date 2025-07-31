@@ -25,7 +25,7 @@ WinGetPos, X_sent, Y_sent, width_sent ,height_sent , ahk_id %WinUID%
 
 newWidth = % screenWidth // 3
 
-newLeft = 78
+newLeft = 0
 WinMove,ahk_id %WinUID_drafts%,,%newLeft%,%screenTop%,%newWidth%,%screenbottom%
 newLeft := newLeft + newWidth
 WinMove,ahk_id %WinUID_out%,,%newLeft%,%screenTop%,%newWidth%,%screenbottom%

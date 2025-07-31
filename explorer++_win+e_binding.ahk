@@ -9,7 +9,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #e::
 try {
     ;Run %A_ScriptDir%\Explorer++.exe
-    Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\explorer++\Explorer++.exe"
+    Run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\explorer++\Explorer++.exe"
 } catch e {
     MsgBox Couldn't run Explorer++.`nPlease make sure it's in the same directory as this script (%A_ScriptDir%).
 }

@@ -17,23 +17,23 @@ Setkeydelay, 20, 15
 ; */
 
 ;program to detect what is entered in USB port and start program based on usb device entered if required.
-;run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\autostartUSB.ahk"
+;run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\autostartUSB.ahk"
 
 ;;;; reload this script
 F2 & r::reload
 
 ;;;; edit this script
-;F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\PSPad editor\PSPad.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
-F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
+;F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\PSPad editor\PSPad.exe" "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
+F2 & e::Run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\VSCode-win32-x64-1.21.1\Code.exe" "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\KSJ_experiments.ahk", , max
 
 ;;;; pause script
 F2 & p::pause
 
 ;;;; run windowinfo
-F2 & w::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\windowinfo.ahk"
+F2 & w::run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\windowinfo.ahk"
 
 ;;;; run temporary program
-F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\temp.ahk"
+F2 & t::run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\temp.ahk"
 
 ;;;; start explorer in links (=windows + e)
 #e::
@@ -172,7 +172,7 @@ Escape & j::
       	clipboard = %original_text% 
         return
         }
-      run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input.txt"
+      run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\array_input.txt"
       }
 ;exceptions
     ; checks whether more than one word have been entered as input
@@ -211,7 +211,7 @@ Escape & j::
 return
 
 ^+h::
-run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\NewHotstringEntry.ahk"
+run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\NewHotstringEntry.ahk"
 return
 
 
@@ -369,7 +369,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
     return
   ;;;; e-mail the open message without deferring (=assign category sendNow and send)
     Escape & m::
-      run, "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\outlook-sendNow.ahk"
+      run, "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\outlook-sendNow.ahk"
     return
 
 
@@ -425,13 +425,13 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
       WinGetTitle, Title, A
       if Title = ABSENCE_DASHBOARD(MIT) - Google Chrome
       {
-        run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing.ahk"  
+        run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing.ahk"  
       }
     Escape & n::
       WinGetTitle, Title, A
       if Title = Crystal - Google Chrome
       {
-        run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing2.ahk"  
+        run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\Crystal_verplaatsing2.ahk"  
       }
       
     
@@ -443,7 +443,7 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 
 
 ;;;; include other ahk files in this script without pasting them in
-;#Include C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts 
+;#Include C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -451,9 +451,9 @@ if WinActive("ahk_class OpusApp") or WinActive("Framework::CFra"){
 function_lut() ;look up target
 {
   global target =
-  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input.txt"
-  post_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input_post.txt"
-  pre_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\AutoHotKey_scripts\array_input_pre.txt"   
+  myFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\array_input.txt"
+  post_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\array_input_post.txt"
+  pre_myFile := "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\AutoHotKey_scripts\array_input_pre.txt"   
   targetfound := ""
   space := " "
   Loop, read, %myFile%, %pre_myFile%

@@ -13,6 +13,6 @@ if (WinActive("ahk_class CabinetWClass"))
     ; Clipboard = %Clipboard%
     sleep 50
     msgbox %clipboard%
-    run "C:\Users\ksj\OneDrive - Sirris\ksj persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" %Clipboard%
+    run "C:\Users\ksj\OneDrive - Sirris\ksj_persoonlijk\PortableApps\VSCode-win32-x64\Code.exe" %Clipboard%
 }
 exit
